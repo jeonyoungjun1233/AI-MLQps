@@ -9,6 +9,7 @@
 - [x] 사전 예측 미수행 사실을 답안에 명시
 - [x] 답안 TXT·PDF, JSON, 편의용 ZIP 준비
 - [ ] 사용자가 최종 답안 내용 확인
-- [ ] GitHub 개인 과제 저장소에 업로드
+- [x] 공개 GitHub 저장소 jeonyoungjun1233/AI-MLQps의 main에 업로드
+- [x] 00_제출할파일_1주차에 JSON·답안 PDF를 모으고 GitHub README에 바로가기 표시
 - [ ] LMS 실제 과제 화면에서 마감·허용 파일 형식 확인
 - [ ] 제출 파일 업로드 후 제출 완료 상태 확인
