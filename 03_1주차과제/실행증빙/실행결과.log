@@ -1,0 +1,8 @@
+mode=snapshot
+station_count=40
+pm10_reported=40
+pm10_missing=0
+pm10_avg=20.0
+pm25_avg=12.7
+data_time=2026-06-28 22:00
+checks=PASS

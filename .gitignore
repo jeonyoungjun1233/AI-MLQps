@@ -1,0 +1,10 @@
+01_강의원본/
+02_강의저장소/
+tmp/
+venv/
+.venv/
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
