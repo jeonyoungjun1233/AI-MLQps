@@ -1,3 +1,0 @@
-exit_code=2
-인증키가 없습니다. --api-key 를 주거나 DATA_GO_KR_API_KEY 환경변수를 설정하세요.
-오프라인 재현은 --simulate 를 사용합니다.

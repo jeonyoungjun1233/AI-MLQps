@@ -3,17 +3,14 @@ from pathlib import Path
 import hashlib
 import importlib.util
 import json
-import subprocess
 import sys
 from datetime import datetime, timezone
 
 BASE = Path(__file__).resolve().parent
-ROOT = BASE.parent
-REPO = ROOT / '02_강의저장소' / 'mlops_public'
-SOURCE = REPO / 'practice/chapter1/code/1-1-public-api.py'
-RAW = REPO / 'practice/chapter1/data/output/ch1_airquality_live_raw.json'
-OUT = BASE / '제출파일'
-EVIDENCE = BASE / '실행증빙'
+SOURCE = BASE / '교수자원본_1-1-public-api.py'
+RAW = BASE / 'airquality_snapshot.json'
+OUT = BASE.parent
+EVIDENCE = BASE
 
 def main():
     OUT.mkdir(exist_ok=True)
@@ -31,7 +28,7 @@ def main():
     # 원본 함수는 live로 고정하므로, 재생 결과임을 명확히 표시한다.
     summary['source'] = 'snapshot'
     summary['source_note'] = '교수자 저장소의 실제 API 응답 스냅샷 재계산. 이번 실행에서 실시간 API를 호출하지 않음.'
-    summary['snapshot_file'] = RAW.relative_to(REPO).as_posix()
+    summary['snapshot_file'] = '실행증빙/airquality_snapshot.json'
     summary['snapshot_sha256'] = hashlib.sha256(RAW.read_bytes()).hexdigest()
     assert summary['pm10_reported'] + summary['pm10_missing'] == summary['station_count']
     assert summary['pm25_reported'] + summary['pm25_missing'] == summary['station_count']
@@ -47,15 +44,17 @@ def main():
         'executed_at': datetime.now(timezone.utc).isoformat(),
         'python': sys.version,
         'repository': 'https://github.com/LeeSeogMin/mlops_public',
-        'commit': subprocess.check_output(['git', '-C', str(REPO), 'rev-parse', 'HEAD'], text=True).strip(),
+        'commit': '9b6618ca6efa5ca22f45301b824e62140519c204',
         'source_sha256': hashlib.sha256(SOURCE.read_bytes()).hexdigest(),
         'snapshot_sha256': summary['snapshot_sha256'],
         'mode': 'snapshot',
+        'sample_pm10_value': items[0]['pm10Value'],
+        'sample_pm10_python_type': type(items[0]['pm10Value']).__name__,
         'checks': ['API resultCode=00', 'totalCount=record count', 'nonempty records', 'PM10/PM25 count invariants', 'means recalculated', 'missing markers conversion'],
         'status': 'PASS'
     }
     (EVIDENCE / 'verification.json').write_text(json.dumps(evidence, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
-    log = f"mode=snapshot\nstation_count={summary['station_count']}\npm10_reported={summary['pm10_reported']}\npm10_missing={summary['pm10_missing']}\npm10_avg={summary['pm10_avg']}\npm25_avg={summary['pm25_avg']}\ndata_time={summary['data_time_min']}\nchecks=PASS\n"
+    log = f"executed_at={evidence['executed_at']}\nmode=snapshot\nstation_count={summary['station_count']}\npm10_reported={summary['pm10_reported']}\npm10_missing={summary['pm10_missing']}\npm10_avg={summary['pm10_avg']}\npm25_avg={summary['pm25_avg']}\ndata_time={summary['data_time_min']}\nchecks=PASS\n"
     (EVIDENCE / '실행결과.log').write_text(log, encoding='utf-8')
     print(log)
 

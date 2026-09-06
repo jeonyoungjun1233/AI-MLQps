@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-06T02:28:52+00:00",
+  "generated_at": "2026-09-06T03:07:42+00:00",
   "source": "snapshot",
   "endpoint": "https://apis.data.go.kr/B552584/ArpltnInforInqireSvc/getCtprvnRltmMesureDnsty",
   "station_count": 40,
@@ -38,6 +38,6 @@
     "stationName"
   ],
   "source_note": "교수자 저장소의 실제 API 응답 스냅샷 재계산. 이번 실행에서 실시간 API를 호출하지 않음.",
-  "snapshot_file": "practice/chapter1/data/output/ch1_airquality_live_raw.json",
+  "snapshot_file": "실행증빙/airquality_snapshot.json",
   "snapshot_sha256": "c74bd701e86eaa63ccbd2cd312b7a520b3a6779889d35440198d0e86d45c8b2f"
 }

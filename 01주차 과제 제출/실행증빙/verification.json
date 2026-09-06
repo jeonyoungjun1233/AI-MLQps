@@ -1,11 +1,13 @@
 {
-  "executed_at": "2026-09-06T02:28:52.710911+00:00",
+  "executed_at": "2026-09-06T03:07:42.187214+00:00",
   "python": "3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]",
   "repository": "https://github.com/LeeSeogMin/mlops_public",
   "commit": "9b6618ca6efa5ca22f45301b824e62140519c204",
   "source_sha256": "7e41b0ae015c0be0c92b09b8e75ba17408a12a9f4a25266230348043b46cd271",
   "snapshot_sha256": "c74bd701e86eaa63ccbd2cd312b7a520b3a6779889d35440198d0e86d45c8b2f",
   "mode": "snapshot",
+  "sample_pm10_value": "21",
+  "sample_pm10_python_type": "str",
   "checks": [
     "API resultCode=00",
     "totalCount=record count",
