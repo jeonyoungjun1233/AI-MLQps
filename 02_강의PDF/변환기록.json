@@ -1,0 +1,106 @@
+[
+  {
+    "week": 1,
+    "file": "01주차_강의자료.pdf",
+    "pages": 11,
+    "mode": "original_pdf",
+    "source": "02_강의저장소/mlops_public/lecture/ch01.md",
+    "source_sha256": "770e2c3fbfe63e5286c7d92c760f8ab23961037e8c04e2beb5d4ce769630f41d"
+  },
+  {
+    "week": 2,
+    "file": "02주차_강의자료.pdf",
+    "pages": 10,
+    "mode": "original_pdf",
+    "source": "02_강의저장소/mlops_public/lecture/ch02.md",
+    "source_sha256": "1976a52ec5c4398e726d321d8b9145ddc187f329004eb6a789d263d0ace45a22"
+  },
+  {
+    "week": 3,
+    "file": "03주차_강의자료.pdf",
+    "pages": 10,
+    "mode": "markdown_to_pdf",
+    "source": "02_강의저장소/mlops_public/lecture/ch03.md",
+    "source_sha256": "c5db3f0542e79358d9654fb2da9264d3ead857d051357c4839c00f90ef024981"
+  },
+  {
+    "week": 4,
+    "file": "04주차_강의자료.pdf",
+    "pages": 5,
+    "mode": "markdown_to_pdf",
+    "source": "02_강의저장소/mlops_public/lecture/ch04.md",
+    "source_sha256": "42897f859a06e15bc0c009b6c25b6089580bc513ec7388f53919da93bb2ce954"
+  },
+  {
+    "week": 5,
+    "file": "05주차_강의자료.pdf",
+    "pages": 9,
+    "mode": "markdown_to_pdf",
+    "source": "02_강의저장소/mlops_public/lecture/ch05.md",
+    "source_sha256": "b9e071639f58a16734d5a0694468d5cd4a63701967f8c027da8579e84c88cbfe"
+  },
+  {
+    "week": 6,
+    "file": "06주차_강의자료.pdf",
+    "pages": 9,
+    "mode": "markdown_to_pdf",
+    "source": "02_강의저장소/mlops_public/lecture/ch06.md",
+    "source_sha256": "21e46af65fe6dd8ee63accd5ffd7987fe32ab690ee77fe803194fb263d3cd8c8"
+  },
+  {
+    "week": 7,
+    "file": "07주차_강의자료.pdf",
+    "pages": 10,
+    "mode": "markdown_to_pdf",
+    "source": "02_강의저장소/mlops_public/lecture/ch07.md",
+    "source_sha256": "33fbbf5787f27d9bfb23fe23b483e30bfe201f649c25bb6d462710bb10c44864"
+  },
+  {
+    "week": 9,
+    "file": "09주차_강의자료.pdf",
+    "pages": 11,
+    "mode": "markdown_to_pdf",
+    "source": "02_강의저장소/mlops_public/lecture/ch09.md",
+    "source_sha256": "d5b98f414b6a5f91943eaec7625749817b231876f8d6f5d0f8b135b41ab86f37"
+  },
+  {
+    "week": 10,
+    "file": "10주차_강의자료.pdf",
+    "pages": 10,
+    "mode": "markdown_to_pdf",
+    "source": "02_강의저장소/mlops_public/lecture/ch10.md",
+    "source_sha256": "4a1a8b5b85c31054c40144d41d424671d7b752a28cdad267944e40bb196215f2"
+  },
+  {
+    "week": 11,
+    "file": "11주차_강의자료.pdf",
+    "pages": 9,
+    "mode": "markdown_to_pdf",
+    "source": "02_강의저장소/mlops_public/lecture/ch11.md",
+    "source_sha256": "f0674f78c0ba6ad90f41c033f1cb7aa27608a7d7df9d24a0ae8335c8663ee132"
+  },
+  {
+    "week": 12,
+    "file": "12주차_강의자료.pdf",
+    "pages": 4,
+    "mode": "markdown_to_pdf",
+    "source": "02_강의저장소/mlops_public/lecture/ch12.md",
+    "source_sha256": "dd852ab066e059e2c9a76e248d61a259c3d9ab85c4e3dd767f73bad541297392"
+  },
+  {
+    "week": 13,
+    "file": "13주차_강의자료.pdf",
+    "pages": 12,
+    "mode": "markdown_to_pdf",
+    "source": "02_강의저장소/mlops_public/lecture/ch13.md",
+    "source_sha256": "e632362d0a384eacb60157ceb1a68beef20813f0d5269ee6b8f3b2e776cce1d1"
+  },
+  {
+    "week": 14,
+    "file": "14주차_강의자료.pdf",
+    "pages": 9,
+    "mode": "markdown_to_pdf",
+    "source": "02_강의저장소/mlops_public/lecture/ch14.md",
+    "source_sha256": "de1b25683ae2015e399e099975d7b0df9affa62625b577522c3547a046ba9986"
+  }
+]
