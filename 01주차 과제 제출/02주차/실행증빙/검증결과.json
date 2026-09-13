@@ -1,7 +1,7 @@
 {
   "status": "PASS",
-  "started_at": "2026-09-13T22:12:01.744766+09:00",
-  "finished_at": "2026-09-13T22:12:03.707936+09:00",
+  "started_at": "2026-09-13T22:20:11.754027+09:00",
+  "finished_at": "2026-09-13T22:20:13.791912+09:00",
   "execution_mode": "saved_response_recalculation",
   "network_calls_during_recalculation": 0,
   "time_basis": "event_time: response.body.items[].dataTime (KST)",
@@ -68,7 +68,7 @@
     "practice/chapter2/data/output/ch2_eda_summary.json": "b0a254b5e1bca0f2b5de643d130f8e7e20b7e8d3ceb66f782bbc1a08f8fff612",
     "practice/chapter2/data/output/ch2_drift_result.json": "14dfc0519925ea90dee57c7ed29f11665f8a06d02875cd1fb0c24a6c5ea38d00",
     "practice/chapter2/data/output/ch2_drift_visual.txt": "069e324a82c8169dbe4415f57a4b0ef580bc2baaee4f463e587046434e170bf4",
-    "02주차_서술형_답안.txt": "a7b6d4dadf6822b19625b7fd7a2624801124b5960def0012f8196540752af485"
+    "02주차_서술형_답안.txt": "0a6640232d6f4dd45617d24a7b43354c46315a6c282071dfeacdc3ed6857af68"
   },
   "drift_result": {
     "column": "pm10Value",

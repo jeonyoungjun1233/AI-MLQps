@@ -120,7 +120,7 @@ def main():
     else:
         relation = '크므로' if p > alpha else '같으므로'
         first = f'실행 결과 p_value={p:.16g}는 alpha={alpha}보다 {relation}, p_value < alpha일 때만 드리프트를 감지한다는 판정 규칙에 따라 drift_detected=false가 되었다. 따라서 이 유의수준에서는 두 시점의 PM10 분포가 같다는 귀무가설을 기각하지 못한다.'
-    second = f'drift_detected=false는 두 시점의 분포가 같다는 증명이 아니라, 차이가 있다고 판단할 통계적 증거가 충분하지 않다는 뜻이다. 내 실행의 baseline_n={n}은 결측을 제외한 기준 시점의 PM10 표본 수로, 비교적 작은 표본에서는 검정력이 부족하여 실제 변화도 놓칠 수 있다. 따라서 분포의 동일성이 확인되었다고 보고하지 않고, 해당 표본과 유의수준에서 유의한 차이를 감지하지 못했다고 서술해야 한다.'
+    second = f'drift_detected=false라는 결과가 나온 경우에도 두 시점의 분포가 같다는 증명이 아니라, 차이가 있다고 판단할 통계적 증거가 충분하지 않다는 뜻이다. 내 실행의 baseline_n={n}은 결측을 제외한 기준 시점의 PM10 표본 수로, 비교적 작은 표본에서는 검정력이 부족하여 실제 변화도 놓칠 수 있다. 따라서 false일 때는 분포의 동일성이 확인되었다고 보고하지 않고, 해당 표본과 유의수준에서 유의한 차이를 감지하지 못했다고 서술해야 한다.'
     answer = f'02주차 과제 서술형 답안\n\n1. p_value와 alpha에 따른 판정\n{first}\n\n2. false를 분포 동일성의 확인으로 보고하면 안 되는 이유\n{second}\n'
     (BASE / '02주차_서술형_답안.txt').write_text(answer, encoding='utf-8')
     paths = [baseline, current, eda_input, *[CHAPTER / c[0] for c in commands], *[output / f for f in ['ch2_eda_summary.json', 'ch2_drift_result.json', 'ch2_drift_visual.txt']], BASE / '02주차_서술형_답안.txt']

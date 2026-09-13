@@ -1,7 +1,7 @@
 [
   {
     "service": "airkorea",
-    "checked_at": "2026-09-13T22:11:17.448797+09:00",
+    "checked_at": "2026-09-13T22:20:24.296198+09:00",
     "endpoint": "https://apis.data.go.kr/B552584/ArpltnInforInqireSvc/getCtprvnRltmMesureDnsty",
     "parameters_without_credentials": {
       "returnType": "json",
@@ -17,7 +17,7 @@
   },
   {
     "service": "law",
-    "checked_at": "2026-09-13T22:11:17.448883+09:00",
+    "checked_at": "2026-09-13T22:20:24.296265+09:00",
     "endpoint": "https://www.law.go.kr/DRF/lawSearch.do",
     "parameters_without_credentials": {
       "target": "law",
