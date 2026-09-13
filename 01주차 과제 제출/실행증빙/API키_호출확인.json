@@ -1,0 +1,31 @@
+{
+  "checked_at": "2026-09-13T12:17:18+09:00",
+  "mode": "live_api_check",
+  "endpoint": "https://apis.data.go.kr/B552584/ArpltnInforInqireSvc/getCtprvnRltmMesureDnsty",
+  "parameters": {
+    "returnType": "json",
+    "numOfRows": "100",
+    "pageNo": "1",
+    "sidoName": "서울",
+    "ver": "1.0"
+  },
+  "key_source": "02_강의저장소\\mlops_public\\.env.example",
+  "key_saved_in_report": false,
+  "http_status": 403,
+  "api_header": {},
+  "total_count": null,
+  "received_count": 0,
+  "measurement_times": [],
+  "sample": null,
+  "status": "FAIL",
+  "confirmation_http_status": 403,
+  "confirmation_response": {
+    "OpenAPI_ServiceResponse": {
+      "cmmMsgHeader": {
+        "errMsg": "SERVICE_KEY_IS_NOT_REGISTERED_ERROR",
+        "returnAuthMsg": "등록되지 않은 서비스키",
+        "returnReasonCode": "30"
+      }
+    }
+  }
+}

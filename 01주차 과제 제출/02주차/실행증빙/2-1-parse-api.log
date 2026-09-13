@@ -1,0 +1,4 @@
+source=file:airquality_seoul_2200.json stations=40 data_time=2026-06-28 22:00 pm10_missing=0 output=C:\Users\junyj\Desktop\AI데이터개발MLQps\01주차 과제 제출\02주차\practice\chapter2\data\output\ch2_eda_summary.json
+
+[pm10_summary] {"min": 14.0, "max": 27.0, "mean": 20.025, "median": 20.0}
+[pm10_grade_counts] {"1": 28, "2": 11, "nan": 1}

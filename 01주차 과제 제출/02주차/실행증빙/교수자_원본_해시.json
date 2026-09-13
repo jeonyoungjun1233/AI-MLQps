@@ -1,0 +1,26 @@
+{
+  "repository": "https://github.com/LeeSeogMin/mlops_public",
+  "commit": "9b6618ca6efa5ca22f45301b824e62140519c204",
+  "files": [
+    {
+      "path": "code/2-1-parse-api.py",
+      "sha256": "ca7366898987c7b6cb9bca956e17d0ce44a1c1334af27c670215b45d5ae255f9"
+    },
+    {
+      "path": "code/2-2-drift-visualize.py",
+      "sha256": "1915ee2b13dca874529f0b869e529612972b37b3f41c3ae4202830313a7c9041"
+    },
+    {
+      "path": "code/requirements.txt",
+      "sha256": "32ea4dfc20fb90ea10d421c3e12de72309e7d57bda24dd081163dfeb57afb472"
+    },
+    {
+      "path": "data/input/airquality_seoul_2200.json",
+      "sha256": "c74bd701e86eaa63ccbd2cd312b7a520b3a6779889d35440198d0e86d45c8b2f"
+    },
+    {
+      "path": "data/input/airquality_seoul_current.json",
+      "sha256": "688573590e38fcda232796d9546d2ac8fba632402e301cc6387562e212afde61"
+    }
+  ]
+}

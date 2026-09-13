@@ -1,0 +1,34 @@
+[
+  {
+    "service": "airkorea",
+    "checked_at": "2026-09-13T22:11:17.448797+09:00",
+    "endpoint": "https://apis.data.go.kr/B552584/ArpltnInforInqireSvc/getCtprvnRltmMesureDnsty",
+    "parameters_without_credentials": {
+      "returnType": "json",
+      "numOfRows": "100",
+      "pageNo": "1",
+      "sidoName": "서울",
+      "ver": "1.0"
+    },
+    "credential_variable": "DATA_GO_KR_API_KEY",
+    "request_sent": false,
+    "success": false,
+    "error": "missing_or_placeholder_credential"
+  },
+  {
+    "service": "law",
+    "checked_at": "2026-09-13T22:11:17.448883+09:00",
+    "endpoint": "https://www.law.go.kr/DRF/lawSearch.do",
+    "parameters_without_credentials": {
+      "target": "law",
+      "type": "JSON",
+      "query": "개인정보 보호법",
+      "display": "3",
+      "page": "1"
+    },
+    "credential_variable": "LAW_OPEN_API_OC",
+    "request_sent": false,
+    "success": false,
+    "error": "missing_or_placeholder_credential"
+  }
+]

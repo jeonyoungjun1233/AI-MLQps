@@ -1,0 +1,2 @@
+# Preserve the exact instructor files and generated JSON/log bytes used in SHA-256 evidence.
+* -text whitespace=blank-at-eol,-blank-at-eof,space-before-tab,cr-at-eol
