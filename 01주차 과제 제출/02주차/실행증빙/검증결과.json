@@ -1,9 +1,44 @@
 {
   "status": "PASS",
-  "started_at": "2026-09-13T22:20:11.754027+09:00",
-  "finished_at": "2026-09-13T22:20:13.791912+09:00",
+  "started_at": "2026-09-13T22:26:48.898211+09:00",
+  "finished_at": "2026-09-13T22:26:50.842958+09:00",
   "execution_mode": "saved_response_recalculation",
   "network_calls_during_recalculation": 0,
+  "input_provenance": {
+    "baseline": "instructor_provided_snapshot",
+    "current": "live_API_response_saved_without_modification",
+    "eda": "live_API_response_saved_without_modification",
+    "live_collection": {
+      "service": "airkorea",
+      "checked_at": "2026-09-13T22:24:51.983112+09:00",
+      "endpoint": "https://apis.data.go.kr/B552584/ArpltnInforInqireSvc/getCtprvnRltmMesureDnsty",
+      "parameters_without_credentials": {
+        "returnType": "json",
+        "numOfRows": "100",
+        "pageNo": "1",
+        "sidoName": "서울",
+        "ver": "1.0"
+      },
+      "credential_variable": "DATA_GO_KR_API_KEY",
+      "request_sent": true,
+      "http_status": 200,
+      "success": true,
+      "api_header": {
+        "resultMsg": "NORMAL_CODE",
+        "resultCode": "00"
+      },
+      "station_count": 40,
+      "total_count": 40,
+      "event_times": [
+        "2026-09-13 22:00"
+      ],
+      "response_file": "practice/chapter2/data/input/airquality_seoul_live.json",
+      "credential_source": "user_supplied_via_process_environment_only",
+      "credential_written_to_file": false,
+      "response_sha256": "e5fc8ed85c687b7174e57e2693134ab9c27383f8526af35852b7face5c9dbce9"
+    },
+    "comparison_interval_days": 77.0
+  },
   "time_basis": "event_time: response.body.items[].dataTime (KST)",
   "python": "3.14.3",
   "packages": {
@@ -19,12 +54,12 @@
         "python",
         "code/2-1-parse-api.py",
         "--input",
-        "data/input/airquality_seoul_2200.json"
+        "data/input/airquality_seoul_live.json"
       ],
       "cwd": "practice/chapter2",
       "exit_code": 0,
       "log": "실행증빙/2-1-parse-api.log",
-      "log_sha256": "fe81f5b62aaaf0d1c815cd61222f47ed35f7a4a54f42869167b8b86003953164"
+      "log_sha256": "1ebbdf45ef1eeddebaf61f1200f2152a8a8d7560237bad1dbc4207f7320a6219"
     },
     {
       "command": [
@@ -33,7 +68,7 @@
         "--baseline",
         "data/input/airquality_seoul_2200.json",
         "--current",
-        "data/input/airquality_seoul_current.json",
+        "data/input/airquality_seoul_live.json",
         "--col",
         "pm10Value",
         "--alpha",
@@ -42,7 +77,7 @@
       "cwd": "practice/chapter2",
       "exit_code": 0,
       "log": "실행증빙/2-2-drift-visualize.log",
-      "log_sha256": "682172d2dbb3560b7c14eb299a1a782abc93d6ea6d3aff7fe6f154167aa0bf5e"
+      "log_sha256": "b7c34abf69283bdaa1a5b91fcb1d57782ac896e7945369e65789bab867704794"
     }
   ],
   "checks": [
@@ -62,26 +97,28 @@
   ],
   "sha256": {
     "practice/chapter2/data/input/airquality_seoul_2200.json": "c74bd701e86eaa63ccbd2cd312b7a520b3a6779889d35440198d0e86d45c8b2f",
-    "practice/chapter2/data/input/airquality_seoul_current.json": "688573590e38fcda232796d9546d2ac8fba632402e301cc6387562e212afde61",
+    "practice/chapter2/data/input/airquality_seoul_live.json": "e5fc8ed85c687b7174e57e2693134ab9c27383f8526af35852b7face5c9dbce9",
+    "실행증빙/재실행.py": "84b15a9fe8895da6c1a10aa07ec3e0f79de0b9db2da6de64692c8666c0661658",
     "practice/chapter2/code/2-1-parse-api.py": "ca7366898987c7b6cb9bca956e17d0ce44a1c1334af27c670215b45d5ae255f9",
     "practice/chapter2/code/2-2-drift-visualize.py": "1915ee2b13dca874529f0b869e529612972b37b3f41c3ae4202830313a7c9041",
-    "practice/chapter2/data/output/ch2_eda_summary.json": "b0a254b5e1bca0f2b5de643d130f8e7e20b7e8d3ceb66f782bbc1a08f8fff612",
-    "practice/chapter2/data/output/ch2_drift_result.json": "14dfc0519925ea90dee57c7ed29f11665f8a06d02875cd1fb0c24a6c5ea38d00",
-    "practice/chapter2/data/output/ch2_drift_visual.txt": "069e324a82c8169dbe4415f57a4b0ef580bc2baaee4f463e587046434e170bf4",
-    "02주차_서술형_답안.txt": "0a6640232d6f4dd45617d24a7b43354c46315a6c282071dfeacdc3ed6857af68"
+    "practice/chapter2/data/output/ch2_eda_summary.json": "ad79594856b33c44fedac43b95e1d1fcde240932f17e010910728b4e0643bc44",
+    "practice/chapter2/data/output/ch2_drift_result.json": "d11a67a02ee33932fd73c6ece8aa18ad890e9c7c246aa22170eb4022019d2328",
+    "practice/chapter2/data/output/ch2_drift_visual.txt": "2887cb279af9389f887784a19c1e03664f6b75558cc46f4c9a03fd93994242fd",
+    "02주차_서술형_답안.txt": "cdac3171b603020e3e3bc434b8ea9c15d5f920176db0b653e93f94d83b77d6a9",
+    "실행증빙/실행설정.json": "06f83a672e7e718b28bf9b12d183a4df1242369cc5e3bb07f8e169a865e9e856"
   },
   "drift_result": {
     "column": "pm10Value",
     "baseline_time": "2026-06-28 22:00",
-    "current_time": "2026-06-28 23:00",
+    "current_time": "2026-09-13 22:00",
     "baseline_n": 40,
     "current_n": 40,
     "baseline_mean": 20.025,
-    "current_mean": 20.775,
-    "ks_statistic": 0.175,
-    "p_value": 0.5786001416508443,
+    "current_mean": 42.35,
+    "ks_statistic": 1.0,
+    "p_value": 1.860340365603627e-23,
     "alpha": 0.05,
-    "drift_detected": false
+    "drift_detected": true
   },
   "lms_submission_confirmed": false
 }

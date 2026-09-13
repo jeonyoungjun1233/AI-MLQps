@@ -1,7 +1,7 @@
 [
   {
     "service": "airkorea",
-    "checked_at": "2026-09-13T22:20:24.296198+09:00",
+    "checked_at": "2026-09-13T22:24:51.983112+09:00",
     "endpoint": "https://apis.data.go.kr/B552584/ArpltnInforInqireSvc/getCtprvnRltmMesureDnsty",
     "parameters_without_credentials": {
       "returnType": "json",
@@ -11,13 +11,26 @@
       "ver": "1.0"
     },
     "credential_variable": "DATA_GO_KR_API_KEY",
-    "request_sent": false,
-    "success": false,
-    "error": "missing_or_placeholder_credential"
+    "request_sent": true,
+    "http_status": 200,
+    "success": true,
+    "api_header": {
+      "resultMsg": "NORMAL_CODE",
+      "resultCode": "00"
+    },
+    "station_count": 40,
+    "total_count": 40,
+    "event_times": [
+      "2026-09-13 22:00"
+    ],
+    "response_file": "practice/chapter2/data/input/airquality_seoul_live.json",
+    "credential_source": "user_supplied_via_process_environment_only",
+    "credential_written_to_file": false,
+    "response_sha256": "e5fc8ed85c687b7174e57e2693134ab9c27383f8526af35852b7face5c9dbce9"
   },
   {
     "service": "law",
-    "checked_at": "2026-09-13T22:20:24.296265+09:00",
+    "checked_at": "2026-09-13T22:25:45.735071+09:00",
     "endpoint": "https://www.law.go.kr/DRF/lawSearch.do",
     "parameters_without_credentials": {
       "target": "law",
@@ -27,8 +40,19 @@
       "page": "1"
     },
     "credential_variable": "LAW_OPEN_API_OC",
-    "request_sent": false,
+    "request_sent": true,
+    "http_status": 200,
     "success": false,
-    "error": "missing_or_placeholder_credential"
+    "response_top_level_fields": [
+      "result",
+      "msg"
+    ],
+    "error_fields": {
+      "result": "사용자 정보 검증에 실패하였습니다.",
+      "msg": "OPEN API 호출 시 사용자 검증을 위하여 정확한 서버장비의 IP주소 및 도메인주소를 등록해 주세요."
+    },
+    "error": "response_not_recognized_as_success",
+    "credential_source": "user_supplied_via_process_environment_only",
+    "credential_written_to_file": false
   }
 ]

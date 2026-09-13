@@ -1,5 +1,6 @@
 import argparse
 import concurrent.futures
+import hashlib
 import json
 import os
 import urllib.error
@@ -15,6 +16,7 @@ EVIDENCE = DEST / '실행증빙'
 EVIDENCE.mkdir(parents=True, exist_ok=True)
 parser = argparse.ArgumentParser(description='API 연결 확인. 인증값과 요청 URL은 출력·저장하지 않습니다.')
 parser.add_argument('--env-file', type=Path, help='사용자가 지정한 기존 키 설정 파일')
+parser.add_argument('--service', choices=['all', 'airkorea', 'law'], default='all')
 args = parser.parse_args()
 config = {}
 config_path = args.env_file or ROOT / '.env'
@@ -54,12 +56,12 @@ def call(service, key_name, endpoint, params):
             record['api_header'] = response.get('header', {})
             body = response.get('body', {})
             items = body.get('items', [])
-            if record['http_status'] == 200 and isinstance(items, list) and items:
+            if record['http_status'] == 200 and response.get('header', {}).get('resultCode') == '00' and isinstance(items, list) and items:
                 assert key not in text and urllib.parse.unquote(key) not in text
                 path = DEST / 'practice/chapter2/data/input/airquality_seoul_live.json'
                 path.parent.mkdir(parents=True, exist_ok=True)
                 path.write_bytes(raw)
-                record.update(success=True, station_count=len(items), total_count=body.get('totalCount'), event_times=sorted({x.get('dataTime', '') for x in items}), response_file=path.relative_to(DEST).as_posix())
+                record.update(success=True, station_count=len(items), total_count=body.get('totalCount'), event_times=sorted({x.get('dataTime', '') for x in items}), response_file=path.relative_to(DEST).as_posix(), response_sha256=hashlib.sha256(raw).hexdigest())
         elif service == 'law' and isinstance(payload, dict):
             result = payload.get('LawSearch', {})
             laws = result.get('law', [])
@@ -69,10 +71,13 @@ def call(service, key_name, endpoint, params):
                 record.update(success=True, total_count=result.get('totalCnt'), laws=[{k: x.get(k) for k in ['법령명한글', '법령ID', '법령일련번호', '공포일자', '시행일자']} for x in laws])
             else:
                 record['response_top_level_fields'] = list(payload)
+                record['error_fields'] = {k: payload[k] for k in ['result', 'msg'] if k in payload}
         if not record['success']:
             try:
                 node = ET.fromstring(text)
-                record['error_fields'] = {tag: node.findtext('.//' + tag) for tag in ['returnReasonCode', 'returnAuthMsg', 'errMsg', 'resultCode', 'resultMsg'] if node.findtext('.//' + tag)}
+                fields = {tag: node.findtext('.//' + tag) for tag in ['returnReasonCode', 'returnAuthMsg', 'errMsg', 'resultCode', 'resultMsg'] if node.findtext('.//' + tag)}
+                if fields:
+                    record['error_fields'] = fields
             except ET.ParseError:
                 record['error'] = 'response_not_recognized_as_success'
     except Exception as exc:
@@ -85,10 +90,14 @@ def call(service, key_name, endpoint, params):
     return json.loads(safe)
 
 with concurrent.futures.ThreadPoolExecutor(max_workers=2) as pool:
-    futures = [
-        pool.submit(call, 'airkorea', 'DATA_GO_KR_API_KEY', 'https://apis.data.go.kr/B552584/ArpltnInforInqireSvc/getCtprvnRltmMesureDnsty', {'returnType': 'json', 'numOfRows': '100', 'pageNo': '1', 'sidoName': '서울', 'ver': '1.0'}),
-        pool.submit(call, 'law', 'LAW_OPEN_API_OC', 'https://www.law.go.kr/DRF/lawSearch.do', {'target': 'law', 'type': 'JSON', 'query': '개인정보 보호법', 'display': '3', 'page': '1'}),
+    services = [
+        ('airkorea', 'DATA_GO_KR_API_KEY', 'https://apis.data.go.kr/B552584/ArpltnInforInqireSvc/getCtprvnRltmMesureDnsty', {'returnType': 'json', 'numOfRows': '100', 'pageNo': '1', 'sidoName': '서울', 'ver': '1.0'}),
+        ('law', 'LAW_OPEN_API_OC', 'https://www.law.go.kr/DRF/lawSearch.do', {'target': 'law', 'type': 'JSON', 'query': '개인정보 보호법', 'display': '3', 'page': '1'}),
     ]
+    futures = [pool.submit(call, *service) for service in services if args.service in ['all', service[0]]]
     results = [f.result() for f in futures]
-(EVIDENCE / 'API_호출확인.json').write_text(json.dumps(results, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+report_path = EVIDENCE / 'API_호출확인.json'
+previous = json.loads(report_path.read_text(encoding='utf-8')) if args.service != 'all' and report_path.exists() else []
+combined = [r for r in previous if r['service'] not in {x['service'] for x in results}] + results
+report_path.write_text(json.dumps(combined, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
 print(json.dumps(results, ensure_ascii=False, indent=2))

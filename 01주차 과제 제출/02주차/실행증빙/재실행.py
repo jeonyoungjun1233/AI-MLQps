@@ -59,9 +59,11 @@ def values(rows, col):
 
 
 def main():
+    settings_path = EVIDENCE / '실행설정.json'
+    settings = read(settings_path) if settings_path.exists() else {}
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--current', default='data/input/airquality_seoul_current.json')
-    parser.add_argument('--eda-input', default='data/input/airquality_seoul_2200.json')
+    parser.add_argument('--current', default=settings.get('current', 'data/input/airquality_seoul_current.json'))
+    parser.add_argument('--eda-input', default=settings.get('eda_input', 'data/input/airquality_seoul_2200.json'))
     args = parser.parse_args()
     baseline = CHAPTER / 'data/input/airquality_seoul_2200.json'
     current = (CHAPTER / args.current).resolve()
@@ -71,6 +73,13 @@ def main():
     provenance = read(EVIDENCE / '교수자_원본_해시.json')
     for entry in provenance['files']:
         assert sha(CHAPTER / entry['path']) == entry['sha256'], entry['path']
+    live_input = (CHAPTER / 'data/input/airquality_seoul_live.json').resolve()
+    live_collection = None
+    if live_input in (current, eda_input):
+        live_collection = next(r for r in read(EVIDENCE / 'API_호출확인.json') if r['service'] == 'airkorea')
+        assert live_collection['success'] and live_collection['http_status'] == 200
+        assert live_collection['api_header']['resultCode'] == '00'
+        assert live_collection['response_sha256'] == sha(live_input), '수집 증빙과 실시간 입력의 해시가 다릅니다.'
     base_rows, curr_rows, eda_rows = items(baseline), items(current), items(eda_input)
     assert base_rows[0]['dataTime'] != curr_rows[0]['dataTime'], '서로 다른 이벤트 시각이 필요합니다.'
     started = datetime.now(timezone(timedelta(hours=9))).isoformat()
@@ -113,6 +122,8 @@ def main():
     d = max(abs(sum(x <= t for x in base) / len(base) - sum(x <= t for x in curr) / len(curr)) for t in set(base + curr))
     assert drift['ks_statistic'] == round(d, 4) == round(float(ks.statistic), 4)
     assert math.isclose(drift['p_value'], float(ks.pvalue), rel_tol=1e-12)
+    if d == 1 and len(base) == len(curr):
+        assert math.isclose(drift['p_value'], 2 / math.comb(len(base) + len(curr), len(base)), rel_tol=1e-12)
     assert drift['drift_detected'] == (drift['p_value'] < drift['alpha'])
     p, alpha, n = drift['p_value'], drift['alpha'], drift['baseline_n']
     if drift['drift_detected']:
@@ -123,11 +134,20 @@ def main():
     second = f'drift_detected=false라는 결과가 나온 경우에도 두 시점의 분포가 같다는 증명이 아니라, 차이가 있다고 판단할 통계적 증거가 충분하지 않다는 뜻이다. 내 실행의 baseline_n={n}은 결측을 제외한 기준 시점의 PM10 표본 수로, 비교적 작은 표본에서는 검정력이 부족하여 실제 변화도 놓칠 수 있다. 따라서 false일 때는 분포의 동일성이 확인되었다고 보고하지 않고, 해당 표본과 유의수준에서 유의한 차이를 감지하지 못했다고 서술해야 한다.'
     answer = f'02주차 과제 서술형 답안\n\n1. p_value와 alpha에 따른 판정\n{first}\n\n2. false를 분포 동일성의 확인으로 보고하면 안 되는 이유\n{second}\n'
     (BASE / '02주차_서술형_답안.txt').write_text(answer, encoding='utf-8')
-    paths = [baseline, current, eda_input, *[CHAPTER / c[0] for c in commands], *[output / f for f in ['ch2_eda_summary.json', 'ch2_drift_result.json', 'ch2_drift_visual.txt']], BASE / '02주차_서술형_답안.txt']
+    paths = [baseline, current, eda_input, Path(__file__), *[CHAPTER / c[0] for c in commands], *[output / f for f in ['ch2_eda_summary.json', 'ch2_drift_result.json', 'ch2_drift_visual.txt']], BASE / '02주차_서술형_답안.txt']
+    if settings_path.exists():
+        paths.append(settings_path)
     evidence = {
         'status': 'PASS', 'started_at': started,
         'finished_at': datetime.now(timezone(timedelta(hours=9))).isoformat(),
         'execution_mode': 'saved_response_recalculation', 'network_calls_during_recalculation': 0,
+        'input_provenance': {
+            'baseline': 'instructor_provided_snapshot',
+            'current': 'live_API_response_saved_without_modification' if current == live_input else 'instructor_provided_snapshot',
+            'eda': 'live_API_response_saved_without_modification' if eda_input == live_input else 'instructor_provided_snapshot',
+            'live_collection': live_collection,
+            'comparison_interval_days': (datetime.fromisoformat(drift['current_time']) - datetime.fromisoformat(drift['baseline_time'])).total_seconds() / 86400,
+        },
         'time_basis': 'event_time: response.body.items[].dataTime (KST)',
         'python': platform.python_version(),
         'packages': {pkg: importlib.metadata.version(pkg) for pkg in ['pandas', 'numpy', 'scipy', 'requests', 'matplotlib']},

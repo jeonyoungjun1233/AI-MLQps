@@ -1,0 +1,5 @@
+{
+  "current": "data/input/airquality_seoul_live.json",
+  "eda_input": "data/input/airquality_seoul_live.json",
+  "description": "에어코리아 실시간 API에서 수집한 저장 응답으로 최종 제출물을 재현한다. 기준은 교수자 제공 2026-06-28 22:00 스냅샷이다."
+}
