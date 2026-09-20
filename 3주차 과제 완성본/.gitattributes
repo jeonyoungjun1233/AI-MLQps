@@ -1,0 +1,2 @@
+# Preserve the exact bytes of executed inputs, output JSON, and evidence.
+* -text

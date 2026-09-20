@@ -1,0 +1,53 @@
+{
+  "검증시각_UTC": "2026-09-20T02:29:45.300141+00:00",
+  "python": "3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]",
+  "PyYAML": "6.0.3",
+  "결과": "PASS",
+  "서비스수": 6,
+  "호스트포트수": 7,
+  "JSON_의존성수": 2,
+  "Compose_의존성수": 3,
+  "JSON_의존성": [
+    [
+      "grafana",
+      "prometheus"
+    ],
+    [
+      "kafka-ui",
+      "kafka"
+    ]
+  ],
+  "Compose_의존성": [
+    [
+      "kafka",
+      "zookeeper"
+    ],
+    [
+      "grafana",
+      "prometheus"
+    ],
+    [
+      "kafka-ui",
+      "kafka"
+    ]
+  ],
+  "보안경고": [
+    "postgres: weak/default password in POSTGRES_PASSWORD",
+    "grafana: weak/default password in GF_SECURITY_ADMIN_PASSWORD"
+  ],
+  "compose_path": "C:\\Users\\junyj\\Desktop\\AI데이터개발MLQps\\3주차 과제 완성본\\practice\\chapter3\\docker-compose.yml",
+  "generated_at": "2026-09-20T02:27:06+00:00",
+  "실행범위": "교수자 원본 Python 스크립트의 로컬 Compose 정적 분석; Docker 기동 및 외부 API 호출 없음",
+  "원본일치": {
+    "code/3-1-compose-plan.py": true,
+    "code/requirements.txt": true,
+    "docker-compose.yml": true
+  },
+  "SHA256": {
+    "practice\\chapter3\\code\\3-1-compose-plan.py": "5b89a3acf1bffa99d785c7c9e07c5408c95b6e85d4d3cc419ff00af0105250e8",
+    "practice\\chapter3\\code\\requirements.txt": "8563143f40d4d4c2ab30dcb6388151550a0cee0d3c0a97437e147b29326507fd",
+    "practice\\chapter3\\docker-compose.yml": "b52badc2e8dbb98787a2c41d520456a0e0599568199a63134a9967e88eb7ffd9",
+    "practice\\chapter3\\data\\output\\ch3_compose_plan.json": "120dce5709c27693ac8035212750122c26d3bc9e9eaafa5fa2164419fe768441"
+  },
+  "사전예측": "사용자 제공 기록 없음; 사후 결과를 사전 예측으로 기재하지 않음"
+}

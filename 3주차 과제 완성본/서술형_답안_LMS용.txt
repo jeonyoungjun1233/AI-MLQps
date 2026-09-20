@@ -1,0 +1,5 @@
+﻿1. compose_path는 C:\Users\junyj\Desktop\AI데이터개발MLQps\3주차 과제 완성본\practice\chapter3\docker-compose.yml 이고 generated_at은 2026-09-20T02:27:06+00:00 이다. compose_path는 실행 시 읽은 Compose 파일의 절대 경로이므로 사용자 계정명과 저장소를 저장한 폴더 위치에 따라 학생마다 다르다.
+
+2. 산출물에 기록된 서비스와 호스트 포트는 zookeeper(2181), kafka(9092, 29092), postgres(5432), prometheus(9090), grafana(3000), kafka-ui(8080)로 총 6개 서비스와 7개 포트이다. 실행 전 서비스 수 예측 기록이 없어 예측과의 불일치 여부는 판정할 수 없다. 수집 계층에 2개, 저장 계층에 1개, 모니터링 계층에 3개의 서비스가 배치되므로 계층 수와 서비스 수는 같지 않다.
+
+3. 보안 경고 두 건은 “postgres: weak/default password in POSTGRES_PASSWORD”와 “grafana: weak/default password in GF_SECURITY_ADMIN_PASSWORD”이다. 검수 요구사항: PostgreSQL과 Grafana의 비밀번호는 기본값을 사용하지 않고 외부 환경변수 또는 시크릿 저장소에서 주입하며, 검수 시 Compose 및 저장소에 비밀번호 평문이 없음을 확인하고 기본 비밀번호 인증 실패와 주입한 비밀번호 인증 성공을 비밀값을 제외한 시험 기록으로 제출해야 한다.

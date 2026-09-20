@@ -1,0 +1,13 @@
+{
+  "결과": "PASS",
+  "정적값일치": {
+    "services": true,
+    "host_ports": true,
+    "security_checks": true
+  },
+  "제출_JSON_변경없음": true,
+  "제출_JSON_SHA256": "120dce5709c27693ac8035212750122c26d3bc9e9eaafa5fa2164419fe768441",
+  "재실행_compose_path": "C:\\Users\\junyj\\Desktop\\AI데이터개발MLQps\\3주차 과제 완성본\\실행증빙\\재실행결과\\practice\\chapter3\\docker-compose.yml",
+  "재실행_generated_at": "2026-09-20T02:27:43+00:00",
+  "설명": "별도 경로에서 새로 실행했으므로 compose_path와 generated_at은 비교 대상에서 제외함"
+}

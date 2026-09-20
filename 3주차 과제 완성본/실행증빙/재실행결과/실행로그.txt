@@ -1,0 +1,4 @@
+명령: C:\Python314\python.exe code/3-1-compose-plan.py
+작업 폴더: C:\Users\junyj\Desktop\AI데이터개발MLQps\3주차 과제 완성본\실행증빙\재실행결과\practice\chapter3
+종료 코드: 0
+output=C:\Users\junyj\Desktop\AI데이터개발MLQps\3주차 과제 완성본\실행증빙\재실행결과\practice\chapter3\data\output\ch3_compose_plan.json services=6
