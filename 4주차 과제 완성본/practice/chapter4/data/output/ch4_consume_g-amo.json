@@ -1,0 +1,14 @@
+{
+  "finished_at": "2026-09-27T03:12:33.504209+00:00",
+  "topic": "public.complaint.received.v1.8fcceef5613b.amo",
+  "group": "g-amo",
+  "mode": "at-most-once",
+  "processed_this_run": 0,
+  "partitions_seen": {},
+  "latency_ms": {
+    "count": 0,
+    "mean": null,
+    "max": null
+  },
+  "processed_store": "data\\output\\ch4_processed_g-amo.jsonl"
+}

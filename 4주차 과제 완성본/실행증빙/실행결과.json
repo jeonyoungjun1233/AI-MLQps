@@ -1,0 +1,14 @@
+{
+  "started_at": "2026-09-27T03:11:40.132582+00:00",
+  "finished_at": "2026-09-27T03:13:02.982355+00:00",
+  "exit_code": 0,
+  "command": [
+    "C:\\Users\\junyj\\Desktop\\AI데이터개발MLQps\\tmp\\ch4-venv\\Scripts\\python.exe",
+    "C:\\Users\\junyj\\Desktop\\AI데이터개발MLQps\\4주차 과제 완성본\\실행증빙\\Windows_Kafka_실행.py"
+  ],
+  "broker": "Apache Kafka 3.9.1 + ZooKeeper, native Windows Java 17",
+  "kafka_python": "3.0.7",
+  "docker_used": false,
+  "api_requests": 0,
+  "adaptation": "Windows topic deletion lock avoided using new topic per scenario; original producer/consumer code unchanged"
+}

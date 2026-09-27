@@ -1,0 +1,90 @@
+[
+  {
+    "path": "practice/chapter4/run_chapter4.py",
+    "sha256": "31532c2b8704cfbdb92e4d94c4fb465e79e327e6bf5e24a3576db1d4d877d297",
+    "matches_instructor": true
+  },
+  {
+    "path": "practice/chapter4/run_dedup.py",
+    "sha256": "986149d3b294256f6009f0cf39a34af8f3bfe73c8bfcbeea284f823e37e7b994",
+    "matches_instructor": true
+  },
+  {
+    "path": "practice/chapter4/run_kafka.py",
+    "sha256": "9e8e89b06919d3319804ec66fdfd30636f229bd3aad4652f09b002fee5070f13",
+    "matches_instructor": true
+  },
+  {
+    "path": "practice/chapter4/code/4-1-kafka-producer.py",
+    "sha256": "55d3aa15e1513dd490a51dd3a99d5bd244c65773e52305150075582c2562ea2f",
+    "matches_instructor": true
+  },
+  {
+    "path": "practice/chapter4/code/4-2-kafka-consumer.py",
+    "sha256": "dbb64b82f8d0773f8a94ff31067f0d0489183dcae36e87d7cc17138044225eef",
+    "matches_instructor": true
+  },
+  {
+    "path": "practice/chapter4/code/4-3-deduplicate-events.py",
+    "sha256": "5c7905c2e64e6d06411b97875221e6aa8c7bf044a4fcedceabf23493a4e3b365",
+    "matches_instructor": true
+  },
+  {
+    "path": "practice/chapter4/code/requirements.txt",
+    "sha256": "add0ca7d121282f5701986e14af45ffb90db85826d6909812b45daf34b57503e",
+    "matches_instructor": true
+  },
+  {
+    "path": "practice/chapter4/data/input/ch4_alo_duplicate_stream.jsonl",
+    "sha256": "0b0dec4f4615d5faced25c20ce74715e920a0b5ed44500d91df6b2dfb6540423",
+    "matches_instructor": true
+  },
+  {
+    "path": "practice/chapter4/data/output/ch4_consume_g-alo.json",
+    "sha256": "46b1852d6a77fe20a07ac136bc8a044bf09ade5924bac8dde1efdb528c2e8e3f"
+  },
+  {
+    "path": "practice/chapter4/data/output/ch4_consume_g-amo.json",
+    "sha256": "81d15df7a2b12fac54a910cb8a51777ef8469b90086ee101b3d64a545cea133e"
+  },
+  {
+    "path": "practice/chapter4/data/output/ch4_consume_g-baseline.json",
+    "sha256": "39349b200d35bf38ae196b2d3aaf94d96b7b320f1d284d5c836e85245eb7f005"
+  },
+  {
+    "path": "practice/chapter4/data/output/ch4_dedup.sqlite",
+    "sha256": "130c474541039c1d7f20888c3448f3f8477f97a2f6120068b32b3fa91cfdf904"
+  },
+  {
+    "path": "practice/chapter4/data/output/ch4_dedup_report.json",
+    "sha256": "b6f86e465e6d647dbfbcbb7bdf552850d0bb62cb88442ce70d4d6d97f243ba12"
+  },
+  {
+    "path": "practice/chapter4/data/output/ch4_delivery_report.json",
+    "sha256": "19882f9ccad05f79739fc9172e0927ed790176e4497cd9f39381d33b20cf9e1f"
+  },
+  {
+    "path": "practice/chapter4/data/output/ch4_processed_g-alo.jsonl",
+    "sha256": "477245e19db2f9623c8fb85fe69318fabc9302677208062ed43921c11db6b93f"
+  },
+  {
+    "path": "practice/chapter4/data/output/ch4_processed_g-amo.jsonl",
+    "sha256": "5997a89b14e0fe2df93f1493465bb3e12bac99bc8ab9948d739bdc476568d0ec"
+  },
+  {
+    "path": "practice/chapter4/data/output/ch4_processed_g-baseline.jsonl",
+    "sha256": "6ff929aee999873ba6b7dd362660311f396725440d3c0720dddfb4abfaab0fea"
+  },
+  {
+    "path": "practice/chapter4/data/output/ch4_produce_alo.json",
+    "sha256": "55a2adbe3f2e040c97feb90fd40eb7173311c5281804a2726f66b4c5b6c7c703"
+  },
+  {
+    "path": "practice/chapter4/data/output/ch4_produce_amo.json",
+    "sha256": "e68c5c589b52e359fe007f601e19157b08a21b585d2c264c41be3426956f3e9a"
+  },
+  {
+    "path": "practice/chapter4/data/output/ch4_produce_baseline.json",
+    "sha256": "0787004dffb57c9e52967599b3b8ad2f7cf281374dcc8abcbd029ea14fa2fb35"
+  }
+]

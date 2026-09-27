@@ -1,0 +1,12 @@
+{
+  "started_at": "2026-09-27T03:03:39.167226+00:00",
+  "finished_at": "2026-09-27T03:04:09.452846+00:00",
+  "exit_code": 1,
+  "command": [
+    "C:\\Users\\junyj\\Desktop\\AI데이터개발MLQps\\tmp\\ch4-venv\\Scripts\\python.exe",
+    "C:\\Users\\junyj\\Desktop\\AI데이터개발MLQps\\4주차 과제 완성본\\practice\\chapter4\\run_chapter4.py"
+  ],
+  "broker": "Apache Kafka 3.9.1 + ZooKeeper, native Windows Java 17",
+  "docker_used": false,
+  "api_requests": 0
+}

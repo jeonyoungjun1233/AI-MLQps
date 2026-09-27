@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "staged_files_checked": 48,
+  "credential_pattern_hits": [],
+  "manifest_git_blob_hashes_matched": 20,
+  "pdf_visual_review": "1 page inspected; no clipping/overlap",
+  "note": "알려진 주요 인증정보 패턴 검사. 모든 종류의 비밀정보 부재를 보장하는 검사는 아님."
+}

@@ -1,0 +1,39 @@
+============================================================ 
+[A] baseline: 정상 전송·동시 소비
+ ============================================================
+Traceback (most recent call last):
+  File "C:\Users\junyj\Desktop\AI데이터개발MLQps\4주차 과제 완성본\practice\chapter4\run_kafka.py", line 217, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\junyj\Desktop\AI데이터개발MLQps\4주차 과제 완성본\practice\chapter4\run_kafka.py", line 146, in main
+    reset_topic()
+    ~~~~~~~~~~~^^
+  File "C:\Users\junyj\Desktop\AI데이터개발MLQps\4주차 과제 완성본\practice\chapter4\run_kafka.py", line 49, in reset_topic
+    admin = KafkaAdminClient(bootstrap_servers=BOOTSTRAP, request_timeout_ms=15000)
+  File "C:\Users\junyj\Desktop\AI데이터개발MLQps\tmp\ch4-venv\Lib\site-packages\kafka\admin\client.py", line 246, in __init__
+    self._manager.bootstrap(self.config['bootstrap_timeout_ms'])
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\junyj\Desktop\AI데이터개발MLQps\tmp\ch4-venv\Lib\site-packages\kafka\net\manager.py", line 182, in bootstrap
+    self._net.run(self.bootstrap_async, timeout_ms, refresh)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\junyj\Desktop\AI데이터개발MLQps\tmp\ch4-venv\Lib\site-packages\kafka\net\selector.py", line 332, in run
+    raise state['exception']  # pylint: disable=E0702
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\junyj\Desktop\AI데이터개발MLQps\tmp\ch4-venv\Lib\site-packages\kafka\net\selector.py", line 316, in waiter
+    state['value'] = await self._invoke(coro, *args)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\junyj\Desktop\AI데이터개발MLQps\tmp\ch4-venv\Lib\site-packages\kafka\net\selector.py", line 408, in _invoke
+    result = await result
+             ^^^^^^^^^^^^
+  File "C:\Users\junyj\Desktop\AI데이터개발MLQps\tmp\ch4-venv\Lib\site-packages\kafka\future.py", line 165, in __await__
+    raise self.exception
+  File "C:\Users\junyj\Desktop\AI데이터개발MLQps\tmp\ch4-venv\Lib\site-packages\kafka\net\selector.py", line 389, in wrapper
+    future.success(await self._invoke(coro, *args))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\junyj\Desktop\AI데이터개발MLQps\tmp\ch4-venv\Lib\site-packages\kafka\net\selector.py", line 402, in _invoke
+    result = await coro(*args)
+             ^^^^^^^^^^^^^^^^^
+  File "C:\Users\junyj\Desktop\AI데이터개발MLQps\tmp\ch4-venv\Lib\site-packages\kafka\net\manager.py", line 169, in _do_bootstrap
+    raise Errors.KafkaTimeoutError(
+        'Unable to bootstrap from %s' % (self.cluster.config['bootstrap_servers'],))
+kafka.errors.KafkaTimeoutError: KafkaTimeoutError: Unable to bootstrap from localhost:9092

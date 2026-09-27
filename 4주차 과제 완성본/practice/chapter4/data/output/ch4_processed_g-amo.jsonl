@@ -1,0 +1,10 @@
+{"partition": 1, "offset": 0, "consumed_at": "2026-09-27T03:12:06.135284+00:00", "latency_ms": 1550.9, "event_id": "amo-000001", "scenario": "amo"}
+{"partition": 1, "offset": 1, "consumed_at": "2026-09-27T03:12:06.135982+00:00", "latency_ms": 1431.9, "event_id": "amo-000002", "scenario": "amo"}
+{"partition": 1, "offset": 2, "consumed_at": "2026-09-27T03:12:06.136229+00:00", "latency_ms": 1430.0, "event_id": "amo-000004", "scenario": "amo"}
+{"partition": 1, "offset": 3, "consumed_at": "2026-09-27T03:12:06.136403+00:00", "latency_ms": 1428.1, "event_id": "amo-000005", "scenario": "amo"}
+{"partition": 1, "offset": 4, "consumed_at": "2026-09-27T03:12:06.142064+00:00", "latency_ms": 1432.9, "event_id": "amo-000006", "scenario": "amo"}
+{"partition": 1, "offset": 5, "consumed_at": "2026-09-27T03:12:06.142242+00:00", "latency_ms": 1428.4, "event_id": "amo-000011", "scenario": "amo"}
+{"partition": 1, "offset": 6, "consumed_at": "2026-09-27T03:12:06.142385+00:00", "latency_ms": 1427.0, "event_id": "amo-000013", "scenario": "amo"}
+{"partition": 1, "offset": 7, "consumed_at": "2026-09-27T03:12:06.142579+00:00", "latency_ms": 1422.9, "event_id": "amo-000018", "scenario": "amo"}
+{"partition": 1, "offset": 8, "consumed_at": "2026-09-27T03:12:06.142807+00:00", "latency_ms": 1422.2, "event_id": "amo-000019", "scenario": "amo"}
+{"partition": 1, "offset": 9, "consumed_at": "2026-09-27T03:12:06.142975+00:00", "latency_ms": 1420.8, "event_id": "amo-000021", "scenario": "amo"}

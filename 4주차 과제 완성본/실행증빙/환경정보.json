@@ -1,0 +1,36 @@
+{
+  "python": "3.14.3",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "sqlite": "3.50.4",
+  "java": "openjdk version \"17.0.16\" 2025-07-15 LTS\nOpenJDK Runtime Environment Zulu17.60+17-CA (build 17.0.16+8-LTS)\nOpenJDK 64-Bit Server VM Zulu17.60+17-CA (build 17.0.16+8-LTS, mixed mode, sharing)\n",
+  "kafka": "3.9.1",
+  "kafka_python": "3.0.7",
+  "source_commit": "9b6618ca6efa5ca22f45301b824e62140519c204",
+  "runtime_downloads": [
+    {
+      "url": "https://cdn.azul.com/zulu/bin/zulu17.60.17-ca-jre17.0.16-win_x64.zip",
+      "sha256": "e1e9ab85ee06fb88f1567ce421625114d0284311c4756470ea8d7e5642c5d002"
+    },
+    {
+      "url": "https://archive.apache.org/dist/kafka/3.9.1/kafka_2.13-3.9.1.tgz",
+      "sha256": "dd4399816e678946cab76e3bd1686103555e69bc8f2ab8686cda71aa15bc31a3"
+    }
+  ],
+  "lecture_pdf": {
+    "path": "02_강의PDF/04주차_강의자료.pdf",
+    "pages_reviewed": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "sha256": "040998ad5ad34d84236338f2eb22fe1f471860bd313c47e0008ed9a792367167"
+  },
+  "notes": [
+    "Docker/WSL 미설치. Windows 네이티브 Java 브로커 사용.",
+    "토픽 삭제 파일 잠금 회피: 보조 실행기로 시나리오별 신규 토픽 생성. 원본 코드는 바꾸지 않음.",
+    "초기실패 로그는 제출 수치가 아님. 최종 실행결과.json과 실행로그.txt를 사용.",
+    "브로커 로그의 Windows 경로 부분은 시스템 기본 CP949 인코딩일 수 있음."
+  ]
+}

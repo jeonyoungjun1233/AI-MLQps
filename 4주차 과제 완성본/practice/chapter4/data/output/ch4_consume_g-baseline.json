@@ -1,0 +1,18 @@
+{
+  "finished_at": "2026-09-27T03:12:04.273389+00:00",
+  "topic": "public.complaint.received.v1.8fcceef5613b.baseline",
+  "group": "g-baseline",
+  "mode": "at-least-once",
+  "processed_this_run": 200,
+  "partitions_seen": {
+    "0": 61,
+    "1": 76,
+    "2": 63
+  },
+  "latency_ms": {
+    "count": 200,
+    "mean": 7.2,
+    "max": 119.1
+  },
+  "processed_store": "data\\output\\ch4_processed_g-baseline.jsonl"
+}

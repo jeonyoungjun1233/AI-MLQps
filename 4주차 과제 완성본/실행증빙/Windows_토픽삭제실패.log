@@ -1,0 +1,154 @@
+============================================================ 
+[A] baseline: 정상 전송·동시 소비
+ ============================================================
+[reset] consumer group 삭제 건너뜀: [Error 15] CoordinatorNotAvailableError: FindCoordinatorResponse error for GROUP/g-baseline: 
+C:\Users\junyj\Desktop\AI데이터개발MLQps\4주차 과제 완성본\practice\chapter4\code\4-2-kafka-consumer.py:58: DeprecationWarning: key_deserializer does not implement kafka.serializer.Deserializer
+  consumer = KafkaConsumer(
+C:\Users\junyj\Desktop\AI데이터개발MLQps\4주차 과제 완성본\practice\chapter4\code\4-2-kafka-consumer.py:58: DeprecationWarning: value_deserializer does not implement kafka.serializer.Deserializer
+  consumer = KafkaConsumer(
+
+$ C:\Users\junyj\Desktop\AI데이터개발MLQps\4주차 과제 완성본\practice\chapter4\code\4-1-kafka-producer.py --count 200 --scenario baseline
+C:\Users\junyj\Desktop\AI데이터개발MLQps\4주차 과제 완성본\practice\chapter4\code\4-1-kafka-producer.py:126: DeprecationWarning: key_serializer does not implement kafka.serializer.Serializer
+  main()
+C:\Users\junyj\Desktop\AI데이터개발MLQps\4주차 과제 완성본\practice\chapter4\code\4-1-kafka-producer.py:126: DeprecationWarning: value_serializer does not implement kafka.serializer.Serializer
+  main()
+{
+  "generated_at": "2026-09-27T03:09:21.225357+00:00",
+  "topic": "public.complaint.received.v1",
+  "scenario": "baseline",
+  "acks": "all",
+  "sent": 200,
+  "elapsed_sec": 0.33,
+  "partition_distribution": {
+    "0": 61,
+    "1": 76,
+    "2": 63
+  },
+  "district_to_partitions": {
+    "강남구": [
+      1
+    ],
+    "관악구": [
+      0
+    ],
+    "마포구": [
+      1
+    ],
+    "성동구": [
+      0
+    ],
+    "송파구": [
+      2
+    ],
+    "용산구": [
+      2
+    ],
+    "종로구": [
+      2
+    ],
+    "중구": [
+      1
+    ]
+  },
+  "key_to_single_partition": true
+}
+
+[저장] C:\Users\junyj\Desktop\AI데이터개발MLQps\4주차 과제 완성본\practice\chapter4\data\output\ch4_produce_baseline.json
+{
+  "finished_at": "2026-09-27T03:09:36.360804+00:00",
+  "topic": "public.complaint.received.v1",
+  "group": "g-baseline",
+  "mode": "at-least-once",
+  "processed_this_run": 200,
+  "partitions_seen": {
+    "0": 61,
+    "1": 76,
+    "2": 63
+  },
+  "latency_ms": {
+    "count": 200,
+    "mean": 7.2,
+    "max": 118.7
+  },
+  "processed_store": "data\\output\\ch4_processed_g-baseline.jsonl"
+}
+
+[저장] C:\Users\junyj\Desktop\AI데이터개발MLQps\4주차 과제 완성본\practice\chapter4\data\output\ch4_consume_g-baseline.json
+============================================================ 
+[B] at-most-once: 커밋 먼저 → 처리 중 크래시 → 유실
+ ============================================================
+[reset] consumer group 삭제: {'g-baseline': 'OK', 'g-amo': 'GroupIdNotFoundError', 'g-alo': 'GroupIdNotFoundError'}
+Traceback (most recent call last):
+  File "C:\Users\junyj\Desktop\AI데이터개발MLQps\tmp\ch4-venv\Lib\site-packages\kafka\net\inet.py", line 21, in create_connection
+    sock = await socket_factory.connect(net, res, socket_options, timeout_at=timeout_at)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\junyj\Desktop\AI데이터개발MLQps\tmp\ch4-venv\Lib\site-packages\kafka\net\inet.py", line 92, in connect
+    return await self.sock_connect(net, sock, sockaddr, timeout_at=timeout_at)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\junyj\Desktop\AI데이터개발MLQps\tmp\ch4-venv\Lib\site-packages\kafka\net\inet.py", line 112, in sock_connect
+    await net.wait_write(sock, timeout_at=timeout_at)
+  File "C:\Users\junyj\Desktop\AI데이터개발MLQps\tmp\ch4-venv\Lib\site-packages\kafka\net\selector.py", line 49, in __await__
+    return (yield self)
+            ^^^^^^^^^^
+  File "C:\Users\junyj\Desktop\AI데이터개발MLQps\tmp\ch4-venv\Lib\site-packages\kafka\net\selector.py", line 94, in __call__
+    ret = coro.throw(exc)
+  File "C:\Users\junyj\Desktop\AI데이터개발MLQps\tmp\ch4-venv\Lib\site-packages\kafka\net\selector.py", line 479, in io_guard
+    yield
+kafka.errors.KafkaTimeoutError: KafkaTimeoutError: I/O wait timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\junyj\Desktop\AI데이터개발MLQps\4주차 과제 완성본\practice\chapter4\run_kafka.py", line 217, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\junyj\Desktop\AI데이터개발MLQps\4주차 과제 완성본\practice\chapter4\run_kafka.py", line 171, in main
+    reset_topic()
+    ~~~~~~~~~~~^^
+  File "C:\Users\junyj\Desktop\AI데이터개발MLQps\4주차 과제 완성본\practice\chapter4\run_kafka.py", line 75, in reset_topic
+    admin.create_topics(
+    ~~~~~~~~~~~~~~~~~~~^
+        [NewTopic(name=TOPIC, num_partitions=PARTITIONS, replication_factor=1)]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\junyj\Desktop\AI데이터개발MLQps\tmp\ch4-venv\Lib\site-packages\kafka\admin\_topics.py", line 144, in create_topics
+    response = self._manager.run(self._send_request_to_controller, request, response_errors, raise_errors)
+  File "C:\Users\junyj\Desktop\AI데이터개발MLQps\tmp\ch4-venv\Lib\site-packages\kafka\net\manager.py", line 473, in run
+    return self._net.run(coro, *args)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\junyj\Desktop\AI데이터개발MLQps\tmp\ch4-venv\Lib\site-packages\kafka\net\selector.py", line 332, in run
+    raise state['exception']  # pylint: disable=E0702
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\junyj\Desktop\AI데이터개발MLQps\tmp\ch4-venv\Lib\site-packages\kafka\net\selector.py", line 316, in waiter
+    state['value'] = await self._invoke(coro, *args)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\junyj\Desktop\AI데이터개발MLQps\tmp\ch4-venv\Lib\site-packages\kafka\net\selector.py", line 402, in _invoke
+    result = await coro(*args)
+             ^^^^^^^^^^^^^^^^^
+  File "C:\Users\junyj\Desktop\AI데이터개발MLQps\tmp\ch4-venv\Lib\site-packages\kafka\admin\client.py", line 357, in _send_request_to_controller
+    response = await self._manager.send(request, node_id=self._controller_id)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\junyj\Desktop\AI데이터개발MLQps\tmp\ch4-venv\Lib\site-packages\kafka\future.py", line 165, in __await__
+    raise self.exception
+  File "C:\Users\junyj\Desktop\AI데이터개발MLQps\tmp\ch4-venv\Lib\site-packages\kafka\cluster.py", line 127, in _refresh_loop
+    await self.refresh_metadata()
+  File "C:\Users\junyj\Desktop\AI데이터개발MLQps\tmp\ch4-venv\Lib\site-packages\kafka\cluster.py", line 155, in refresh_metadata
+    await self._do_refresh_metadata(node_id)
+  File "C:\Users\junyj\Desktop\AI데이터개발MLQps\tmp\ch4-venv\Lib\site-packages\kafka\cluster.py", line 173, in _do_refresh_metadata
+    response = await self._manager.send(request, node_id)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\junyj\Desktop\AI데이터개발MLQps\tmp\ch4-venv\Lib\site-packages\kafka\future.py", line 165, in __await__
+    raise self.exception
+  File "C:\Users\junyj\Desktop\AI데이터개발MLQps\tmp\ch4-venv\Lib\site-packages\kafka\net\manager.py", line 253, in _connect
+    transport = await self._build_transport(node, timeout_at=timeout_at)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\junyj\Desktop\AI데이터개발MLQps\tmp\ch4-venv\Lib\site-packages\kafka\net\manager.py", line 230, in _build_transport
+    sock = await create_connection(self._net, node.host, node.port,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+                                   timeout_at=timeout_at)
+                                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\junyj\Desktop\AI데이터개발MLQps\tmp\ch4-venv\Lib\site-packages\kafka\net\inet.py", line 26, in create_connection
+    raise Errors.KafkaConnectionError('Connection timed out')
+kafka.errors.KafkaConnectionError: KafkaConnectionError: Connection timed out
