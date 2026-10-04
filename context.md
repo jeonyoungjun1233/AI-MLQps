@@ -1,5 +1,7 @@
 # 현재 상태
 
+- 2026-10-04: 5주차 과제·실행증빙을 GitHub main `5ae28f527b0629792164c22ce85e4766eed56646`로 푸시하고 원격 커밋 일치를 확인했다. 코드·입력·제출 JSON·체크포인트·로그 16개 Git blob SHA-256 일치, 주요 인증정보 패턴 검사 통과. LMS 제출은 미수행.
+
 - 2026-10-04: 5주차 PDF 전체 9쪽을 텍스트·화면으로 검토하고 사용자 지정 `05주차 과제 제출란`에 필수 JSON, 문항별 정확히 3문장 답안 PDF/TXT·LMS 붙여넣기, 상세 해설·제출 안내와 실행증빙을 만들었다. Python 3.13.15 / PySpark 4.1.2 / Java 17로 교수자 원본 코드를 수정 없이 실제 실행했고 종료 코드 0을 확인했다. Windows 경로 문제는 영문 임시 junction, Hadoop 네이티브 누락은 별도 배포 3.3.6 파일로 해결했다(출처·커밋·해시 기록). Spark의 Hadoop Java 라이브러리는 3.4.2이다.
 - 5주차 입력은 교수자 코드의 고정 시각 가상 민원 14건이며 실제 Spark 파일 소스 스트리밍 처리이다(API 호출·Kafka 사용 없음). watermark_delay=window_size=10 minutes. LATE_OK: event_time=22:04, 도착 watermark=22:09−10분=21:59, 수용, 강남 3→4. LATE_DROP: event_time=21:49, 도착 watermark=22:18−10분=22:08, 폐기, 누적 0·0·1. 최종 키별 집계 합은 13, 강남구 sliding 보조 배치 합은 14. Spark checkpoint 배치 2·4의 실제 batchWatermarkMs로 산술을 교차 검증했다.
 - 제출 JSON `05주차 과제 제출란/practice/chapter5/data/output/ch5_late_event_report.json`은 generated_at=2026-10-04T09:59:20.373715+00:00, SHA-256=60f8b7c718b2f227dfca2e484b93bde09620884f3234be407a38c9b7fa9b62ff이며 실행 이후 수정하지 않았다. 별도 임시 경로의 실제 Spark 재실행에서도 생성 시각·동등 행 순서를 제외한 전체 JSON 일치를 확인했다. 원본 코드 해시·입력·JSONL·폐기 카운터·체크포인트·답안 3/3/3문장 검증 및 PDF 1쪽 시각 검수 완료.
