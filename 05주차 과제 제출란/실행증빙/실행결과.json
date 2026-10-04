@@ -1,0 +1,16 @@
+{
+  "started_at": "2026-10-04T09:59:05.232465+00:00",
+  "finished_at": "2026-10-04T09:59:23.377252+00:00",
+  "exit_code": 0,
+  "command": "python practice/chapter5/run_chapter5.py",
+  "environment": {
+    "JAVA_HOME": "C:\\Users\\junyj\\AppData\\Local\\Temp\\mlops-ch5-work\\tmp\\ch4-runtime\\zulu17.60.17-ca-jre17.0.16-win_x64",
+    "HADOOP_HOME": "C:\\Users\\junyj\\AppData\\Local\\Temp\\mlops-ch5-work\\tmp\\ch5-hadoop",
+    "SPARK_HOME": "C:\\Users\\junyj\\AppData\\Local\\Temp\\mlops-ch5-work\\tmp\\ch5-venv\\Lib\\site-packages\\pyspark",
+    "PYSPARK_PYTHON": "C:\\Users\\junyj\\AppData\\Local\\Temp\\mlops-ch5-work\\tmp\\ch5-venv\\Scripts\\python.exe",
+    "SPARK_LOCAL_IP": "127.0.0.1"
+  },
+  "source_code_modified": false,
+  "input_kind": "교수자 코드가 생성한 고정 시각의 가상 민원 14건, 실제 Spark 파일 소스 스트리밍 실행",
+  "api_requests": 0
+}

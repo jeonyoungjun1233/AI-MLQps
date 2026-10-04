@@ -1,0 +1,26 @@
+The system cannot find the path specified.
+Traceback (most recent call last):
+  File "C:\Users\junyj\Desktop\AI데이터개발MLQps\05주차 과제 제출란\practice\chapter5\code\5-1-streaming-window-aggregation.py", line 241, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\junyj\Desktop\AI데이터개발MLQps\05주차 과제 제출란\practice\chapter5\code\5-1-streaming-window-aggregation.py", line 105, in main
+    spark = build_spark()
+  File "C:\Users\junyj\Desktop\AI데이터개발MLQps\05주차 과제 제출란\practice\chapter5\code\5-1-streaming-window-aggregation.py", line 99, in build_spark
+    .getOrCreate()
+     ~~~~~~~~~~~^^
+  File "C:\Users\junyj\Desktop\AI데이터개발MLQps\tmp\ch5-venv\Lib\site-packages\pyspark\sql\session.py", line 557, in getOrCreate
+    sc = SparkContext.getOrCreate(sparkConf)
+  File "C:\Users\junyj\Desktop\AI데이터개발MLQps\tmp\ch5-venv\Lib\site-packages\pyspark\core\context.py", line 542, in getOrCreate
+    SparkContext(conf=conf or SparkConf())
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\junyj\Desktop\AI데이터개발MLQps\tmp\ch5-venv\Lib\site-packages\pyspark\core\context.py", line 206, in __init__
+    SparkContext._ensure_initialized(self, gateway=gateway, conf=conf)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\junyj\Desktop\AI데이터개발MLQps\tmp\ch5-venv\Lib\site-packages\pyspark\core\context.py", line 463, in _ensure_initialized
+    SparkContext._gateway = gateway or launch_gateway(conf)
+                                       ~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\junyj\Desktop\AI데이터개발MLQps\tmp\ch5-venv\Lib\site-packages\pyspark\java_gateway.py", line 111, in launch_gateway
+    raise PySparkRuntimeError(
+    ...<2 lines>...
+    )
+pyspark.errors.exceptions.base.PySparkRuntimeError: [JAVA_GATEWAY_EXITED] Java gateway process exited before sending its port number.

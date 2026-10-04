@@ -1,0 +1,72 @@
+{
+  "status": "PASS",
+  "checks": [
+    "watermark delay and window size",
+    "generated input matches source: batch1.json",
+    "generated input matches source: batch2.json",
+    "LATE_OK event_time",
+    "LATE_OK watermark arithmetic",
+    "LATE_OK window decision",
+    "generated input matches source: batch3.json",
+    "LATE_DROP event_time",
+    "LATE_DROP watermark arithmetic",
+    "LATE_DROP window decision",
+    "report and JSONL output identical",
+    "accepted late event updates count 3 to 4",
+    "dropped event window absent",
+    "drop counter 0,0,1",
+    "latest counts total 13 accepted of 14 inputs",
+    "sliding batch count 14",
+    "checkpoint offset evidence exists",
+    "calculated arrival watermarks recorded in Spark batches 2 and 4"
+  ],
+  "watermark_calculations": [
+    {
+      "event_id": "LATE_OK",
+      "max_event_time_before_arrival": "2026-07-07T22:09:00",
+      "watermark_delay": "10 minutes",
+      "watermark": "2026-07-07T21:59:00",
+      "window_start": "2026-07-07T22:00:00",
+      "window_end": "2026-07-07T22:10:00",
+      "decision": "수용"
+    },
+    {
+      "event_id": "LATE_DROP",
+      "max_event_time_before_arrival": "2026-07-07T22:18:00",
+      "watermark_delay": "10 minutes",
+      "watermark": "2026-07-07T22:08:00",
+      "window_start": "2026-07-07T21:40:00",
+      "window_end": "2026-07-07T21:50:00",
+      "decision": "폐기"
+    }
+  ],
+  "checkpoint_watermarks": [
+    {
+      "batch": 0,
+      "batchWatermarkMs": 0
+    },
+    {
+      "batch": 1,
+      "batchWatermarkMs": 1783429140000
+    },
+    {
+      "batch": 2,
+      "batchWatermarkMs": 1783429140000
+    },
+    {
+      "batch": 3,
+      "batchWatermarkMs": 1783429680000
+    },
+    {
+      "batch": 4,
+      "batchWatermarkMs": 1783429680000
+    },
+    {
+      "batch": 5,
+      "batchWatermarkMs": 1783430040000
+    }
+  ],
+  "final_accepted_count": 13,
+  "submission_sha256": "60f8b7c718b2f227dfca2e484b93bde09620884f3234be407a38c9b7fa9b62ff",
+  "note": "실제 실행 산출물 대사이며 새 Spark 실행·API 호출이 아님."
+}

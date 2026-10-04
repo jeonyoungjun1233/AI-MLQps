@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "spark_rerun_exit_code": 0,
+  "comparison": "generated_at과 동일 micro-batch 내부 행 순서만 제외, 나머지 제출 JSON 전체 동일",
+  "original_generated_at": "2026-10-04T09:59:20.373715+00:00",
+  "rerun_generated_at": "2026-10-04T10:04:32.769858+00:00",
+  "submission_unchanged": true,
+  "api_requests": 0,
+  "temporary_directory_retained": true,
+  "cleanup_note": "Windows 파일 잠금 시 임시 디렉터리가 남을 수 있으며 제출본과 무관함."
+}

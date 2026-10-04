@@ -1,0 +1,69 @@
+[
+  {
+    "path": "practice/chapter5/run_chapter5.py",
+    "sha256": "aa59accaad6ed91af1a606a5274b2d282d33a4325fab102261506b362b4328b7",
+    "matches_instructor": true
+  },
+  {
+    "path": "practice/chapter5/code/5-1-streaming-window-aggregation.py",
+    "sha256": "01e881fc24a4b3030452cd48f633169bd6098d1c19cabae4ea28d2e2442a2081",
+    "matches_instructor": true
+  },
+  {
+    "path": "practice/chapter5/code/requirements.txt",
+    "sha256": "7aa43a26c2c372a2f0d1d8e2603abdb1d8b1600dd63e2b65a3c1c4f23515a845",
+    "matches_instructor": true
+  },
+  {
+    "path": "practice/chapter5/data/input/stream/batch1.json",
+    "sha256": "ae56fddcc55aaecb6e86757160bedb0a1bc1cec1bbe66a727e52b49aa011892b"
+  },
+  {
+    "path": "practice/chapter5/data/input/stream/batch2.json",
+    "sha256": "a30658f5881d98e7b91d99691b43db66be51fcefea3ea91a67ef74f18e20caa4"
+  },
+  {
+    "path": "practice/chapter5/data/input/stream/batch3.json",
+    "sha256": "5d9094052e2ac693d4f5e286ee69c3941e53619afc76310c2b3df057cc8639bb"
+  },
+  {
+    "path": "practice/chapter5/data/output/ch5_late_event_report.json",
+    "sha256": "60f8b7c718b2f227dfca2e484b93bde09620884f3234be407a38c9b7fa9b62ff"
+  },
+  {
+    "path": "practice/chapter5/data/output/ch5_sliding_demo.json",
+    "sha256": "477f34d0875c771253805a65b9f1dd50768ba9b9457fd165f32cce0d67055505"
+  },
+  {
+    "path": "practice/chapter5/data/output/ch5_window_counts.jsonl",
+    "sha256": "9cc3f21a28915d5499a701288ef614c789751398c919b0c85354720793d2a17a"
+  },
+  {
+    "path": "실행증빙/checkpoint_offsets/0",
+    "sha256": "1a2d72720910c876cd0fbfae65831da212f8c558548d4d65b05110ad37a78fb6"
+  },
+  {
+    "path": "실행증빙/checkpoint_offsets/1",
+    "sha256": "b45fbf02c0e6f8f7aa3359c2b5c5696f9b2175a845ea7c80ed51a48755507f80"
+  },
+  {
+    "path": "실행증빙/checkpoint_offsets/2",
+    "sha256": "d09a5401e73b35cf78d6b9972eb68ad51afa910aed5545755288dbe48983f9d8"
+  },
+  {
+    "path": "실행증빙/checkpoint_offsets/3",
+    "sha256": "344917eaf3d69ecca0415b8ecbd5b1669f1188ee1e3419b98fda261eabcb9e21"
+  },
+  {
+    "path": "실행증빙/checkpoint_offsets/4",
+    "sha256": "30e2204bb327fba9686a69187f78dfb11186812cee2a78335235916d70a712e6"
+  },
+  {
+    "path": "실행증빙/checkpoint_offsets/5",
+    "sha256": "4c4558bfb46f6383c69300c39eef69647500f3b7ee49f7c0ebfa75376666790e"
+  },
+  {
+    "path": "실행증빙/실행로그.txt",
+    "sha256": "1c517380d580c3d43bf36e0d422ab10d8d6f7267b8b4872c680dbc08ac4a3000"
+  }
+]

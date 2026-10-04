@@ -1,0 +1,13 @@
+{
+  "note": "Spark의 Hadoop Java 라이브러리는 3.4.2, Windows 네이티브 파일은 별도 배포 3.3.6. 실제 실행으로 호환 확인. 공식 ASF 바이너리는 아님.",
+  "downloads": [
+    {
+      "url": "https://raw.githubusercontent.com/cdarlint/winutils/7386986d5d8a079b5cd4464f4599766dd27e7d13/hadoop-3.3.6/bin/winutils.exe",
+      "sha256": "496a591eb1e67df2a620f710d529ba6ddfe1c19149e6647cc4e320bb0efd8553"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/cdarlint/winutils/7386986d5d8a079b5cd4464f4599766dd27e7d13/hadoop-3.3.6/bin/hadoop.dll",
+      "sha256": "d7ab36a68518748cef142be2da5069b4c763c2cd764c1d2e6ac48c7200405be3"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "python": "3.13.15",
+  "pyspark": "4.1.2",
+  "py4j": "0.10.9.9",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "java": "openjdk version \"17.0.16\" 2025-07-15 LTS\nOpenJDK Runtime Environment Zulu17.60+17-CA (build 17.0.16+8-LTS)\nOpenJDK 64-Bit Server VM Zulu17.60+17-CA (build 17.0.16+8-LTS, mixed mode, sharing)\n",
+  "source_commit": "9b6618ca6efa5ca22f45301b824e62140519c204",
+  "lecture_pdf_sha256": "f6c411c5c78fe73cf7935bbe3c0b14b44b2c9effe903e0cd84c9711d1af4489c",
+  "lecture_pages_reviewed": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "spark_timezone": "Asia/Seoul",
+  "source_files_match": true
+}

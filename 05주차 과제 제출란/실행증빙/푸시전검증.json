@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "staged_files_checked": 43,
+  "credential_pattern_hits": [],
+  "git_blob_hashes_matched": 16,
+  "original_json_bytes_unchanged": true,
+  "pdf_pages": 1,
+  "pdf_visual_review": "전체 1쪽 검수, 잘림·겹침 없음",
+  "answer_sentences": [
+    3,
+    3,
+    3
+  ],
+  "note": "주요 인증정보 패턴 검사이며 모든 종류의 비밀정보를 탐지하는 것은 아님."
+}

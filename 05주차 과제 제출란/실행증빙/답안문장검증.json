@@ -1,0 +1,15 @@
+{
+  "sentences_per_question": [
+    3,
+    3,
+    3
+  ],
+  "max_allowed": 3,
+  "required_fields_quoted": [
+    "watermark_delay",
+    "window_size",
+    "event_time",
+    "watermark_at_arrival",
+    "decision"
+  ]
+}

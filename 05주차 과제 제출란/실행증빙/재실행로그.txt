@@ -1,0 +1,62 @@
+WARNING: Using incubator modules: jdk.incubator.vector
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+{
+  "late_events": [
+    {
+      "event_id": "LATE_OK",
+      "event_time": "22:04",
+      "arrived": "배치2(엔진이 22:09까지 관측한 뒤)",
+      "watermark_at_arrival": "21:59 (= 22:09 - 10m)",
+      "decision": "수용",
+      "evidence": "창 22:00-22:10 강남구 count 3 → 4"
+    },
+    {
+      "event_id": "LATE_DROP",
+      "event_time": "21:49",
+      "arrived": "배치3(엔진이 22:18까지 관측한 뒤)",
+      "watermark_at_arrival": "22:08 (= 22:18 - 10m)",
+      "decision": "폐기",
+      "evidence": "numRowsDroppedByWatermark 누적 = 1"
+    }
+  ],
+  "dropped": {
+    "batch1.json": 0,
+    "batch2.json": 0,
+    "batch3.json": 1
+  },
+  "sliding_강남구": [
+    {
+      "window": "21:55-22:05",
+      "count": 3
+    },
+    {
+      "window": "22:00-22:10",
+      "count": 4
+    },
+    {
+      "window": "22:05-22:15",
+      "count": 3
+    },
+    {
+      "window": "22:10-22:20",
+      "count": 2
+    },
+    {
+      "window": "22:15-22:25",
+      "count": 1
+    },
+    {
+      "window": "22:20-22:30",
+      "count": 1
+    }
+  ]
+}
+
+[저장] C:\Users\junyj\AppData\Local\Temp\ch5-rerun-di98ygw7\chapter5\data\output\ch5_window_counts.jsonl
+[저장] C:\Users\junyj\AppData\Local\Temp\ch5-rerun-di98ygw7\chapter5\data\output\ch5_late_event_report.json
+[저장] C:\Users\junyj\AppData\Local\Temp\ch5-rerun-di98ygw7\chapter5\data\output\ch5_sliding_demo.json
+SUCCESS: The process with PID 2688 (child process of PID 34988) has been terminated.
+SUCCESS: The process with PID 34988 (child process of PID 29864) has been terminated.
+SUCCESS: The process with PID 29864 (child process of PID 28272) has been terminated.
