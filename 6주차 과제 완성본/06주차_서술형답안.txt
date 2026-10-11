@@ -1,0 +1,39 @@
+6주차 과제 답안
+AI 데이터개발과 MLOps | 전영준 | 202373020
+
+1. 일별 quality와 총계 보존식
+선택 날짜: 2026-07-01
+출처: ch6_batch_run_report.json의 daily_runs[0].quality
+
+physical = 20
+valid = 20
+mapped = 18
+missing = 1
+unmapped = 1
+dup_removed = 0
+gate = "PASS"
+preservation_ok = true
+
+physical은 중복을 포함한 입력의 물리적 행 수 20건, dup_removed는 complaint_id가 중복되어 제거된 행 수 0건, valid는 중복 제거 후 남은 행 수 20건이다.
+mapped는 지역 코드 매핑 성공 18건, missing은 지역 값이 비어 있는 1건, unmapped는 지역 값 ‘판교’가 있지만 매핑 사전에 없는 1건이다.
+총계 보존식은 physical = mapped + missing + unmapped + dup_removed이며, 본인 값으로 20 = 18 + 1 + 1 + 0 = 20이므로 성립한다.
+또한 valid = physical - dup_removed = 20 - 0 = 20이고, valid = mapped + missing + unmapped = 18 + 1 + 1 = 20이다.
+따라서 valid는 매핑 성공 건수만을 뜻하지 않으며, gate="PASS"와 preservation_ok=true는 이 실습의 보존 검사를 통과했다는 뜻이지 결측·미매핑이 0건이라는 뜻은 아니다.
+
+2. missing과 unmapped를 ‘실패 2건’으로 합치면 안 되는 이유
+2026-07-01의 missing=1은 지역 값 자체가 비어 있는 입력 결측이고, unmapped=1은 지역 값 ‘판교’는 있지만 현재 매핑 사전에 대응 코드가 없는 사전 미포괄이다.
+두 항을 ‘실패 2건’으로 합치면 입력 보완이 필요한 문제와 매핑 사전·적용 범위 검토가 필요한 문제를 구별할 수 없다.
+따라서 두 건수와 비율을 분리해 보고해야 하며, 본인 결과에서는 각각 valid=20 대비 1/20=0.05이고 두 항이 존재해도 총계 보존식은 성립한다.
+
+3. 상세 원고 표 7.1과 비교 및 결정성
+과제가 지칭하는 강의 PDF 3쪽 ‘상세 원고 표 7.1 일별 정제 회계’와 본인 사흘 결과가 모두 같다.
+날짜       physical valid mapped missing unmapped dup_removed gate preservation_ok
+2026-07-01    20      20     18      1       1          0      PASS true
+2026-07-02    18      17     16      0       1          1      PASS true
+2026-07-03    22      22     20      1       1          0      PASS true
+입력은 실시간 API 응답이 아니라 교수자가 제공한 2026-07-01~03의 고정 JSONL 총 60행이며, 공백 제거·약칭 치환·complaint_id 첫 행 유지 방식의 중복 제거와 고정 지역 매핑을 적용하므로 같은 입력과 규칙에서 집계 결과가 결정된다.
+제공 저장소에서 누락된 매핑 CSV는 PDF에 제시된 강남구=11680, 마포구=11440, 관악구=11620으로 보완했으며, 판교·성남시·김포는 매핑되지 않는다.
+실제로 7월 1일을 재실행한 daily_summary.json과 report.md의 SHA-256이 각각 전후 동일하고 identical=true로 확인되었다.
+단, 실행 시각·태스크 시작 순서 등 전달되는 실행 메타데이터까지 매번 같다는 뜻은 아니며, 여기서 결정적이라는 대상은 정제 회계와 업무 집계 산출물이다.
+
+참고: 저장소 상세 원고 chapter7.md에서는 숫자 표가 ‘2단계 실행 결과(실제)’에 있고 표 7.1의 표제가 다르므로, 위 비교는 과제 PDF 3쪽에 제시된 숫자 표를 기준으로 했다.

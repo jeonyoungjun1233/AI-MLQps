@@ -1,0 +1,27 @@
+[
+  {
+    "path": "run_chapter6.py",
+    "sha256": "2c5c5209927b0f81c3307bfc328d8d3e00c6c914fad51f640f4e3902564c1743",
+    "original_matches": true
+  },
+  {
+    "path": "code/6-1-daily-report-dag.py",
+    "sha256": "a42e6e3c06e2b39b9948ea83aa0339f6f9826dfaa51f996384784317ece13094",
+    "original_matches": true
+  },
+  {
+    "path": "data/input/complaints/2026-07-01.jsonl",
+    "sha256": "eb383ada7b1f2fbe19d043601c5a7243f086d4374ff88ee2d3c7d0717f2e455b",
+    "original_matches": true
+  },
+  {
+    "path": "data/input/complaints/2026-07-02.jsonl",
+    "sha256": "47054502762d2c711881501ea851c2554b208dcad26c10158d13e6063dc04f35",
+    "original_matches": true
+  },
+  {
+    "path": "data/input/complaints/2026-07-03.jsonl",
+    "sha256": "6fee3734c9fc19b45d6ad2a842de001b3da9016b35fbdd30815c3e4ef0f14cc7",
+    "original_matches": true
+  }
+]

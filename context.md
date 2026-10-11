@@ -46,3 +46,14 @@
 - 공개 GitHub 저장소: https://github.com/jeonyoungjun1233/AI-MLQps, main. 기존 이력을 유지하고 새 제출물을 반영한다.
 - 교수자 원본 저장소: 02_강의저장소/mlops_public, commit 9b6618ca6efa5ca22f45301b824e62140519c204. 개인 제출물 재작성으로 원본은 수정하지 않았다.
 - 02_강의PDF에 주차별 13개·119쪽 통합본이 있으며 전체 강의 목차는 PDF로 바로 연결된다.
+
+
+## 2026-10-11 06주차 과제
+
+- 06주차 강의 PDF 전체 9쪽과 chapter6 원본 실행기·DAG를 확인하고 사용자 지정 `6주차 과제 완성본`에 개인 과제를 구성했다.
+- Windows의 Airflow 미지원 문제를 피하여 요청한 저장소 GitHub Actions Ubuntu에서 Airflow 3.3.0 / Python 3.13.16으로 실제 실행했다. run_id=38114810747, 실행 코드 커밋=95479f47b458aba83bcf166e65781003752bee49, CH6_RUN_PASS, 종료 코드 0. 외부 API 호출이 아닌 고정 JSONL 배치 처리이다.
+- 교수자 저장소에 누락된 lawd_cd_seoul.csv는 PDF 3쪽 강남구=11680, 마포구=11440, 관악구=11620 세 행으로 개인 작업본에 보완했다. 교수자 원본 및 기존 .env.example 변경은 건드리지 않았다.
+- 07-01 physical20/valid20/mapped18/missing1/unmapped1/dup0, 07-02 18/17/16/0/1/1, 07-03 22/22/20/1/1/0. 모두 PASS/true. 07-01 재실행 해시 동일, 07-04 의도된 실패 전파, 주간 60=54+2+3+1 검증 완료.
+- 제출 JSON SHA-256: 354efd48bb3c9262d6f1d2e075775fbb0a551a7c9c6fb9fd8af2fe53199c65ec. Actions artifact 원본을 그대로 저장했다.
+- PDF 2쪽·TXT 답안 및 LMS 안내 완성, PDF 렌더링 검수 완료. 2번은 3문장. PDF의 표 7.1 숫자와 실제 결과 일치; 상세 원고의 표제 차이는 출처에 설명했다. 사전 예측을 지어내지 않았다.
+- LMS 제출과 실제 마감 확인은 미수행이다. 수업일 포함 7일 이내 안내만 기록한다.

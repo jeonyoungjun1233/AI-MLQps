@@ -1,0 +1,46 @@
+{
+  "status": "PASS",
+  "verification": "실행된 JSON과 입력의 독립 대조 (Airflow 실행 대체 아님)",
+  "daily": [
+    {
+      "day": "2026-07-01",
+      "counts": [
+        20,
+        20,
+        18,
+        1,
+        1,
+        0
+      ],
+      "table_matches": true
+    },
+    {
+      "day": "2026-07-02",
+      "counts": [
+        18,
+        17,
+        16,
+        0,
+        1,
+        1
+      ],
+      "table_matches": true
+    },
+    {
+      "day": "2026-07-03",
+      "counts": [
+        22,
+        22,
+        20,
+        1,
+        1,
+        0
+      ],
+      "table_matches": true
+    }
+  ],
+  "report_sha256": "354efd48bb3c9262d6f1d2e075775fbb0a551a7c9c6fb9fd8af2fe53199c65ec",
+  "idempotency": true,
+  "expected_failure_propagation": true,
+  "weekly": true
+}
