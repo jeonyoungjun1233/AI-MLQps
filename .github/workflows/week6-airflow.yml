@@ -1,0 +1,36 @@
+name: Week 6 Airflow exercise
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  exercise:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Install course Airflow
+        run: |
+          mkdir -p evidence
+          curl -fL https://raw.githubusercontent.com/apache/airflow/constraints-3.3.0/constraints-3.13.txt -o evidence/constraints-3.13.txt
+          pip install 'apache-airflow==3.3.0' --constraint evidence/constraints-3.13.txt
+          pip freeze > evidence/pip-freeze.txt
+          python --version > evidence/environment.txt
+          uname -a >> evidence/environment.txt
+          echo "run_id=$GITHUB_RUN_ID commit=$GITHUB_SHA" >> evidence/environment.txt
+      - name: Run original exercise
+        run: |
+          set -o pipefail
+          python '6주차 과제 완성본/practice/chapter6/run_chapter6.py' 2>&1 | tee evidence/run.log
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: week6-execution
+          path: |
+            evidence/
+            6주차 과제 완성본/practice/chapter6/data/output/**
+            !6주차 과제 완성본/practice/chapter6/data/output/airflow_home/**
+          retention-days: 7
