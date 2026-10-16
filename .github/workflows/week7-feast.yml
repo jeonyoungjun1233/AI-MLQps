@@ -1,0 +1,40 @@
+name: Week 7 Feast exercise
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  exercise:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    env:
+      FEAST_USAGE: 'False'
+      PYTHONUTF8: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Install course requirements
+        run: |
+          mkdir -p evidence
+          pip install -r '7주차 과제 완성본/practice/chapter7/code/requirements.txt'
+          pip freeze > evidence/requirements-lock.txt
+          python --version > evidence/environment.txt
+          uname -a >> evidence/environment.txt
+          echo "run_id=$GITHUB_RUN_ID commit=$GITHUB_SHA" >> evidence/environment.txt
+      - name: Run original exercise and TTL probe
+        run: |
+          set -o pipefail
+          python '7주차 과제 완성본/practice/chapter7/run_chapter7.py' 2>&1 | tee evidence/run.log
+          python '7주차 과제 완성본/실행증빙/TTL검증.py' 2>&1 | tee evidence/ttl.log
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: week7-execution
+          path: |
+            evidence/
+            7주차 과제 완성본/practice/chapter7/data/output/**
+            !7주차 과제 완성본/practice/chapter7/data/output/feature_repo/**
+            7주차 과제 완성본/실행증빙/TTL검증결과.json
+          retention-days: 7
