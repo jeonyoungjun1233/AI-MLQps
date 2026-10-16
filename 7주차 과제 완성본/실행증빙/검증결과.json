@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "all_consistent": true,
+  "checked_keys": 3,
+  "historical_requested": 4,
+  "historical_returned": 3,
+  "historical_dropped": 1,
+  "TTL_probe_passed": true,
+  "report_sha256": "7b88cd44fbfa31ffd11ba38da6bd8dd8622cc26e4793df8a897be4722b0dc773"
+}

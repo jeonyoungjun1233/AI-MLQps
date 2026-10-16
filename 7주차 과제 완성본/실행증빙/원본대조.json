@@ -1,0 +1,53 @@
+[
+  {
+    "path": "code/7-1-feature-store-minimal.py",
+    "sha256": "081edc8f28b704155ad7e20dab4fe3d560b40306ca0276a65907b6493132d9b4",
+    "instructor_matches": true
+  },
+  {
+    "path": "code/requirements.txt",
+    "sha256": "925ab8c5a03559b42cefe9f3e3c533b0ef842c0fa717add3c7e2d0b15f8a3a8b",
+    "instructor_matches": true
+  },
+  {
+    "path": "run_chapter7.py",
+    "sha256": "6f30d34c314152328c0b2d10a398d081e7b91dea10eae1289aa449b87e21d152",
+    "instructor_matches": true
+  },
+  {
+    "path": "data/input/ch6_daily/2026-07-01/daily_summary.json",
+    "sha256": "d458e9905b0eeb1af200b58b0f65af350482b854e7f20ea56e18cd6de2cdc1b6",
+    "instructor_matches": true,
+    "own_week6_matches": true
+  },
+  {
+    "path": "data/input/ch6_daily/2026-07-01/quality_check.json",
+    "sha256": "484adf4b1f4260292e6c7502072e91e6fb5f3d04731c5bfe12746a57708e60d0",
+    "instructor_matches": true,
+    "own_week6_matches": true
+  },
+  {
+    "path": "data/input/ch6_daily/2026-07-02/daily_summary.json",
+    "sha256": "20bbe55f54301ee6a61cc672ecea6fa92f9fb052ea191c75db18d5a4f49da0c9",
+    "instructor_matches": true,
+    "own_week6_matches": true
+  },
+  {
+    "path": "data/input/ch6_daily/2026-07-02/quality_check.json",
+    "sha256": "25c4e5d574490cb1655262d350d80fbb8febc58c9f72bb4d6ce4e460da35d478",
+    "instructor_matches": true,
+    "own_week6_matches": true
+  },
+  {
+    "path": "data/input/ch6_daily/2026-07-03/daily_summary.json",
+    "sha256": "245c98e3e7ebe1f48f2b18644450b694ba38e11b54caf5ea561050dd9eeaf5cd",
+    "instructor_matches": true,
+    "own_week6_matches": true
+  },
+  {
+    "path": "data/input/ch6_daily/2026-07-03/quality_check.json",
+    "sha256": "73acd54075c46f6ba8d10c9256712219d4e49869de47372ac482a15db8f5ba55",
+    "instructor_matches": true,
+    "own_week6_matches": true
+  }
+]

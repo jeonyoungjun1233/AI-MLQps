@@ -1,0 +1,28 @@
+{
+  "scenario": "7월 4~7일 집계 공급 실패, 7월 8일 09:00 기준 시점으로 오프라인 조회; 온라인은 실제 실행 시각에 조회 (시계 조작 없음)",
+  "as_of": "2026-07-08T09:00:00+00:00",
+  "latest_feature_timestamp": "2026-07-04T00:00:00+00:00",
+  "feature_age_hours_at_as_of": 105.0,
+  "ttl_hours": 72,
+  "historical_requested": 3,
+  "historical_returned": 0,
+  "online_actual_query_time": "2026-10-16T05:08:51.003991+00:00",
+  "online": {
+    "lawd_cd": [
+      "11440",
+      "11620",
+      "11680"
+    ],
+    "day_unmapped_rate": [
+      0.045,
+      0.045,
+      0.045
+    ],
+    "complaint_count": [
+      6,
+      5,
+      9
+    ]
+  },
+  "PASS": true
+}
