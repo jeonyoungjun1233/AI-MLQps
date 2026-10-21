@@ -1,0 +1,563 @@
+{
+  "verified_at_kst": "2026-10-21T12:46:09.123464+09:00",
+  "repo": "https://github.com/jeonyoungjun1233/AI-MLQps",
+  "branch": "main",
+  "artifacts_commit": "37bec93ce808b7c6d8ebe6db10dc5beec5170f8f",
+  "remote_commit_matches": true,
+  "files_verified_count": 138,
+  "files": [
+    {
+      "path": "01주차 과제 제출/중간고사/.gitattributes",
+      "sha256": "8b9c3028d6467ff3be7c793141927841d70f47f52d0590677438f488ca154992"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/README.md",
+      "sha256": "ba369f0d324f69100bc1c687dc7f3055e4066ea264c7e3158d633c25b5cc8930"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/exam/README.md",
+      "sha256": "d5fb986f95581abd66307e8537fc51076c05125d3bdbc5c40f6e41ac50bf728f"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/exam/common.py",
+      "sha256": "c4bfa2f93f1cab89b3367a41097c2e80ca9789f1f59f7885dbd20bf6e2ae28bf"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/exam/q1.py",
+      "sha256": "cb5cd7de7f76d3e34176f4980ca45986063562148c59f6597fd07c7ae290414a"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/exam/q1_fixed.py",
+      "sha256": "a39db5f63249251299a42f75fa3dd8c3237bda2c5c627e649f171e3cc3807f07"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/exam/q2.py",
+      "sha256": "d4b65c34b2ef94a25fbb50d7694d2a67ad297ed3bc95df179f3ba009a70fb88b"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/exam/q2_fixed.py",
+      "sha256": "e67a58a1349d8effb725253e00d3f51f2a7e5260716170346070fa56d3d8fe2a"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/exam/q3.py",
+      "sha256": "3cfb43900dd70788c5d57bb5b16e199d1a6a5494b59f582b4e3df112f6a2cc48"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/exam/q3_fixed.py",
+      "sha256": "27ece37c07b95dd34c3b442cf61c2de6df26476bd6d07a96627b955d4f0734d9"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/exam/q4.py",
+      "sha256": "62481ee6193d3c60f1186add44ea744182d28833a9ae7663fbb1655e36c3bc21"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/exam/q4_fixed.py",
+      "sha256": "46bf231cae47ae231d7cb47de51b71b42ab0da066c3f4130f19142a94c6bf934"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/exam/q5.py",
+      "sha256": "51ca48a1e6dd2f6ca42889c74aa1e11c52b520f85e9f95c4cfeb5a5b3aa19a4d"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/exam/q5_fixed.py",
+      "sha256": "d4cc4fedf614de2eff9ae171e24be9994180874758aaa9c13250557b2ba18c69"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/exam/q6.py",
+      "sha256": "ddf1c92f1eec81dad4587a74a570c378cbba83b3db68835596b6217d0337b617"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/exam/q6_fixed.py",
+      "sha256": "7494e1dea08bf7a83e6040f6440dc40ce133831a1940119a06b4c850a8e28a99"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/exam/submissions/중간고사_202373020.md",
+      "sha256": "a539d6dead526d4c93f8de39c1427753bffa5f9961d9b3bf3ccfaee9eab538e1"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/exam/submit_exam.py",
+      "sha256": "aeceb1ad5f1e90200a321d19305eedfdc2fa48957676e419b8ef93ed2f717a64"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/exam/시험지.md",
+      "sha256": "081bb502a9fa4aeba3744fc8bb7e8b7673acc356af32f00de795072e556ac19b"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/lecture/ch01.md",
+      "sha256": "a10b4ff63269048c6ae9ec3752660887b9ef96785f5e0e0305bceb6825c5c105"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/lecture/ch02.md",
+      "sha256": "d1bcbfbaba2862033442605de55bc800f472ed7c425512a79554ac910278789d"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/lecture/ch03.md",
+      "sha256": "8493125fd6140493841e058cb007ad6f7a3812937d303c8d903ea724ec474757"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/lecture/ch04.md",
+      "sha256": "fb84ca349bfc844d7ad81a4c2d9b90e26bfef8ab2f554ff45b4bd4184819f211"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/lecture/ch05.md",
+      "sha256": "30f6c7ac0bf368aa7f0713eb95d9c0bf2acea603589684a7e041509e8f7292bd"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/lecture/ch06.md",
+      "sha256": "95ef1c35771222537bb02d1d7a873db6dc4ff4d0897bffddec82cff5883bb21f"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/lecture/ch07.md",
+      "sha256": "2e0e4a43e4b0c1b7dc4f0df7d3d6be106ec2ea0b5a7cce7fc4d23cfa30242d7f"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/practice/chapter2/data/input/airquality_seoul_2200.json",
+      "sha256": "c74bd701e86eaa63ccbd2cd312b7a520b3a6779889d35440198d0e86d45c8b2f"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/practice/chapter2/data/input/airquality_seoul_current.json",
+      "sha256": "688573590e38fcda232796d9546d2ac8fba632402e301cc6387562e212afde61"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/practice/chapter3/data/input/airquality_seoul_2200.json",
+      "sha256": "c74bd701e86eaa63ccbd2cd312b7a520b3a6779889d35440198d0e86d45c8b2f"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/practice/chapter3/data/input/airquality_seoul_current.json",
+      "sha256": "688573590e38fcda232796d9546d2ac8fba632402e301cc6387562e212afde61"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/practice/chapter4/data/input/ch4_alo_duplicate_stream.jsonl",
+      "sha256": "8ca9c870917976ef052a3f172df32a12e5b1009503aeae35f5d6e98a63687bd9"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/practice/chapter5/data/input/stream/batch1.json",
+      "sha256": "b0603e9d4d7b58056743295db184cf5ac71a2a2c45f748b9c8d4854bd8d8f847"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/practice/chapter5/data/input/stream/batch2.json",
+      "sha256": "8d4337edf26744f4afe9ffc206d1602a139c46cfdf6fc319dc0c4e3cd4e2d507"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/practice/chapter5/data/input/stream/batch3.json",
+      "sha256": "eeae0e55ecedcbcd9538dc522b68ebaf4df0d0c83fb1066fb8a36e84000b1e0c"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/practice/chapter6/data/input/complaints/2026-07-01.jsonl",
+      "sha256": "07c2b30bd07f5a1d6a5ee10f97e857c6ce95e79edd2b231e8b2f2915dc1abe21"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/practice/chapter6/data/input/complaints/2026-07-02.jsonl",
+      "sha256": "d60ddd70179a57b781babce1c913f67fd303766646a6c5b504ce4f8e347f4bca"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/practice/chapter6/data/input/complaints/2026-07-03.jsonl",
+      "sha256": "e4f6e86f791e28cd05dbcee6c2a2a53b0a5da53bb57f144e85503026dbc26326"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/practice/chapter6/data/input/lawd_cd_seoul.csv",
+      "sha256": "4b5cceda7bb9d940c6cf8caae5da768c9c735a3a14a6b01317066ced28f7c3fb"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/practice/chapter7/data/input/ch6_daily/2026-07-01/daily_summary.json",
+      "sha256": "88a34af5412b47233bc1a011086a78d08c0b66e6c1456be42057a7a9b3e2abac"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/practice/chapter7/data/input/ch6_daily/2026-07-01/quality_check.json",
+      "sha256": "8450c9a63f0b648327a42ccae1ec108987dcd49b88f575ac3cb91187e3921497"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/practice/chapter7/data/input/ch6_daily/2026-07-02/daily_summary.json",
+      "sha256": "01dd41fc883028fa0123a839aa9830d2a2a4d6f7765c8a86c34826f0bdea2ec3"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/practice/chapter7/data/input/ch6_daily/2026-07-02/quality_check.json",
+      "sha256": "8e23f8e8386d900b46936144158e3f566c2e835b1120518893a0ee1412abd868"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/practice/chapter7/data/input/ch6_daily/2026-07-03/daily_summary.json",
+      "sha256": "472a681e6f81068097872d00e26be2535459772db2a6d77ba331222e54c94c07"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/practice/chapter7/data/input/ch6_daily/2026-07-03/quality_check.json",
+      "sha256": "42e6d1e770749bfb378066c468cac4e5b44db2f90adc38eeddd62c66581eef3f"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/q1_q2_q1_00_original.log",
+      "sha256": "31d9b0a654f36143fdb55e5df96af2da28cc13caff96900f0953250329ed6ccc"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/q1_q2_q1_01_pagination.log",
+      "sha256": "5555b502cec4e187493d0fef04cb017364fd153af034e7c59e94228ccda6783b"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/q1_q2_q1_01_pagination.py.txt",
+      "sha256": "86b4eb97aca9a533de46db466f7dd7f5da602a4f40506a9a54b3f0ca5535787a"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/q1_q2_q1_02_final.log",
+      "sha256": "020f906ec69f5b8675a2028c95ddb0a8711c723333b37bfea93b4e9720beb644"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/q1_q2_q2_00_original.log",
+      "sha256": "2dd145da4d05faf39f35424ae7814f6e8f8cf94d72eecd4cf57bde937f5fa178"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/q1_q2_q2_01_final.log",
+      "sha256": "e79d2cd3028f086343f1e978f085d6c4140746e8073e04cd6352cfe46c719dbf"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/q1_q2_runs.json",
+      "sha256": "7163edad36df74b01a788d1f60272ba3d4b8e6672b29124f02c652969e4156cd"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/q1_q2_verification.json",
+      "sha256": "e12e01773e134ef117dbef94f1d8278e7f859a5c25c19f86e93a724aae931f80"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/q1_q2_verify.py",
+      "sha256": "7f81e399764a446b05de0f276521e27cff33aa5130072b8bf726fb260631c342"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/q3_q4_q3_00_original.json",
+      "sha256": "51bc5f594209020bbae1e4e835a3ab2e37e4f095c9db71c3359cf491e5ab3b8c"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/q3_q4_q3_00_original.log",
+      "sha256": "c5767ddb1c3da5447c199455699ae7ace95dcb0882e3dc737d13c9bceb450f47"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/q3_q4_q3_00_original.source.py",
+      "sha256": "3cfb43900dd70788c5d57bb5b16e199d1a6a5494b59f582b4e3df112f6a2cc48"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/q3_q4_q3_00_original.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/q3_q4_q3_01_id_validation.json",
+      "sha256": "0d73cff0a2e534a119388b96d5a166edab6b7636ea10f57faf52496fd38d4864"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/q3_q4_q3_01_id_validation.log",
+      "sha256": "6e9f9350322e5ddbec57c5f600f698945bb1d19e3d0954ab315edb47488cb961"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/q3_q4_q3_01_id_validation.source.py",
+      "sha256": "89078e04b7668cd817a7366e9c7c80cfd7a8e5eec897c65b8596658b31349ba0"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/q3_q4_q3_01_id_validation.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/q3_q4_q3_02_final_dedup.json",
+      "sha256": "66e26eff55ac0dc0a92d28485788194e0867974c7af6a121fb67637eafba6197"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/q3_q4_q3_02_final_dedup.log",
+      "sha256": "a14f4b449e3ebda4a413096d3e18693718ec5167661036a1b5be3c34094d195d"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/q3_q4_q3_02_final_dedup.source.py",
+      "sha256": "27ece37c07b95dd34c3b442cf61c2de6df26476bd6d07a96627b955d4f0734d9"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/q3_q4_q3_02_final_dedup.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/q3_q4_q4_00_original.json",
+      "sha256": "50da6e1af15f96d1eb22f27775be188944ccdb401b49e47c56aeda6ff08f1611"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/q3_q4_q4_00_original.log",
+      "sha256": "aa8fc6cc7b86939fd3fedf5a013e6f5ad27a02f1b17e6495d15aeb14c9bef980"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/q3_q4_q4_00_original.source.py",
+      "sha256": "62481ee6193d3c60f1186add44ea744182d28833a9ae7663fbb1655e36c3bc21"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/q3_q4_q4_00_original.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/q3_q4_q4_01_watermark.json",
+      "sha256": "5609542f287c83c5310c49073f8a3a29629f6b9ecce5a0777f1fb4c1c62c6b23"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/q3_q4_q4_01_watermark.log",
+      "sha256": "810963f2d3408b07ff71b7bbbf8a8d15eba30d75ef438c5f061dd135454405e6"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/q3_q4_q4_01_watermark.source.py",
+      "sha256": "3bd932c3b5e51e49632d430e921082383dcc7aaa24bec150e5dda9488aae06f4"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/q3_q4_q4_01_watermark.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/q3_q4_q4_02_final_observability.json",
+      "sha256": "7f424c5cc0271ffb2313ac9d34b984408c527883a9fc36c2e1cee40b532228c1"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/q3_q4_q4_02_final_observability.log",
+      "sha256": "4839228a4777a25815134f93f3bf08133df726427e87cb864dff00114ebdd18e"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/q3_q4_q4_02_final_observability.source.py",
+      "sha256": "46bf231cae47ae231d7cb47de51b71b42ab0da066c3f4130f19142a94c6bf934"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/q3_q4_q4_02_final_observability.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/q3_q4_run.py",
+      "sha256": "91af93d60ccb0daa4a315de73a1abf28eecaa92644f8d372a3ce6d3b3cdd086c"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/q3_q4_verification.json",
+      "sha256": "faaa8b95825a3c877c95742039453f7992125984b637d74c9a3ce535428731b2"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/q3_q4_verify.py",
+      "sha256": "88548c29632a2d10775769d78016264a69f2edb90f6c2633175111ba0a2344e0"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/q5_q6_q5_final.json",
+      "sha256": "e46bd2ddcadc4286fd943b48f1cc130916be088da2b63b1a87bba6601781dfad"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/q5_q6_q5_final.log",
+      "sha256": "dca100102e9d3bf6d1e46e4829289b709194ecb6c75116a7ad6a126392d6de3e"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/q5_q6_q5_final.source.txt",
+      "sha256": "d4cc4fedf614de2eff9ae171e24be9994180874758aaa9c13250557b2ba18c69"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/q5_q6_q5_final.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/q5_q6_q5_original.json",
+      "sha256": "34b75f0e7162b35b0d03e3bfeb543ad867a1bd0dbc0002011905b04f5279a380"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/q5_q6_q5_original.log",
+      "sha256": "ad7e739ccfefbc8fb92c82563b4eeea60e70057d86e3a95f661bf9b251ad17f2"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/q5_q6_q5_original.source.txt",
+      "sha256": "51ca48a1e6dd2f6ca42889c74aa1e11c52b520f85e9f95c4cfeb5a5b3aa19a4d"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/q5_q6_q5_original.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/q5_q6_q5_step1_dedup.json",
+      "sha256": "9448ec7257525bd3fd65f3de016af6e7f205f60c6c52e404e54d2f93a8c87482"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/q5_q6_q5_step1_dedup.log",
+      "sha256": "e78ad8afce08bc0751260d2acf8ae36f13c0ec078334551277430733b7197dc3"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/q5_q6_q5_step1_dedup.source.txt",
+      "sha256": "ac43859743bd97f7c3b23b2cc9b389a8f42058717ef1964ceee4a3448b902aca"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/q5_q6_q5_step1_dedup.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/q5_q6_q5_step2_normalize.json",
+      "sha256": "e31230eb59e2048297d78e3f19b4ad5c7a89e0a3b8d5ba86aeae3b82b9dd1442"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/q5_q6_q5_step2_normalize.log",
+      "sha256": "5fd05f0b9bb2b381e7f811207d8f9b6136f90af2b751678787b654f528788a81"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/q5_q6_q5_step2_normalize.source.txt",
+      "sha256": "e009d159eb4d3ee480bb69105b4df148b33fff6373b896e0212927cc76a92333"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/q5_q6_q5_step2_normalize.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/q5_q6_q5_step3_mapping.json",
+      "sha256": "48bcc4a290d66d84e5ce35b36ec43331bca9522693ab7e09e348714c9c89ddae"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/q5_q6_q5_step3_mapping.log",
+      "sha256": "41209698a671031bf808dad966d07cda15142bb08e18d80a660225d1ee28caa7"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/q5_q6_q5_step3_mapping.source.txt",
+      "sha256": "1dfb8658788ce0cdaa202169648ee0ea0ee34a1d9b37be3aac7db15747090e8d"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/q5_q6_q5_step3_mapping.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/q5_q6_q6_final.json",
+      "sha256": "ffbb6ddc4a816528c450e4af587b2e9fcb345878e553cb0d3dada95b347ec060"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/q5_q6_q6_final.log",
+      "sha256": "7afcf9ca34ad1da2e1b703c26e4590280c40ad0542465027d424e493ab9ef86c"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/q5_q6_q6_final.source.txt",
+      "sha256": "7494e1dea08bf7a83e6040f6440dc40ce133831a1940119a06b4c850a8e28a99"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/q5_q6_q6_final.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/q5_q6_q6_original.json",
+      "sha256": "ac21d400bb6e4e2144f042b60e1eb80a5775f7a53a7abe0b36e3069589b92d77"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/q5_q6_q6_original.log",
+      "sha256": "384a639b56a007bbaf77b6054da93c076ccbe198c56fc5ce05c596d46aae5b9f"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/q5_q6_q6_original.source.txt",
+      "sha256": "ddf1c92f1eec81dad4587a74a570c378cbba83b3db68835596b6217d0337b617"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/q5_q6_q6_original.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/q5_q6_q6_step1_point_in_time.json",
+      "sha256": "dc0c5b8a5d07557a9f299ff272931c1b0e4d7b8c52ac52d163b1a12eb24fce81"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/q5_q6_q6_step1_point_in_time.log",
+      "sha256": "b5791c5e16aacea3569f326d2ed84de1d1514b6019c3b72d43ca1e721da7488c"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/q5_q6_q6_step1_point_in_time.source.txt",
+      "sha256": "f1d6330e55420b0de2e8618a6f445f7625755c811614f8f853c8b2b39a1ac73a"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/q5_q6_q6_step1_point_in_time.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/q5_q6_run.py",
+      "sha256": "bf307d4f6811f083b1849ebe44f86cad3462dcdfb78546d8eacbb0332a3062eb"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/q5_q6_verify.py",
+      "sha256": "1526e69c4f10fc4f0509a109adc104a42fa28654c4a006d910c082e58db27ab1"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/q5_q6_write_answers.py",
+      "sha256": "da4390c02a5d0badff6f126d7dd42f68599c107bfa281864b7e5c65f7aefdd5a"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/q5_q6_독립검증.json",
+      "sha256": "198d63c5ff388c3a24867880ef8a32a1fcb864bea7a5244fd380eadce3c29b0c"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/교차검토기록.md",
+      "sha256": "ac7c6e2f63ea8c5aa9ec3bce6a7df1607c571763da9668f16f19190df2f39565"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/답안_q1_q2.json",
+      "sha256": "e97f6c31ee8309dd2dcc8061ba2724c5f7e31a2d1230dcc03d5ae5f6aa7de91e"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/답안_q3_q4.json",
+      "sha256": "f45da40710482b6bd9f12c26741c3b479bfe8c7e64a6fc88d9aa6a9771210f5c"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/답안_q5_q6.json",
+      "sha256": "125b9b73b79c00d00c5eefa40ece6d94bf4433cb9a692f62d789ad96ec7e414c"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/답안_종합.json",
+      "sha256": "aca08435e05da51275ea3fa8a48f6175fd72c33beee39a86605f6efe37b8bef2"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/답안채우기.py",
+      "sha256": "ed1ee9042c36e620e75f0dcec776e83f14e530d4f76dea314a9954e07e5f2370"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/독립검증.py",
+      "sha256": "d38ec2ee10cc9a539588d7160ddc231ff7f46ec5da81fc7cb876caa1d1204cce"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/독립검증결과.json",
+      "sha256": "749c7392047608034bb343c74d606ace971f0f6cd598cad17e064014b7e634bf"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/독립계산.json",
+      "sha256": "656f362cd408013883682e35cc5e1af0564797c646f8e5368abb88b26f1b942e"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/마크다운검증.json",
+      "sha256": "d5a100cee89547097d06dc80045befa0ab8bffaab3f000eb0790b797a09e5a5f"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/원본목록.json",
+      "sha256": "3d70dfaba54c148d701d3371e0a406b953a9de121a07e46c08c57d3959ad4754"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/재실행.py",
+      "sha256": "18e162b8d70337f66b73283b020c10c01a8da619a7ca6ea8e02439c64086c69b"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/제출생성기.log",
+      "sha256": "adb10a52eba36f1d17f251e08f391a3cd5a1355642d95bdb7bdea231bbd21db4"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/제출생성기_실행.json",
+      "sha256": "40dee0c51d0fe315410a965d058676dd318e9cc3be9cfe921ca2aef912b8efad"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/제출생성기_원문.md.txt",
+      "sha256": "253b31644a89ebe43f1c5bdc44e0c4c37aa4c67998b019a6afe1f404fedae57d"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/최종_q1_fixed.stdout.txt",
+      "sha256": "020f906ec69f5b8675a2028c95ddb0a8711c723333b37bfea93b4e9720beb644"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/최종_q2_fixed.stdout.txt",
+      "sha256": "e79d2cd3028f086343f1e978f085d6c4140746e8073e04cd6352cfe46c719dbf"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/최종_q3_fixed.stdout.txt",
+      "sha256": "5cdf7181de6e2b2a95e8a209c78c3a68437880849213ccaafe09e1d97492f34e"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/최종_q4_fixed.stdout.txt",
+      "sha256": "db3d19568c42397d89beb8c893b273f3f66b9dae43826a1dd57f3c29077e42dd"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/최종_q5_fixed.stdout.txt",
+      "sha256": "dca100102e9d3bf6d1e46e4829289b709194ecb6c75116a7ad6a126392d6de3e"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/최종_q6_fixed.stdout.txt",
+      "sha256": "7afcf9ca34ad1da2e1b703c26e4590280c40ad0542465027d424e493ab9ef86c"
+    },
+    {
+      "path": "01주차 과제 제출/중간고사/실행증빙/최종검증결과.json",
+      "sha256": "002473349cf9aaa5f4246b14079174ea796c3596fba5472fc8f63930f37f3785"
+    }
+  ],
+  "lms_submitted": false
+}

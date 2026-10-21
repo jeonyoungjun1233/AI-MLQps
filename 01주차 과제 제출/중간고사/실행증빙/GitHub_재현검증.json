@@ -1,0 +1,107 @@
+{
+  "verified_at_kst": "2026-10-21T12:46:50.884990+09:00",
+  "commit": "37bec93ce808b7c6d8ebe6db10dc5beec5170f8f",
+  "method": "git archive of verified remote commit into a separate temporary directory",
+  "exit_code": 0,
+  "result": {
+    "checked_at_kst": "2026-10-21T12:46:50.869952+09:00",
+    "status": "PASS",
+    "student_id": "202373020",
+    "name": "전영준",
+    "source_commit": "226fdea47359c30694bc4a499b33b63baf3d9ab7",
+    "original_files_unchanged": 35,
+    "answer_fields_filled": 28,
+    "required_keys_verified": 41,
+    "runs": [
+      {
+        "script": "q1.py",
+        "exit_code": 0,
+        "stdout_matches_submission": true,
+        "script_sha256": "cb5cd7de7f76d3e34176f4980ca45986063562148c59f6597fd07c7ae290414a",
+        "stdout_sha256": "87aaba47eedc3a4d6035b81093cead8c9628a23391686de054aa77d658df711b"
+      },
+      {
+        "script": "q1_fixed.py",
+        "exit_code": 0,
+        "stdout_matches_submission": true,
+        "script_sha256": "a39db5f63249251299a42f75fa3dd8c3237bda2c5c627e649f171e3cc3807f07",
+        "stdout_sha256": "5cec2b4a16ae923797742ac4a1865ac463bc09bcf95ccb9db5a0db3c84efb626"
+      },
+      {
+        "script": "q2.py",
+        "exit_code": 0,
+        "stdout_matches_submission": true,
+        "script_sha256": "d4b65c34b2ef94a25fbb50d7694d2a67ad297ed3bc95df179f3ba009a70fb88b",
+        "stdout_sha256": "23efaf451154db6b0d375bdb5a625a48c9cb2f90004397b40e4ca7b8a7a10ce7"
+      },
+      {
+        "script": "q2_fixed.py",
+        "exit_code": 0,
+        "stdout_matches_submission": true,
+        "script_sha256": "e67a58a1349d8effb725253e00d3f51f2a7e5260716170346070fa56d3d8fe2a",
+        "stdout_sha256": "5391651ab20ff21eb89fc0f2dcd5421208e03452d37fbf25a2562b2e0aea7a52"
+      },
+      {
+        "script": "q3.py",
+        "exit_code": 0,
+        "stdout_matches_submission": true,
+        "script_sha256": "3cfb43900dd70788c5d57bb5b16e199d1a6a5494b59f582b4e3df112f6a2cc48",
+        "stdout_sha256": "c5767ddb1c3da5447c199455699ae7ace95dcb0882e3dc737d13c9bceb450f47"
+      },
+      {
+        "script": "q3_fixed.py",
+        "exit_code": 0,
+        "stdout_matches_submission": true,
+        "script_sha256": "27ece37c07b95dd34c3b442cf61c2de6df26476bd6d07a96627b955d4f0734d9",
+        "stdout_sha256": "a14f4b449e3ebda4a413096d3e18693718ec5167661036a1b5be3c34094d195d"
+      },
+      {
+        "script": "q4.py",
+        "exit_code": 0,
+        "stdout_matches_submission": true,
+        "script_sha256": "62481ee6193d3c60f1186add44ea744182d28833a9ae7663fbb1655e36c3bc21",
+        "stdout_sha256": "aa8fc6cc7b86939fd3fedf5a013e6f5ad27a02f1b17e6495d15aeb14c9bef980"
+      },
+      {
+        "script": "q4_fixed.py",
+        "exit_code": 0,
+        "stdout_matches_submission": true,
+        "script_sha256": "46bf231cae47ae231d7cb47de51b71b42ab0da066c3f4130f19142a94c6bf934",
+        "stdout_sha256": "4839228a4777a25815134f93f3bf08133df726427e87cb864dff00114ebdd18e"
+      },
+      {
+        "script": "q5.py",
+        "exit_code": 0,
+        "stdout_matches_submission": true,
+        "script_sha256": "51ca48a1e6dd2f6ca42889c74aa1e11c52b520f85e9f95c4cfeb5a5b3aa19a4d",
+        "stdout_sha256": "f87cec8695bc8af48ee26fe0a9dc140f1a0e1dbcdc38aa31af4e6ea0140ed8d0"
+      },
+      {
+        "script": "q5_fixed.py",
+        "exit_code": 0,
+        "stdout_matches_submission": true,
+        "script_sha256": "d4cc4fedf614de2eff9ae171e24be9994180874758aaa9c13250557b2ba18c69",
+        "stdout_sha256": "496989a6a9b12b40c31ebd63abdfb79d19b80c5f28d36a83d3f8a1fbade2a346"
+      },
+      {
+        "script": "q6.py",
+        "exit_code": 0,
+        "stdout_matches_submission": true,
+        "script_sha256": "ddf1c92f1eec81dad4587a74a570c378cbba83b3db68835596b6217d0337b617",
+        "stdout_sha256": "9124f4f650ab5e2f8bbfba0ac64dcbfd962cc8c0ed9e6ad98ea7338a747d556f"
+      },
+      {
+        "script": "q6_fixed.py",
+        "exit_code": 0,
+        "stdout_matches_submission": true,
+        "script_sha256": "7494e1dea08bf7a83e6040f6440dc40ce133831a1940119a06b4c850a8e28a99",
+        "stdout_sha256": "0cfb1b3d63e8612ace3c8167b1699dc9f84d819f63311ba4f76bb5402b552865"
+      }
+    ],
+    "submission_sha256": "a539d6dead526d4c93f8de39c1427753bffa5f9961d9b3bf3ccfaee9eab538e1",
+    "submission_unchanged_by_verification": true,
+    "only_answer_fields_added": true,
+    "network_api_calls": 0,
+    "lms_submitted": false
+  }
+}
