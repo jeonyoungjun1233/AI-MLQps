@@ -22,11 +22,12 @@ def build():
         answer = answers[code].strip()
         assert len(answer) > 40, code
         output += ">> 답:\n\n" + answer + "\n" + rest
+    output += "\n---\n\n" + (EVIDENCE / "소감.md").read_text(encoding="utf-8")
     return output, answers
 
 
 if __name__ == "__main__":
     output, answers = build()
-    target = ROOT / "exam/submissions/중간고사_202373020.md"
+    target = ROOT / "exam/submissions/중간고사_202373020_전영준.md"
     target.write_text(output, encoding="utf-8")
     print(f"Filled {len(answers)} answer fields; generator output/code preserved.")

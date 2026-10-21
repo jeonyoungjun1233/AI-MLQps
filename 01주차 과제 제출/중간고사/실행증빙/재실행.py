@@ -13,7 +13,7 @@ if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8")
 EVIDENCE = Path(__file__).resolve().parent
 ROOT = EVIDENCE.parent
-SUBMISSION = ROOT / "exam/submissions/중간고사_202373020.md"
+SUBMISSION = ROOT / "exam/submissions/중간고사_202373020_전영준.md"
 
 
 def load_module(name, filename):
@@ -34,7 +34,7 @@ def main():
     answer_builder = load_module("answer_builder", "답안채우기.py")
     assembled, answers = answer_builder.build()
     text = SUBMISSION.read_text(encoding="utf-8")
-    assert text == assembled, "생성기 원문에 답 칸만 추가한 내용과 불일치"
+    assert text == assembled, "생성기 답 칸과 사용자 요청 소감을 반영한 내용과 불일치"
     assert text.startswith("# 중간고사 제출 -- 202373020 전영준\n")
     assert len(re.findall(r"^>> 답:$", text, re.M)) == 28
     assert len(re.findall(r"^```", text, re.M)) == 36, "출력12개+코드6개 fence"
@@ -75,7 +75,8 @@ def main():
             "original_files_unchanged":len(source["files"]),"answer_fields_filled":len(answers),
             "required_keys_verified":sum(len(v) for v in expected.values()),"runs":runs,
             "submission_sha256":before_hash,"submission_unchanged_by_verification":True,
-            "only_answer_fields_added":True,"network_api_calls":0,"lms_submitted":False}
+            "generator_output_and_code_unchanged":True,"reflection_added_by_user_request":True,
+            "network_api_calls":0,"lms_submitted":False}
     (EVIDENCE / "최종검증결과.json").write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding="utf-8")
     print("PASS: 원본 35개 불변, 12개 실제 실행 출력 일치, 수정 코드 전문 일치, 필수 KEY 41개, 답 칸 28개.")
     print(f"제출 파일 SHA-256: {before_hash}")

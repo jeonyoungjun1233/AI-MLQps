@@ -1,5 +1,5 @@
 {
-  "checked_at_kst": "2026-10-21T12:42:29.841897+09:00",
+  "checked_at_kst": "2026-10-21T12:53:19.521120+09:00",
   "status": "PASS",
   "student_id": "202373020",
   "name": "전영준",
@@ -93,9 +93,10 @@
       "stdout_sha256": "0cfb1b3d63e8612ace3c8167b1699dc9f84d819f63311ba4f76bb5402b552865"
     }
   ],
-  "submission_sha256": "a539d6dead526d4c93f8de39c1427753bffa5f9961d9b3bf3ccfaee9eab538e1",
+  "submission_sha256": "e5f95bd142475925ae2d25c22841e2ad8c3cd2bf2aa99fb0f617f29c5292af2d",
   "submission_unchanged_by_verification": true,
-  "only_answer_fields_added": true,
+  "generator_output_and_code_unchanged": true,
+  "reflection_added_by_user_request": true,
   "network_api_calls": 0,
   "lms_submitted": false
 }
