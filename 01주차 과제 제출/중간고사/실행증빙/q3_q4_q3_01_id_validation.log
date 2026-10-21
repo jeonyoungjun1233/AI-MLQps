@@ -1,0 +1,7 @@
+원천 30건, 커밋 주기 6, 장애 시점 20건 처리 직후
+A 규칙 적재 행 수 32행
+ID 대사: 원천 30개, 적재 고유 30개, 유실 0건, 미지 ID 0개
+A 규칙: 중복 2행; 처리 후 커밋은 at-least-once이며 exactly-once 전달이 아님
+@@KEY commit_every=6
+@@KEY crash_at=20
+@@KEY rows_raw=32

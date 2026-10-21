@@ -1,0 +1,11 @@
+배치 마감 17:10, 접수 기록 54건
+  '강남구'         23건
+  '관악구'         13건
+  '마포구'         16건
+  '성남시'          1건
+집계 완료: 4개 지역, 합계 53건
+@@KEY cutoff=17:10
+@@KEY physical=54
+@@KEY dup_removed=1
+@@KEY n_groups_by_name=4
+@@KEY total_reported=53

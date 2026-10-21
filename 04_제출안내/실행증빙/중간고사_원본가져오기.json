@@ -1,0 +1,48 @@
+{
+  "date": "2026-10-21",
+  "commit": "226fdea47359c30694bc4a499b33b63baf3d9ab7",
+  "files": [
+    {
+      "path": "exam/README.md",
+      "sha256": "d5fb986f95581abd66307e8537fc51076c05125d3bdbc5c40f6e41ac50bf728f"
+    },
+    {
+      "path": "exam/common.py",
+      "sha256": "c4bfa2f93f1cab89b3367a41097c2e80ca9789f1f59f7885dbd20bf6e2ae28bf"
+    },
+    {
+      "path": "exam/q1.py",
+      "sha256": "cb5cd7de7f76d3e34176f4980ca45986063562148c59f6597fd07c7ae290414a"
+    },
+    {
+      "path": "exam/q2.py",
+      "sha256": "d4b65c34b2ef94a25fbb50d7694d2a67ad297ed3bc95df179f3ba009a70fb88b"
+    },
+    {
+      "path": "exam/q3.py",
+      "sha256": "3cfb43900dd70788c5d57bb5b16e199d1a6a5494b59f582b4e3df112f6a2cc48"
+    },
+    {
+      "path": "exam/q4.py",
+      "sha256": "62481ee6193d3c60f1186add44ea744182d28833a9ae7663fbb1655e36c3bc21"
+    },
+    {
+      "path": "exam/q5.py",
+      "sha256": "51ca48a1e6dd2f6ca42889c74aa1e11c52b520f85e9f95c4cfeb5a5b3aa19a4d"
+    },
+    {
+      "path": "exam/q6.py",
+      "sha256": "ddf1c92f1eec81dad4587a74a570c378cbba83b3db68835596b6217d0337b617"
+    },
+    {
+      "path": "exam/submit_exam.py",
+      "sha256": "aeceb1ad5f1e90200a321d19305eedfdc2fa48957676e419b8ef93ed2f717a64"
+    },
+    {
+      "path": "exam/시험지.md",
+      "sha256": "081bb502a9fa4aeba3744fc8bb7e8b7673acc356af32f00de795072e556ac19b"
+    }
+  ],
+  "verified": true,
+  "exam_executed": false
+}

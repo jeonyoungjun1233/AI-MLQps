@@ -1,0 +1,6 @@
+원천 30건, 커밋 주기 6, 장애 시점 20건 처리 직후
+A 규칙 적재 행 수 32행
+검증: 적재 32 >= 원천 30 -> 유실 없음, exactly-once 달성
+@@KEY commit_every=6
+@@KEY crash_at=20
+@@KEY rows_raw=32

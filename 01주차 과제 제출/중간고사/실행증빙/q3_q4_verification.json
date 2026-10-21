@@ -1,0 +1,186 @@
+{
+  "verified_at_kst": "2026-10-21T12:38:17.424590+09:00",
+  "status": "PASS",
+  "student_id": "202373020",
+  "q3": {
+    "keys": {
+      "commit_every": "6",
+      "crash_at": "20",
+      "rows_raw": "32",
+      "duplicates": "2",
+      "rows_after_dedup": "30",
+      "lost_rule_b": "4"
+    },
+    "source_physical_rows": 40,
+    "source_unique_events": 30,
+    "source_unique_kafka_positions": 30,
+    "last_commit_a": 18,
+    "next_commit_b": 24,
+    "independent_duplicates": 2,
+    "independent_b_loss": 4
+  },
+  "q4": {
+    "keys": {
+      "window_min": "10",
+      "delay_min": "3",
+      "accepted": "13",
+      "dropped": "1",
+      "n_rows": "7",
+      "late_ok": "수용",
+      "late_drop": "폐기"
+    },
+    "event_decisions": [
+      {
+        "event_id": "E01",
+        "file": "batch1.json",
+        "event_time": "2026-07-07T22:01:00",
+        "window_end": "2026-07-07T22:10:00",
+        "watermark": null,
+        "decision": "수용"
+      },
+      {
+        "event_id": "E02",
+        "file": "batch1.json",
+        "event_time": "2026-07-07T22:02:00",
+        "window_end": "2026-07-07T22:10:00",
+        "watermark": null,
+        "decision": "수용"
+      },
+      {
+        "event_id": "E03",
+        "file": "batch1.json",
+        "event_time": "2026-07-07T22:03:00",
+        "window_end": "2026-07-07T22:10:00",
+        "watermark": null,
+        "decision": "수용"
+      },
+      {
+        "event_id": "E04",
+        "file": "batch1.json",
+        "event_time": "2026-07-07T22:05:00",
+        "window_end": "2026-07-07T22:10:00",
+        "watermark": null,
+        "decision": "수용"
+      },
+      {
+        "event_id": "E05",
+        "file": "batch1.json",
+        "event_time": "2026-07-07T22:08:00",
+        "window_end": "2026-07-07T22:10:00",
+        "watermark": null,
+        "decision": "수용"
+      },
+      {
+        "event_id": "E06",
+        "file": "batch1.json",
+        "event_time": "2026-07-07T22:09:00",
+        "window_end": "2026-07-07T22:10:00",
+        "watermark": null,
+        "decision": "수용"
+      },
+      {
+        "event_id": "E07",
+        "file": "batch2.json",
+        "event_time": "2026-07-07T22:11:00",
+        "window_end": "2026-07-07T22:20:00",
+        "watermark": "2026-07-07T22:06:00",
+        "decision": "수용"
+      },
+      {
+        "event_id": "E08",
+        "file": "batch2.json",
+        "event_time": "2026-07-07T22:12:00",
+        "window_end": "2026-07-07T22:20:00",
+        "watermark": "2026-07-07T22:06:00",
+        "decision": "수용"
+      },
+      {
+        "event_id": "LATE_OK",
+        "file": "batch2.json",
+        "event_time": "2026-07-07T22:04:00",
+        "window_end": "2026-07-07T22:10:00",
+        "watermark": "2026-07-07T22:06:00",
+        "decision": "수용"
+      },
+      {
+        "event_id": "E09",
+        "file": "batch2.json",
+        "event_time": "2026-07-07T22:14:00",
+        "window_end": "2026-07-07T22:20:00",
+        "watermark": "2026-07-07T22:06:00",
+        "decision": "수용"
+      },
+      {
+        "event_id": "E10",
+        "file": "batch2.json",
+        "event_time": "2026-07-07T22:18:00",
+        "window_end": "2026-07-07T22:20:00",
+        "watermark": "2026-07-07T22:06:00",
+        "decision": "수용"
+      },
+      {
+        "event_id": "LATE_DROP",
+        "file": "batch3.json",
+        "event_time": "2026-07-07T21:49:00",
+        "window_end": "2026-07-07T21:50:00",
+        "watermark": "2026-07-07T22:15:00",
+        "decision": "폐기"
+      },
+      {
+        "event_id": "E11",
+        "file": "batch3.json",
+        "event_time": "2026-07-07T22:21:00",
+        "window_end": "2026-07-07T22:30:00",
+        "watermark": "2026-07-07T22:15:00",
+        "decision": "수용"
+      },
+      {
+        "event_id": "E12",
+        "file": "batch3.json",
+        "event_time": "2026-07-07T22:24:00",
+        "window_end": "2026-07-07T22:30:00",
+        "watermark": "2026-07-07T22:15:00",
+        "decision": "수용"
+      }
+    ],
+    "window_district_counts": [
+      {
+        "start": "2026-07-07T22:00:00",
+        "district": "강남구",
+        "count": 4
+      },
+      {
+        "start": "2026-07-07T22:00:00",
+        "district": "관악구",
+        "count": 1
+      },
+      {
+        "start": "2026-07-07T22:00:00",
+        "district": "마포구",
+        "count": 2
+      },
+      {
+        "start": "2026-07-07T22:10:00",
+        "district": "강남구",
+        "count": 2
+      },
+      {
+        "start": "2026-07-07T22:10:00",
+        "district": "마포구",
+        "count": 2
+      },
+      {
+        "start": "2026-07-07T22:20:00",
+        "district": "강남구",
+        "count": 1
+      },
+      {
+        "start": "2026-07-07T22:20:00",
+        "district": "관악구",
+        "count": 1
+      }
+    ]
+  },
+  "originals_unchanged": true,
+  "all_six_execution_logs_verified": true
+}

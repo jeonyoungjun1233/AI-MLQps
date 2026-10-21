@@ -1,0 +1,109 @@
+{
+  "student_id": "202373020",
+  "verification": "PASS",
+  "execution_mode": "교수자 저장 응답의 로컬 재계산; 실시간 API/Kafka 호출 없음",
+  "q1": {
+    "page_size": 27,
+    "first_page": {
+      "n": 27,
+      "n_missing": 4,
+      "n_valid": 23,
+      "sum": 1467,
+      "mean_zero_filled": 54.333333333333336,
+      "mean_valid_only": 63.78260869565217
+    },
+    "full_input": {
+      "n": 40,
+      "n_missing": 4,
+      "n_valid": 36,
+      "sum": 2329,
+      "mean_zero_filled": 58.225,
+      "mean_valid_only": 64.69444444444444,
+      "mean_gap": 6.4694444444444414,
+      "min_valid": 49,
+      "max_valid": 71,
+      "missing_stations": [
+        "도봉구",
+        "공항대로",
+        "강남구",
+        "송파구"
+      ],
+      "top_tied": [
+        "도산대로",
+        "서초구",
+        "영등포구",
+        "한강대로"
+      ]
+    },
+    "keys": {
+      "total_count": 40,
+      "n_collected": 40,
+      "complete": 1,
+      "n_missing_khai": 4,
+      "mean_khai": 64.6944,
+      "max_khai_station": "도산대로"
+    }
+  },
+  "q2": {
+    "n_events": 80,
+    "window_min": 60,
+    "late_period": 4,
+    "grace_batch": 15,
+    "grace_speed_before": 12,
+    "batch": {
+      "2026-06-28 22:00": {
+        "count": 40,
+        "pm10_mean": 20.02
+      },
+      "2026-06-28 23:00": {
+        "count": 40,
+        "pm10_mean": 20.77
+      }
+    },
+    "speed_before": {
+      "2026-06-28 22:00": {
+        "count": 30,
+        "pm10_mean": 19.9
+      },
+      "2026-06-28 23:00": {
+        "count": 30,
+        "pm10_mean": 20.63
+      }
+    },
+    "speed_after": {
+      "2026-06-28 22:00": {
+        "count": 40,
+        "pm10_mean": 20.02
+      },
+      "2026-06-28 23:00": {
+        "count": 40,
+        "pm10_mean": 20.77
+      }
+    },
+    "keys": {
+      "n_diff_before": 2,
+      "missing_events_before": 20,
+      "max_mean_gap_before": 0.14,
+      "sha_batch": "e47adef45d61237d",
+      "sha_speed": "e47adef45d61237d",
+      "sha_equal": 1
+    },
+    "sha_function_unchanged": true
+  },
+  "checks": [
+    "원본과 같은 학번",
+    "q1 전체 건수/결측/유효 평균/최대 동점 정렬",
+    "q1 측정소-시각 키 유일성",
+    "q2 원본 스피드 결과 재현",
+    "q2 창별 원자료 조건식 독립 재계산",
+    "q2 필수 키 6개",
+    "q2 sha 함수 AST 불변"
+  ],
+  "code_sha256": {
+    "q1.py": "cb5cd7de7f76d3e34176f4980ca45986063562148c59f6597fd07c7ae290414a",
+    "q2.py": "d4b65c34b2ef94a25fbb50d7694d2a67ad297ed3bc95df179f3ba009a70fb88b",
+    "q1_fixed.py": "a39db5f63249251299a42f75fa3dd8c3237bda2c5c627e649f171e3cc3807f07",
+    "q2_fixed.py": "e67a58a1349d8effb725253e00d3f51f2a7e5260716170346070fa56d3d8fe2a",
+    "common.py": "c4bfa2f93f1cab89b3367a41097c2e80ca9789f1f59f7885dbd20bf6e2ae28bf"
+  }
+}

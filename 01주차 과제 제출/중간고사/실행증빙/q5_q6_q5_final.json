@@ -1,0 +1,16 @@
+{
+  "student_id": "202373020",
+  "command": [
+    "C:\\Python314\\python.exe",
+    "C:\\Users\\junyj\\Desktop\\AI데이터개발MLQps\\01주차 과제 제출\\중간고사\\exam\\q5_fixed.py",
+    "--id",
+    "202373020"
+  ],
+  "cwd": "C:\\Users\\junyj\\Desktop\\AI데이터개발MLQps\\01주차 과제 제출\\중간고사",
+  "executed_at_kst": "2026-10-21T12:37:19.942476+09:00",
+  "python": "3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]",
+  "returncode": 0,
+  "source_sha256": "d4cc4fedf614de2eff9ae171e24be9994180874758aaa9c13250557b2ba18c69",
+  "stdout_sha256": "496989a6a9b12b40c31ebd63abdfb79d19b80c5f28d36a83d3f8a1fbade2a346",
+  "input_kind": "교수자 제공 파일의 학번별 재계산; 외부 API/브로커/Feast 실행 없음"
+}

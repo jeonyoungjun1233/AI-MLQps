@@ -1,0 +1,284 @@
+{
+  "student_id": "202373020",
+  "status": "PASS",
+  "method": "수정본 재실행 stdout 일치 및 독립 SQLite 집계/시점조인 교차검증",
+  "q5": {
+    "keys": {
+      "cutoff": "17:10",
+      "physical": 54,
+      "dup_removed": 1,
+      "mapped": 52,
+      "unmapped": 1,
+      "missing": 0,
+      "preserved": 1,
+      "n_groups_by_name": 10,
+      "n_groups_by_code": 3,
+      "total_reported": 52
+    },
+    "groups": [
+      {
+        "cd": "11440",
+        "n": 16
+      },
+      {
+        "cd": "11620",
+        "n": 13
+      },
+      {
+        "cd": "11680",
+        "n": 23
+      }
+    ],
+    "daily": [
+      {
+        "day": "2026-07-01",
+        "outcome": "mapped",
+        "n": 18
+      },
+      {
+        "day": "2026-07-02",
+        "outcome": "dup_removed",
+        "n": 1
+      },
+      {
+        "day": "2026-07-02",
+        "outcome": "mapped",
+        "n": 16
+      },
+      {
+        "day": "2026-07-02",
+        "outcome": "unmapped",
+        "n": 1
+      },
+      {
+        "day": "2026-07-03",
+        "outcome": "mapped",
+        "n": 18
+      }
+    ],
+    "excluded_by_cutoff": [
+      {
+        "cid": "C260701-019",
+        "region_raw": null,
+        "at": "2026-07-01T17:36:00+09:00"
+      },
+      {
+        "cid": "C260701-020",
+        "region_raw": "판교",
+        "at": "2026-07-01T18:08:00+09:00"
+      },
+      {
+        "cid": "C260703-019",
+        "region_raw": "관악구",
+        "at": "2026-07-03T17:36:00+09:00"
+      },
+      {
+        "cid": "C260703-020",
+        "region_raw": "관악구",
+        "at": "2026-07-03T18:08:00+09:00"
+      },
+      {
+        "cid": "C260703-021",
+        "region_raw": null,
+        "at": "2026-07-03T18:40:00+09:00"
+      },
+      {
+        "cid": "C260703-022",
+        "region_raw": "김포",
+        "at": "2026-07-03T19:12:00+09:00"
+      }
+    ],
+    "duplicate_detail": [
+      {
+        "cid": "C260702-001",
+        "at": "2026-07-02T08:00:00+09:00",
+        "nth": 1,
+        "outcome": "mapped"
+      },
+      {
+        "cid": "C260702-001",
+        "at": "2026-07-02T11:12:00+09:00",
+        "nth": 2,
+        "outcome": "dup_removed"
+      }
+    ],
+    "full_day_outcomes": {
+      "dup_removed": 1,
+      "mapped": 54,
+      "missing": 2,
+      "unmapped": 3
+    }
+  },
+  "q6": {
+    "keys": {
+      "n_samples": 12,
+      "n_joined": 4,
+      "n_dropped_no_value": 2,
+      "n_dropped_ttl": 6,
+      "n_leaked_future": 2,
+      "sum_count": 30
+    },
+    "sample_rows": [
+      {
+        "sample_id": 9,
+        "cd": "11620",
+        "as_of": "2026-07-01T09:00:00+00:00",
+        "epoch": 1782896400,
+        "covers": null,
+        "known_at": null,
+        "age_hours": null,
+        "n": null,
+        "outcome": "no_value",
+        "original_future": 1
+      },
+      {
+        "sample_id": 0,
+        "cd": "11680",
+        "as_of": "2026-07-01T09:00:00+00:00",
+        "epoch": 1782896400,
+        "covers": null,
+        "known_at": null,
+        "age_hours": null,
+        "n": null,
+        "outcome": "no_value",
+        "original_future": 1
+      },
+      {
+        "sample_id": 6,
+        "cd": "11440",
+        "as_of": "2026-07-04T09:00:00+00:00",
+        "epoch": 1783155600,
+        "covers": "2026-07-03",
+        "known_at": "2026-07-04T00:00:00+00:00",
+        "age_hours": 9.0,
+        "n": 6,
+        "outcome": "joined",
+        "original_future": 0
+      },
+      {
+        "sample_id": 2,
+        "cd": "11680",
+        "as_of": "2026-07-04T09:00:00+00:00",
+        "epoch": 1783155600,
+        "covers": "2026-07-03",
+        "known_at": "2026-07-04T00:00:00+00:00",
+        "age_hours": 9.0,
+        "n": 9,
+        "outcome": "joined",
+        "original_future": 0
+      },
+      {
+        "sample_id": 1,
+        "cd": "11440",
+        "as_of": "2026-07-06T09:00:00+00:00",
+        "epoch": 1783328400,
+        "covers": "2026-07-03",
+        "known_at": "2026-07-04T00:00:00+00:00",
+        "age_hours": 57.0,
+        "n": 6,
+        "outcome": "joined",
+        "original_future": 0
+      },
+      {
+        "sample_id": 8,
+        "cd": "11680",
+        "as_of": "2026-07-06T09:00:00+00:00",
+        "epoch": 1783328400,
+        "covers": "2026-07-03",
+        "known_at": "2026-07-04T00:00:00+00:00",
+        "age_hours": 57.0,
+        "n": 9,
+        "outcome": "joined",
+        "original_future": 0
+      },
+      {
+        "sample_id": 7,
+        "cd": "11620",
+        "as_of": "2026-07-07T09:00:00+00:00",
+        "epoch": 1783414800,
+        "covers": "2026-07-03",
+        "known_at": "2026-07-04T00:00:00+00:00",
+        "age_hours": 81.0,
+        "n": 5,
+        "outcome": "ttl",
+        "original_future": 0
+      },
+      {
+        "sample_id": 11,
+        "cd": "11680",
+        "as_of": "2026-07-08T09:00:00+00:00",
+        "epoch": 1783501200,
+        "covers": "2026-07-03",
+        "known_at": "2026-07-04T00:00:00+00:00",
+        "age_hours": 105.0,
+        "n": 9,
+        "outcome": "ttl",
+        "original_future": 0
+      },
+      {
+        "sample_id": 10,
+        "cd": "11620",
+        "as_of": "2026-07-09T09:00:00+00:00",
+        "epoch": 1783587600,
+        "covers": "2026-07-03",
+        "known_at": "2026-07-04T00:00:00+00:00",
+        "age_hours": 129.0,
+        "n": 5,
+        "outcome": "ttl",
+        "original_future": 0
+      },
+      {
+        "sample_id": 3,
+        "cd": "11440",
+        "as_of": "2026-07-10T09:00:00+00:00",
+        "epoch": 1783674000,
+        "covers": "2026-07-03",
+        "known_at": "2026-07-04T00:00:00+00:00",
+        "age_hours": 153.0,
+        "n": 6,
+        "outcome": "ttl",
+        "original_future": 0
+      },
+      {
+        "sample_id": 4,
+        "cd": "11620",
+        "as_of": "2026-07-10T09:00:00+00:00",
+        "epoch": 1783674000,
+        "covers": "2026-07-03",
+        "known_at": "2026-07-04T00:00:00+00:00",
+        "age_hours": 153.0,
+        "n": 5,
+        "outcome": "ttl",
+        "original_future": 0
+      },
+      {
+        "sample_id": 5,
+        "cd": "11620",
+        "as_of": "2026-07-10T09:00:00+00:00",
+        "epoch": 1783674000,
+        "covers": "2026-07-03",
+        "known_at": "2026-07-04T00:00:00+00:00",
+        "age_hours": 153.0,
+        "n": 5,
+        "outcome": "ttl",
+        "original_future": 0
+      }
+    ]
+  },
+  "unchanged_original_files": [
+    "exam/common.py",
+    "exam/q5.py",
+    "exam/q6.py",
+    "exam/submit_exam.py",
+    "practice/chapter6/data/input/complaints/2026-07-01.jsonl",
+    "practice/chapter6/data/input/complaints/2026-07-02.jsonl",
+    "practice/chapter6/data/input/complaints/2026-07-03.jsonl",
+    "practice/chapter6/data/input/lawd_cd_seoul.csv",
+    "practice/chapter7/data/input/ch6_daily/2026-07-01/daily_summary.json",
+    "practice/chapter7/data/input/ch6_daily/2026-07-01/quality_check.json",
+    "practice/chapter7/data/input/ch6_daily/2026-07-02/daily_summary.json",
+    "practice/chapter7/data/input/ch6_daily/2026-07-02/quality_check.json",
+    "practice/chapter7/data/input/ch6_daily/2026-07-03/daily_summary.json",
+    "practice/chapter7/data/input/ch6_daily/2026-07-03/quality_check.json"
+  ]
+}

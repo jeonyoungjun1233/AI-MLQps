@@ -1,0 +1,21 @@
+배치 마감 17:10 (접수 시각 < 마감, 원천 +09:00), 전체 60건 중 접수 기록 54건
+마감 범위 밖 6건, 원문 이름 묶음 10개
+  11440 마포구 16건
+  11620 관악구 13건
+  11680 강남구 23건
+  2026-07-01 physical=18, dup_removed=0, mapped=18, missing=0, unmapped=0
+  2026-07-02 physical=18, dup_removed=1, mapped=16, missing=0, unmapped=1
+  2026-07-03 physical=18, dup_removed=0, mapped=18, missing=0, unmapped=0
+중복 제거 접수번호: ['C260702-001']
+미기재 접수번호: []
+미매핑: C260702-017 '성남시' 2026-07-02T17:04:00+09:00
+집계 완료: 3개 표준 지역, 합계 52건
+@@KEY cutoff=17:10
+@@KEY physical=54
+@@KEY dup_removed=1
+@@KEY mapped=52
+@@KEY missing=0
+@@KEY unmapped=1
+@@KEY n_groups_by_name=10
+@@KEY n_groups_by_code=3
+@@KEY total_reported=52

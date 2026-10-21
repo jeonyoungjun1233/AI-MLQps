@@ -1,0 +1,119 @@
+"""
+문제 5 (6주). 일별 민원 배치 보고서의 지역별 건수
+===================================================
+구청이 7월 1~3일 민원을 지역별로 세어 보고한다. 자료는 6주차 실습의 실제 접수 기록 3일치(60건)이다.
+학번마다 배치 마감 시각이 다르다. 각 날짜에서 접수 시각이 마감 시각 이전인 민원만 그날 배치에 들어간다.
+
+참고 파일: practice/chapter6/data/input/lawd_cd_seoul.csv (지역 표준명 -> 표준 코드)
+
+보고서의 문장: "민원 접수 건수를 지역별로 집계했고 오류 없이 종료되었다."
+
+실행: python exam/q5.py --id 학번
+수정본은 q5_fixed.py 로 저장해 같은 방식으로 실행한다.
+"""
+
+import csv
+import json
+from collections import Counter
+
+from common import PRACTICE, key, parse_id, pick_int
+
+sid = parse_id()
+INPUT_DIR = PRACTICE / "chapter6" / "data" / "input"
+DATES = ("2026-07-01", "2026-07-02", "2026-07-03")
+_m = 16 * 60 + 10 * pick_int(sid, "q5-cutoff", 0, 21)          # 16:00 ~ 19:30, 10분 단위
+CUTOFF = f"{_m // 60:02d}:{_m % 60:02d}"
+
+
+def read_day(ds):
+    path = INPUT_DIR / "complaints" / f"{ds}.jsonl"
+    with open(path, encoding="utf-8") as f:
+        return [json.loads(line) for line in f if line.strip()]
+
+
+records = []
+all_records = []
+for ds in DATES:
+    day_records = read_day(ds)
+    all_records += day_records
+    records += [r for r in day_records if r["created_at"][11:16] < CUTOFF]
+
+# 결함 1: 같은 접수번호는 입력 순서상 처음 기록만 남긴다.
+seen_ids = set()
+unique_records = []
+dup_removed = 0
+daily = {ds: Counter() for ds in DATES}
+duplicate_ids = []
+for r in records:
+    ds = r["created_at"][:10]
+    daily[ds]["physical"] += 1
+    if r["complaint_id"] in seen_ids:
+        dup_removed += 1
+        daily[ds]["dup_removed"] += 1
+        duplicate_ids.append(r["complaint_id"])
+        continue
+    seen_ids.add(r["complaint_id"])
+    unique_records.append(r)
+
+# 이름 기준 묶음 수는 원본과 동일하게 마감 전 원문의 비어 있지 않은 값을 센다.
+by_name = Counter(r["region_raw"] for r in records if r.get("region_raw"))
+ALIASES = {"강남": "강남구", "마포": "마포구", "관악": "관악구"}
+with open(INPUT_DIR / "lawd_cd_seoul.csv", encoding="utf-8", newline="") as f:
+    region_to_code = {r["region_std"]: r["lawd_cd"] for r in csv.DictReader(f)}
+code_to_region = {cd: region for region, cd in region_to_code.items()}
+by_code = Counter()
+missing_ids = []
+unmapped_records = []
+for r in unique_records:
+    ds = r["created_at"][:10]
+    # 결함 2: 공백을 제거한 뒤 약칭을 표준명으로 바꾼다.
+    name = (r.get("region_raw") or "").strip()
+    name = ALIASES.get(name, name)
+    if not name:
+        # 결함 3: 미기재와 사전에 없는 미매핑을 구분하고 원문/접수번호를 남긴다.
+        missing_ids.append(r["complaint_id"])
+        daily[ds]["missing"] += 1
+        continue
+    cd = region_to_code.get(name)
+    if cd is None:
+        unmapped_records.append(r)
+        daily[ds]["unmapped"] += 1
+        continue
+    by_code[cd] += 1
+    daily[ds]["mapped"] += 1
+
+physical = len(records)
+mapped = sum(by_code.values())
+missing = len(missing_ids)
+unmapped = len(unmapped_records)
+# 결함 4: 분기별 보존식을 검산한 뒤에만 보고서를 출력한다.
+preserved = physical == mapped + missing + unmapped + dup_removed
+for ds, counts in daily.items():
+    if counts["physical"] != sum(counts[k] for k in ("mapped", "missing", "unmapped", "dup_removed")):
+        raise ValueError(f"{ds}: 총계 보존 실패")
+if not preserved or len(unique_records) != mapped + missing + unmapped:
+    raise ValueError("전체 총계 보존 실패")
+
+print(f"배치 마감 {CUTOFF} (접수 시각 < 마감, 원천 +09:00), 전체 {len(all_records)}건 중 접수 기록 {physical}건")
+print(f"마감 범위 밖 {len(all_records) - physical}건, 원문 이름 묶음 {len(by_name)}개")
+for cd, n in sorted(by_code.items()):
+    print(f"  {cd} {code_to_region[cd]} {n}건")
+for ds, counts in daily.items():
+    print(f"  {ds} physical={counts['physical']}, dup_removed={counts['dup_removed']},"
+          f" mapped={counts['mapped']}, missing={counts['missing']}, unmapped={counts['unmapped']}")
+print(f"중복 제거 접수번호: {duplicate_ids}")
+print(f"미기재 접수번호: {missing_ids}")
+for r in unmapped_records:
+    print(f"미매핑: {r['complaint_id']} {r['region_raw']!r} {r['created_at']}")
+print(f"검산: {physical} = {mapped} + {missing} + {unmapped} + {dup_removed}, 보존={preserved}")
+print(f"집계 완료: {len(by_code)}개 표준 지역, 합계 {mapped}건")
+key("cutoff", CUTOFF)
+key("physical", physical)
+key("dup_removed", dup_removed)
+key("mapped", mapped)
+key("missing", missing)
+key("unmapped", unmapped)
+key("preserved", int(preserved))
+key("n_groups_by_name", len(by_name))
+key("n_groups_by_code", len(by_code))
+key("total_reported", sum(by_code.values()))

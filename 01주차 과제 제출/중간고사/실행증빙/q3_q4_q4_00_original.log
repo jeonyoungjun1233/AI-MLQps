@@ -1,0 +1,9 @@
+창 10분, 지연 허용 3분
+batch1.json: 이벤트 6건 처리, watermark 22:06
+batch2.json: 이벤트 5건 처리, watermark 22:15
+batch3.json: 이벤트 3건 처리, watermark 22:21
+집계 완료: 창-구 7행, 이벤트 12건 반영
+@@KEY window_min=10
+@@KEY delay_min=3
+@@KEY accepted=12
+@@KEY n_rows=7

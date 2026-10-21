@@ -1,0 +1,12 @@
+응답 코드 00 (NORMAL_CODE)
+페이지 크기 27건, 요청 페이지 2개
+수집 40건 / 전체 40건 -- 수집 완료
+결측 4건, 유효값 36건, 유효값 합계 2329
+결측을 0으로 채운 평균 58.2250, 유효값 평균 64.6944, 차이 6.4694
+통합대기환경지수 평균 64.69, 최고 도산대로 (71)
+@@KEY total_count=40
+@@KEY n_collected=40
+@@KEY complete=1
+@@KEY n_missing_khai=4
+@@KEY mean_khai=64.6944
+@@KEY max_khai_station=도산대로

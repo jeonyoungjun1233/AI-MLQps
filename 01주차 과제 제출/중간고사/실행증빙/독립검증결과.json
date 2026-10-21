@@ -1,0 +1,793 @@
+{
+  "student_id": "202373020",
+  "python": "3.14.3",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "expected": {
+    "1": {
+      "total_count": 40,
+      "n_collected": 40,
+      "complete": 1,
+      "n_missing_khai": 4,
+      "mean_khai": 64.69444444444444,
+      "max_khai_station": "도산대로"
+    },
+    "2": {
+      "n_diff_before": 2,
+      "missing_events_before": 20,
+      "max_mean_gap_before": 0.14000000000000057,
+      "sha_batch": "e47adef45d61237d",
+      "sha_speed": "e47adef45d61237d",
+      "sha_equal": 1
+    },
+    "3": {
+      "commit_every": 6,
+      "crash_at": 20,
+      "rows_raw": 32,
+      "duplicates": 2,
+      "rows_after_dedup": 30,
+      "lost_rule_b": 4
+    },
+    "4": {
+      "window_min": 10,
+      "delay_min": 3,
+      "accepted": 13,
+      "dropped": 1,
+      "n_rows": 7,
+      "late_ok": "수용",
+      "late_drop": "폐기"
+    },
+    "5": {
+      "cutoff": "17:10",
+      "physical": 54,
+      "dup_removed": 1,
+      "mapped": 52,
+      "missing": 0,
+      "unmapped": 1,
+      "preserved": 1,
+      "n_groups_by_name": 10,
+      "n_groups_by_code": 3,
+      "total_reported": 52
+    },
+    "6": {
+      "n_samples": 12,
+      "n_joined": 4,
+      "n_dropped_no_value": 2,
+      "n_dropped_ttl": 6,
+      "n_leaked_future": 2,
+      "sum_count": 30
+    }
+  },
+  "detail": {
+    "1": {
+      "page_size": 27,
+      "injected_indices": [
+        1,
+        7,
+        18
+      ],
+      "first_count": 27,
+      "first_missing": 4,
+      "first_zero_mean": 54.333333333333336,
+      "full_zero_mean": 58.225,
+      "full_valid_mean": 64.69444444444444,
+      "sum_valid": 2329,
+      "missing_stations": [
+        "도봉구",
+        "공항대로",
+        "강남구",
+        "송파구"
+      ],
+      "max_station": "도산대로",
+      "max_value": 71
+    },
+    "2": {
+      "late_period": 4,
+      "old_grace": 12,
+      "fixed_grace": 15,
+      "batch": {
+        "2026-06-28 22:00": {
+          "count": 40,
+          "pm10_mean": 20.02
+        },
+        "2026-06-28 23:00": {
+          "count": 40,
+          "pm10_mean": 20.77
+        }
+      },
+      "old_speed": {
+        "2026-06-28 22:00": {
+          "count": 30,
+          "pm10_mean": 19.9
+        },
+        "2026-06-28 23:00": {
+          "count": 30,
+          "pm10_mean": 20.63
+        }
+      },
+      "old_sha": "c3c3979ca3b54d13"
+    },
+    "3": {
+      "source_ids": 30,
+      "last_commit_a": 18,
+      "resume_b": 24,
+      "duplicate_ids": [
+        "alo-000019",
+        "alo-000021"
+      ],
+      "lost_ids": [
+        "alo-000023",
+        "alo-000024",
+        "alo-000025",
+        "alo-000029"
+      ],
+      "source_event_ids": 30,
+      "source_partition_offsets": 30
+    },
+    "4": [
+      {
+        "file": "batch1.json",
+        "watermark": null,
+        "decisions": [
+          {
+            "id": "E01",
+            "district": "강남구",
+            "start": "2026-07-07T22:00:00",
+            "end": "2026-07-07T22:10:00",
+            "accepted": true
+          },
+          {
+            "id": "E02",
+            "district": "마포구",
+            "start": "2026-07-07T22:00:00",
+            "end": "2026-07-07T22:10:00",
+            "accepted": true
+          },
+          {
+            "id": "E03",
+            "district": "강남구",
+            "start": "2026-07-07T22:00:00",
+            "end": "2026-07-07T22:10:00",
+            "accepted": true
+          },
+          {
+            "id": "E04",
+            "district": "관악구",
+            "start": "2026-07-07T22:00:00",
+            "end": "2026-07-07T22:10:00",
+            "accepted": true
+          },
+          {
+            "id": "E05",
+            "district": "강남구",
+            "start": "2026-07-07T22:00:00",
+            "end": "2026-07-07T22:10:00",
+            "accepted": true
+          },
+          {
+            "id": "E06",
+            "district": "마포구",
+            "start": "2026-07-07T22:00:00",
+            "end": "2026-07-07T22:10:00",
+            "accepted": true
+          }
+        ]
+      },
+      {
+        "file": "batch2.json",
+        "watermark": "2026-07-07T22:06:00",
+        "decisions": [
+          {
+            "id": "E07",
+            "district": "강남구",
+            "start": "2026-07-07T22:10:00",
+            "end": "2026-07-07T22:20:00",
+            "accepted": true
+          },
+          {
+            "id": "E08",
+            "district": "마포구",
+            "start": "2026-07-07T22:10:00",
+            "end": "2026-07-07T22:20:00",
+            "accepted": true
+          },
+          {
+            "id": "LATE_OK",
+            "district": "강남구",
+            "start": "2026-07-07T22:00:00",
+            "end": "2026-07-07T22:10:00",
+            "accepted": true
+          },
+          {
+            "id": "E09",
+            "district": "강남구",
+            "start": "2026-07-07T22:10:00",
+            "end": "2026-07-07T22:20:00",
+            "accepted": true
+          },
+          {
+            "id": "E10",
+            "district": "마포구",
+            "start": "2026-07-07T22:10:00",
+            "end": "2026-07-07T22:20:00",
+            "accepted": true
+          }
+        ]
+      },
+      {
+        "file": "batch3.json",
+        "watermark": "2026-07-07T22:15:00",
+        "decisions": [
+          {
+            "id": "LATE_DROP",
+            "district": "마포구",
+            "start": "2026-07-07T21:40:00",
+            "end": "2026-07-07T21:50:00",
+            "accepted": false
+          },
+          {
+            "id": "E11",
+            "district": "관악구",
+            "start": "2026-07-07T22:20:00",
+            "end": "2026-07-07T22:30:00",
+            "accepted": true
+          },
+          {
+            "id": "E12",
+            "district": "강남구",
+            "start": "2026-07-07T22:20:00",
+            "end": "2026-07-07T22:30:00",
+            "accepted": true
+          }
+        ]
+      }
+    ],
+    "5": {
+      "raw_groups": {
+        "강남구": 18,
+        " 강남구 ": 1,
+        "강남": 4,
+        "마포구": 12,
+        "마포": 3,
+        "관악구": 11,
+        "관악": 2,
+        " 마포구": 1,
+        "성남시": 1,
+        "강남 ": 1
+      },
+      "by_code": {
+        "11680": 23,
+        "11440": 16,
+        "11620": 13
+      },
+      "classified": [
+        {
+          "id": "C260701-001",
+          "category": "mapped",
+          "raw": "강남구",
+          "created_at": "2026-07-01T08:00:00+09:00"
+        },
+        {
+          "id": "C260701-002",
+          "category": "mapped",
+          "raw": "강남구",
+          "created_at": "2026-07-01T08:32:00+09:00"
+        },
+        {
+          "id": "C260701-003",
+          "category": "mapped",
+          "raw": "강남구",
+          "created_at": "2026-07-01T09:04:00+09:00"
+        },
+        {
+          "id": "C260701-004",
+          "category": "mapped",
+          "raw": "강남구",
+          "created_at": "2026-07-01T09:36:00+09:00"
+        },
+        {
+          "id": "C260701-005",
+          "category": "mapped",
+          "raw": "강남구",
+          "created_at": "2026-07-01T10:08:00+09:00"
+        },
+        {
+          "id": "C260701-006",
+          "category": "mapped",
+          "raw": " 강남구 ",
+          "created_at": "2026-07-01T10:40:00+09:00"
+        },
+        {
+          "id": "C260701-007",
+          "category": "mapped",
+          "raw": "강남",
+          "created_at": "2026-07-01T11:12:00+09:00"
+        },
+        {
+          "id": "C260701-008",
+          "category": "mapped",
+          "raw": "강남",
+          "created_at": "2026-07-01T11:44:00+09:00"
+        },
+        {
+          "id": "C260701-009",
+          "category": "mapped",
+          "raw": "마포구",
+          "created_at": "2026-07-01T12:16:00+09:00"
+        },
+        {
+          "id": "C260701-010",
+          "category": "mapped",
+          "raw": "마포구",
+          "created_at": "2026-07-01T12:48:00+09:00"
+        },
+        {
+          "id": "C260701-011",
+          "category": "mapped",
+          "raw": "마포구",
+          "created_at": "2026-07-01T13:20:00+09:00"
+        },
+        {
+          "id": "C260701-012",
+          "category": "mapped",
+          "raw": "마포구",
+          "created_at": "2026-07-01T13:52:00+09:00"
+        },
+        {
+          "id": "C260701-013",
+          "category": "mapped",
+          "raw": "마포",
+          "created_at": "2026-07-01T14:24:00+09:00"
+        },
+        {
+          "id": "C260701-014",
+          "category": "mapped",
+          "raw": "관악구",
+          "created_at": "2026-07-01T14:56:00+09:00"
+        },
+        {
+          "id": "C260701-015",
+          "category": "mapped",
+          "raw": "관악구",
+          "created_at": "2026-07-01T15:28:00+09:00"
+        },
+        {
+          "id": "C260701-016",
+          "category": "mapped",
+          "raw": "관악구",
+          "created_at": "2026-07-01T16:00:00+09:00"
+        },
+        {
+          "id": "C260701-017",
+          "category": "mapped",
+          "raw": "관악구",
+          "created_at": "2026-07-01T16:32:00+09:00"
+        },
+        {
+          "id": "C260701-018",
+          "category": "mapped",
+          "raw": "관악",
+          "created_at": "2026-07-01T17:04:00+09:00"
+        },
+        {
+          "id": "C260702-001",
+          "category": "mapped",
+          "raw": "강남구",
+          "created_at": "2026-07-02T08:00:00+09:00"
+        },
+        {
+          "id": "C260702-002",
+          "category": "mapped",
+          "raw": "강남구",
+          "created_at": "2026-07-02T08:32:00+09:00"
+        },
+        {
+          "id": "C260702-003",
+          "category": "mapped",
+          "raw": "강남구",
+          "created_at": "2026-07-02T09:04:00+09:00"
+        },
+        {
+          "id": "C260702-004",
+          "category": "mapped",
+          "raw": "강남구",
+          "created_at": "2026-07-02T09:36:00+09:00"
+        },
+        {
+          "id": "C260702-005",
+          "category": "mapped",
+          "raw": "강남",
+          "created_at": "2026-07-02T10:08:00+09:00"
+        },
+        {
+          "id": "C260702-006",
+          "category": "mapped",
+          "raw": "강남구",
+          "created_at": "2026-07-02T10:40:00+09:00"
+        },
+        {
+          "id": "C260702-007",
+          "category": "mapped",
+          "raw": "마포구",
+          "created_at": "2026-07-02T11:44:00+09:00"
+        },
+        {
+          "id": "C260702-008",
+          "category": "mapped",
+          "raw": "마포구",
+          "created_at": "2026-07-02T12:16:00+09:00"
+        },
+        {
+          "id": "C260702-009",
+          "category": "mapped",
+          "raw": " 마포구",
+          "created_at": "2026-07-02T12:48:00+09:00"
+        },
+        {
+          "id": "C260702-010",
+          "category": "mapped",
+          "raw": "마포구",
+          "created_at": "2026-07-02T13:20:00+09:00"
+        },
+        {
+          "id": "C260702-011",
+          "category": "mapped",
+          "raw": "마포",
+          "created_at": "2026-07-02T13:52:00+09:00"
+        },
+        {
+          "id": "C260702-012",
+          "category": "mapped",
+          "raw": "관악구",
+          "created_at": "2026-07-02T14:24:00+09:00"
+        },
+        {
+          "id": "C260702-013",
+          "category": "mapped",
+          "raw": "관악구",
+          "created_at": "2026-07-02T14:56:00+09:00"
+        },
+        {
+          "id": "C260702-014",
+          "category": "mapped",
+          "raw": "관악구",
+          "created_at": "2026-07-02T15:28:00+09:00"
+        },
+        {
+          "id": "C260702-015",
+          "category": "mapped",
+          "raw": "관악구",
+          "created_at": "2026-07-02T16:00:00+09:00"
+        },
+        {
+          "id": "C260702-016",
+          "category": "mapped",
+          "raw": "관악",
+          "created_at": "2026-07-02T16:32:00+09:00"
+        },
+        {
+          "id": "C260702-017",
+          "category": "unmapped",
+          "raw": "성남시",
+          "created_at": "2026-07-02T17:04:00+09:00"
+        },
+        {
+          "id": "C260703-001",
+          "category": "mapped",
+          "raw": "강남구",
+          "created_at": "2026-07-03T08:00:00+09:00"
+        },
+        {
+          "id": "C260703-002",
+          "category": "mapped",
+          "raw": "강남구",
+          "created_at": "2026-07-03T08:32:00+09:00"
+        },
+        {
+          "id": "C260703-003",
+          "category": "mapped",
+          "raw": "강남구",
+          "created_at": "2026-07-03T09:04:00+09:00"
+        },
+        {
+          "id": "C260703-004",
+          "category": "mapped",
+          "raw": "강남구",
+          "created_at": "2026-07-03T09:36:00+09:00"
+        },
+        {
+          "id": "C260703-005",
+          "category": "mapped",
+          "raw": "강남구",
+          "created_at": "2026-07-03T10:08:00+09:00"
+        },
+        {
+          "id": "C260703-006",
+          "category": "mapped",
+          "raw": "강남구",
+          "created_at": "2026-07-03T10:40:00+09:00"
+        },
+        {
+          "id": "C260703-007",
+          "category": "mapped",
+          "raw": "강남 ",
+          "created_at": "2026-07-03T11:12:00+09:00"
+        },
+        {
+          "id": "C260703-008",
+          "category": "mapped",
+          "raw": "강남",
+          "created_at": "2026-07-03T11:44:00+09:00"
+        },
+        {
+          "id": "C260703-009",
+          "category": "mapped",
+          "raw": "강남구",
+          "created_at": "2026-07-03T12:16:00+09:00"
+        },
+        {
+          "id": "C260703-010",
+          "category": "mapped",
+          "raw": "마포구",
+          "created_at": "2026-07-03T12:48:00+09:00"
+        },
+        {
+          "id": "C260703-011",
+          "category": "mapped",
+          "raw": "마포구",
+          "created_at": "2026-07-03T13:20:00+09:00"
+        },
+        {
+          "id": "C260703-012",
+          "category": "mapped",
+          "raw": "마포구",
+          "created_at": "2026-07-03T13:52:00+09:00"
+        },
+        {
+          "id": "C260703-013",
+          "category": "mapped",
+          "raw": "마포구",
+          "created_at": "2026-07-03T14:24:00+09:00"
+        },
+        {
+          "id": "C260703-014",
+          "category": "mapped",
+          "raw": "마포구",
+          "created_at": "2026-07-03T14:56:00+09:00"
+        },
+        {
+          "id": "C260703-015",
+          "category": "mapped",
+          "raw": "마포",
+          "created_at": "2026-07-03T15:28:00+09:00"
+        },
+        {
+          "id": "C260703-016",
+          "category": "mapped",
+          "raw": "관악구",
+          "created_at": "2026-07-03T16:00:00+09:00"
+        },
+        {
+          "id": "C260703-017",
+          "category": "mapped",
+          "raw": "관악구",
+          "created_at": "2026-07-03T16:32:00+09:00"
+        },
+        {
+          "id": "C260703-018",
+          "category": "mapped",
+          "raw": "관악구",
+          "created_at": "2026-07-03T17:04:00+09:00"
+        }
+      ],
+      "excluded": [
+        {
+          "complaint_id": "C260701-019",
+          "region_raw": null,
+          "category": "도로",
+          "created_at": "2026-07-01T17:36:00+09:00"
+        },
+        {
+          "complaint_id": "C260701-020",
+          "region_raw": "판교",
+          "category": "소음",
+          "created_at": "2026-07-01T18:08:00+09:00"
+        },
+        {
+          "complaint_id": "C260703-019",
+          "region_raw": "관악구",
+          "category": "환경",
+          "created_at": "2026-07-03T17:36:00+09:00"
+        },
+        {
+          "complaint_id": "C260703-020",
+          "region_raw": "관악구",
+          "category": "청소",
+          "created_at": "2026-07-03T18:08:00+09:00"
+        },
+        {
+          "complaint_id": "C260703-021",
+          "region_raw": null,
+          "category": "소음",
+          "created_at": "2026-07-03T18:40:00+09:00"
+        },
+        {
+          "complaint_id": "C260703-022",
+          "region_raw": "김포",
+          "category": "도로",
+          "created_at": "2026-07-03T19:12:00+09:00"
+        }
+      ],
+      "duplicate_ids": [
+        "C260702-001"
+      ]
+    },
+    "6": [
+      {
+        "index": 9,
+        "cd": "11620",
+        "as_of": "2026-07-01T09:00:00+00:00",
+        "status": "no_value",
+        "known_at": null,
+        "age_hours": null,
+        "count": null,
+        "original_count": 5,
+        "future_leak": true
+      },
+      {
+        "index": 0,
+        "cd": "11680",
+        "as_of": "2026-07-01T09:00:00+00:00",
+        "status": "no_value",
+        "known_at": null,
+        "age_hours": null,
+        "count": null,
+        "original_count": 9,
+        "future_leak": true
+      },
+      {
+        "index": 6,
+        "cd": "11440",
+        "as_of": "2026-07-04T09:00:00+00:00",
+        "status": "joined",
+        "known_at": "2026-07-04T00:00:00+00:00",
+        "age_hours": 9.0,
+        "count": 6,
+        "original_count": 6,
+        "future_leak": false
+      },
+      {
+        "index": 2,
+        "cd": "11680",
+        "as_of": "2026-07-04T09:00:00+00:00",
+        "status": "joined",
+        "known_at": "2026-07-04T00:00:00+00:00",
+        "age_hours": 9.0,
+        "count": 9,
+        "original_count": 9,
+        "future_leak": false
+      },
+      {
+        "index": 1,
+        "cd": "11440",
+        "as_of": "2026-07-06T09:00:00+00:00",
+        "status": "joined",
+        "known_at": "2026-07-04T00:00:00+00:00",
+        "age_hours": 57.0,
+        "count": 6,
+        "original_count": 6,
+        "future_leak": false
+      },
+      {
+        "index": 8,
+        "cd": "11680",
+        "as_of": "2026-07-06T09:00:00+00:00",
+        "status": "joined",
+        "known_at": "2026-07-04T00:00:00+00:00",
+        "age_hours": 57.0,
+        "count": 9,
+        "original_count": 9,
+        "future_leak": false
+      },
+      {
+        "index": 7,
+        "cd": "11620",
+        "as_of": "2026-07-07T09:00:00+00:00",
+        "status": "ttl",
+        "known_at": "2026-07-04T00:00:00+00:00",
+        "age_hours": 81.0,
+        "count": null,
+        "original_count": 5,
+        "future_leak": false
+      },
+      {
+        "index": 11,
+        "cd": "11680",
+        "as_of": "2026-07-08T09:00:00+00:00",
+        "status": "ttl",
+        "known_at": "2026-07-04T00:00:00+00:00",
+        "age_hours": 105.0,
+        "count": null,
+        "original_count": 9,
+        "future_leak": false
+      },
+      {
+        "index": 10,
+        "cd": "11620",
+        "as_of": "2026-07-09T09:00:00+00:00",
+        "status": "ttl",
+        "known_at": "2026-07-04T00:00:00+00:00",
+        "age_hours": 129.0,
+        "count": null,
+        "original_count": 5,
+        "future_leak": false
+      },
+      {
+        "index": 3,
+        "cd": "11440",
+        "as_of": "2026-07-10T09:00:00+00:00",
+        "status": "ttl",
+        "known_at": "2026-07-04T00:00:00+00:00",
+        "age_hours": 153.0,
+        "count": null,
+        "original_count": 6,
+        "future_leak": false
+      },
+      {
+        "index": 4,
+        "cd": "11620",
+        "as_of": "2026-07-10T09:00:00+00:00",
+        "status": "ttl",
+        "known_at": "2026-07-04T00:00:00+00:00",
+        "age_hours": 153.0,
+        "count": null,
+        "original_count": 5,
+        "future_leak": false
+      },
+      {
+        "index": 5,
+        "cd": "11620",
+        "as_of": "2026-07-10T09:00:00+00:00",
+        "status": "ttl",
+        "known_at": "2026-07-04T00:00:00+00:00",
+        "age_hours": 153.0,
+        "count": null,
+        "original_count": 5,
+        "future_leak": false
+      }
+    ]
+  },
+  "checks": [
+    {
+      "question": 1,
+      "required_keys_verified": 6,
+      "exit_code": 0
+    },
+    {
+      "question": 2,
+      "required_keys_verified": 6,
+      "exit_code": 0
+    },
+    {
+      "question": 3,
+      "required_keys_verified": 6,
+      "exit_code": 0
+    },
+    {
+      "question": 4,
+      "required_keys_verified": 7,
+      "exit_code": 0
+    },
+    {
+      "question": 5,
+      "required_keys_verified": 10,
+      "exit_code": 0
+    },
+    {
+      "question": 6,
+      "required_keys_verified": 6,
+      "exit_code": 0
+    }
+  ],
+  "original_files_verified": 35,
+  "status": "PASS"
+}

@@ -1,0 +1,37 @@
+[
+  {
+    "question": 1,
+    "stage": "original",
+    "exit_code": 0,
+    "stdout": "응답 코드 00 (NORMAL_CODE)\n수집 27건 -- 수집 완료\n통합대기환경지수 평균 54.33, 최고 도산대로 (71)\n@@KEY total_count=40\n@@KEY n_collected=27\n@@KEY mean_khai=54.3333\n@@KEY max_khai_station=도산대로\n",
+    "stderr": ""
+  },
+  {
+    "question": 2,
+    "stage": "original",
+    "exit_code": 0,
+    "stdout": "이벤트 80건, 창 길이 60분\n창                      배치 건수      배치 평균      스피드 건수      스피드 평균\n2026-06-28 22:00          40      20.02          30       19.90\n2026-06-28 23:00          40      20.77          30       20.63\n두 계층 집계 종료\n@@KEY sha_batch=e47adef45d61237d\n@@KEY sha_speed=c3c3979ca3b54d13\n",
+    "stderr": ""
+  },
+  {
+    "question": 1,
+    "stage": "pagination_only",
+    "exit_code": 0,
+    "stdout": "응답 코드 00 (NORMAL_CODE)\n페이지 크기 27건, 요청 페이지 2개\n수집 40건 / 전체 40건 -- 수집 완료\n통합대기환경지수 평균 58.23, 최고 도산대로 (71)\n@@KEY total_count=40\n@@KEY n_collected=40\n@@KEY complete=1\n@@KEY mean_khai=58.225\n@@KEY max_khai_station=도산대로\n",
+    "stderr": ""
+  },
+  {
+    "question": 1,
+    "stage": "valid_values_only",
+    "exit_code": 0,
+    "stdout": "응답 코드 00 (NORMAL_CODE)\n페이지 크기 27건, 요청 페이지 2개\n수집 40건 / 전체 40건 -- 수집 완료\n결측 4건, 유효값 36건, 유효값 합계 2329\n결측을 0으로 채운 평균 58.2250, 유효값 평균 64.6944, 차이 6.4694\n통합대기환경지수 평균 64.69, 최고 도산대로 (71)\n@@KEY total_count=40\n@@KEY n_collected=40\n@@KEY complete=1\n@@KEY n_missing_khai=4\n@@KEY mean_khai=64.6944\n@@KEY max_khai_station=도산대로\n",
+    "stderr": ""
+  },
+  {
+    "question": 2,
+    "stage": "one_shared_aggregation_rule",
+    "exit_code": 0,
+    "stdout": "이벤트 80건, 창 길이 60분\n지연 주기 4, 수정 전 지연 허용 배치 15분 / 스피드 12분\n수정 후 지연 허용 양쪽 15분, 동일 집계 함수 사용\n[수정 전]\n창                      배치 건수      배치 평균      스피드 건수      스피드 평균\n2026-06-28 22:00          40      20.02          30       19.90\n2026-06-28 23:00          40      20.77          30       20.63\n어긋난 창 2개, 빠진 이벤트 20건, 최대 평균 차이 0.14\n수정 전 해시: 배치 e47adef45d61237d, 스피드 c3c3979ca3b54d13, 일치 0\n[수정 후]\n창                      배치 건수      배치 평균      스피드 건수      스피드 평균\n2026-06-28 22:00          40      20.02          40       20.02\n2026-06-28 23:00          40      20.77          40       20.77\n어긋난 창 0개, 빠진 이벤트 0건, 최대 평균 차이 0.00\n두 계층 집계 종료\n@@KEY n_diff_before=2\n@@KEY missing_events_before=20\n@@KEY max_mean_gap_before=0.14\n@@KEY sha_batch=e47adef45d61237d\n@@KEY sha_speed=e47adef45d61237d\n@@KEY sha_equal=1\n",
+    "stderr": ""
+  }
+]

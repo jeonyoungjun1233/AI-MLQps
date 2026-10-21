@@ -1,0 +1,146 @@
+{
+  "source": "https://github.com/LeeSeogMin/mlops_public",
+  "commit": "226fdea47359c30694bc4a499b33b63baf3d9ab7",
+  "files": [
+    {
+      "path": "exam/README.md",
+      "sha256": "d5fb986f95581abd66307e8537fc51076c05125d3bdbc5c40f6e41ac50bf728f"
+    },
+    {
+      "path": "exam/common.py",
+      "sha256": "c4bfa2f93f1cab89b3367a41097c2e80ca9789f1f59f7885dbd20bf6e2ae28bf"
+    },
+    {
+      "path": "exam/q1.py",
+      "sha256": "cb5cd7de7f76d3e34176f4980ca45986063562148c59f6597fd07c7ae290414a"
+    },
+    {
+      "path": "exam/q2.py",
+      "sha256": "d4b65c34b2ef94a25fbb50d7694d2a67ad297ed3bc95df179f3ba009a70fb88b"
+    },
+    {
+      "path": "exam/q3.py",
+      "sha256": "3cfb43900dd70788c5d57bb5b16e199d1a6a5494b59f582b4e3df112f6a2cc48"
+    },
+    {
+      "path": "exam/q4.py",
+      "sha256": "62481ee6193d3c60f1186add44ea744182d28833a9ae7663fbb1655e36c3bc21"
+    },
+    {
+      "path": "exam/q5.py",
+      "sha256": "51ca48a1e6dd2f6ca42889c74aa1e11c52b520f85e9f95c4cfeb5a5b3aa19a4d"
+    },
+    {
+      "path": "exam/q6.py",
+      "sha256": "ddf1c92f1eec81dad4587a74a570c378cbba83b3db68835596b6217d0337b617"
+    },
+    {
+      "path": "exam/submit_exam.py",
+      "sha256": "aeceb1ad5f1e90200a321d19305eedfdc2fa48957676e419b8ef93ed2f717a64"
+    },
+    {
+      "path": "exam/시험지.md",
+      "sha256": "081bb502a9fa4aeba3744fc8bb7e8b7673acc356af32f00de795072e556ac19b"
+    },
+    {
+      "path": "lecture/ch01.md",
+      "sha256": "a10b4ff63269048c6ae9ec3752660887b9ef96785f5e0e0305bceb6825c5c105"
+    },
+    {
+      "path": "lecture/ch02.md",
+      "sha256": "d1bcbfbaba2862033442605de55bc800f472ed7c425512a79554ac910278789d"
+    },
+    {
+      "path": "lecture/ch03.md",
+      "sha256": "8493125fd6140493841e058cb007ad6f7a3812937d303c8d903ea724ec474757"
+    },
+    {
+      "path": "lecture/ch04.md",
+      "sha256": "fb84ca349bfc844d7ad81a4c2d9b90e26bfef8ab2f554ff45b4bd4184819f211"
+    },
+    {
+      "path": "lecture/ch05.md",
+      "sha256": "30f6c7ac0bf368aa7f0713eb95d9c0bf2acea603589684a7e041509e8f7292bd"
+    },
+    {
+      "path": "lecture/ch06.md",
+      "sha256": "95ef1c35771222537bb02d1d7a873db6dc4ff4d0897bffddec82cff5883bb21f"
+    },
+    {
+      "path": "lecture/ch07.md",
+      "sha256": "2e0e4a43e4b0c1b7dc4f0df7d3d6be106ec2ea0b5a7cce7fc4d23cfa30242d7f"
+    },
+    {
+      "path": "practice/chapter2/data/input/airquality_seoul_2200.json",
+      "sha256": "c74bd701e86eaa63ccbd2cd312b7a520b3a6779889d35440198d0e86d45c8b2f"
+    },
+    {
+      "path": "practice/chapter2/data/input/airquality_seoul_current.json",
+      "sha256": "688573590e38fcda232796d9546d2ac8fba632402e301cc6387562e212afde61"
+    },
+    {
+      "path": "practice/chapter3/data/input/airquality_seoul_2200.json",
+      "sha256": "c74bd701e86eaa63ccbd2cd312b7a520b3a6779889d35440198d0e86d45c8b2f"
+    },
+    {
+      "path": "practice/chapter3/data/input/airquality_seoul_current.json",
+      "sha256": "688573590e38fcda232796d9546d2ac8fba632402e301cc6387562e212afde61"
+    },
+    {
+      "path": "practice/chapter4/data/input/ch4_alo_duplicate_stream.jsonl",
+      "sha256": "8ca9c870917976ef052a3f172df32a12e5b1009503aeae35f5d6e98a63687bd9"
+    },
+    {
+      "path": "practice/chapter5/data/input/stream/batch1.json",
+      "sha256": "b0603e9d4d7b58056743295db184cf5ac71a2a2c45f748b9c8d4854bd8d8f847"
+    },
+    {
+      "path": "practice/chapter5/data/input/stream/batch2.json",
+      "sha256": "8d4337edf26744f4afe9ffc206d1602a139c46cfdf6fc319dc0c4e3cd4e2d507"
+    },
+    {
+      "path": "practice/chapter5/data/input/stream/batch3.json",
+      "sha256": "eeae0e55ecedcbcd9538dc522b68ebaf4df0d0c83fb1066fb8a36e84000b1e0c"
+    },
+    {
+      "path": "practice/chapter6/data/input/complaints/2026-07-01.jsonl",
+      "sha256": "07c2b30bd07f5a1d6a5ee10f97e857c6ce95e79edd2b231e8b2f2915dc1abe21"
+    },
+    {
+      "path": "practice/chapter6/data/input/complaints/2026-07-02.jsonl",
+      "sha256": "d60ddd70179a57b781babce1c913f67fd303766646a6c5b504ce4f8e347f4bca"
+    },
+    {
+      "path": "practice/chapter6/data/input/complaints/2026-07-03.jsonl",
+      "sha256": "e4f6e86f791e28cd05dbcee6c2a2a53b0a5da53bb57f144e85503026dbc26326"
+    },
+    {
+      "path": "practice/chapter6/data/input/lawd_cd_seoul.csv",
+      "sha256": "4b5cceda7bb9d940c6cf8caae5da768c9c735a3a14a6b01317066ced28f7c3fb"
+    },
+    {
+      "path": "practice/chapter7/data/input/ch6_daily/2026-07-01/daily_summary.json",
+      "sha256": "88a34af5412b47233bc1a011086a78d08c0b66e6c1456be42057a7a9b3e2abac"
+    },
+    {
+      "path": "practice/chapter7/data/input/ch6_daily/2026-07-01/quality_check.json",
+      "sha256": "8450c9a63f0b648327a42ccae1ec108987dcd49b88f575ac3cb91187e3921497"
+    },
+    {
+      "path": "practice/chapter7/data/input/ch6_daily/2026-07-02/daily_summary.json",
+      "sha256": "01dd41fc883028fa0123a839aa9830d2a2a4d6f7765c8a86c34826f0bdea2ec3"
+    },
+    {
+      "path": "practice/chapter7/data/input/ch6_daily/2026-07-02/quality_check.json",
+      "sha256": "8e23f8e8386d900b46936144158e3f566c2e835b1120518893a0ee1412abd868"
+    },
+    {
+      "path": "practice/chapter7/data/input/ch6_daily/2026-07-03/daily_summary.json",
+      "sha256": "472a681e6f81068097872d00e26be2535459772db2a6d77ba331222e54c94c07"
+    },
+    {
+      "path": "practice/chapter7/data/input/ch6_daily/2026-07-03/quality_check.json",
+      "sha256": "42e6d1e770749bfb378066c468cac4e5b44db2f90adc38eeddd62c66581eef3f"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+창 10분, 지연 허용 3분
+batch1.json: 도착 6건, 수용 6건, 폐기 0건, 적용 watermark 없음, 폐기 누적 0
+  처리 후 최대 이벤트 시각 22:09, 다음 watermark 22:06
+batch2.json: 도착 5건, 수용 5건, 폐기 0건, 적용 watermark 22:06, 폐기 누적 0
+  처리 후 최대 이벤트 시각 22:18, 다음 watermark 22:15
+batch3.json: 도착 3건, 수용 2건, 폐기 1건, 적용 watermark 22:15, 폐기 누적 1
+  처리 후 최대 이벤트 시각 22:24, 다음 watermark 22:21
+집계 완료: 도착 14건 = 수용 13건 + 폐기 1건, 창-구 7행
+LATE_OK: batch2.json, 발생 22:04, 창 22:00-22:10, watermark 22:06, 수용
+LATE_DROP: batch3.json, 발생 21:49, 창 21:40-21:50, watermark 22:15, 폐기
+창 시작 | 창 끝 | 구 | 건수
+22:00 | 22:10 | 강남구 | 4
+22:00 | 22:10 | 관악구 | 1
+22:00 | 22:10 | 마포구 | 2
+22:10 | 22:20 | 강남구 | 2
+22:10 | 22:20 | 마포구 | 2
+22:20 | 22:30 | 강남구 | 1
+22:20 | 22:30 | 관악구 | 1
+@@KEY window_min=10
+@@KEY delay_min=3
+@@KEY accepted=13
+@@KEY dropped=1
+@@KEY n_rows=7
+@@KEY late_ok=수용
+@@KEY late_drop=폐기

@@ -1,0 +1,15 @@
+{
+  "started_at_kst": "2026-10-21T12:36:30.670115+09:00",
+  "python": "3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]",
+  "command": [
+    "C:\\Python314\\python.exe",
+    "C:\\Users\\junyj\\Desktop\\AI데이터개발MLQps\\01주차 과제 제출\\중간고사\\exam\\q4_fixed.py",
+    "--id",
+    "202373020"
+  ],
+  "execution_kind": "provided-input simulation; no Kafka/Spark service or external API request",
+  "stage": "q4_02_final_observability",
+  "exit_code": 0,
+  "source_sha256": "46bf231cae47ae231d7cb47de51b71b42ab0da066c3f4130f19142a94c6bf934",
+  "stdout_sha256": "4839228a4777a25815134f93f3bf08133df726427e87cb864dff00114ebdd18e"
+}
