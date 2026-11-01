@@ -106,3 +106,5 @@
 - JSON SHA256=a1c7abe2d08581a3ec1bc2127c0ed210b38f05667ccba3bed54d23c4425e7ef5. 데이터 지문5ff6781dc27fbf73…은 Windows CRLF 차이; LF 변환 시 강의96f6b6b3ce9dcdd1…과 일치. 제출 파일은 변경하지 않음.
 - 원본4개 해시 불변, 유리수 독립MAE검산(1 및23/22), CSV지문, MLflow DB alias/버전 및 모델3개 아카이브 검증. 로그·환경·검증·DB와 모델ZIP 보관. 외부 API 수집 아닌 제공 스냅샷.
 - LMS 미제출, 실제 수업일·마감 미확인. 수업일 포함7일 이내 안내.
+
+- 09주차 산출물 커밋6977a95c9f9f225ed2d811771f105520127bdf10 GitHub main 푸시·원격일치 확인, 과제파일25개 Git blob 바이트 대조 통과. LMS는 미제출.
