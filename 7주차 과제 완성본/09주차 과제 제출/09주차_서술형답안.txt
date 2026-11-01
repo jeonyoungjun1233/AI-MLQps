@@ -1,0 +1,11 @@
+9주차 과제 서술형 답안
+AI 데이터개발과 MLOps | 전영준 | 202373020
+
+1. 본인 JSON의 승격 판정과 반려 이유 (3문장)
+본인 ch9_experiment_report.json에서 registry.champion_version=1이고, 첫 버전은 version=1, train_mae=1.0000, metric_gate="train_mae <= 1.05", metric_gate_pass=true, promoted=true이다.
+두 번째 버전은 version=2, train_mae=1.0455, metric_gate="train_mae <= 1.05", metric_gate_pass=true, promoted=false이다.
+절대 게이트를 통과한 미승격 v2의 train_mae=1.0455와 champion v1의 train_mae=1.0000을 비교하면 1.0455 > 1.0000으로 오차가 더 크므로, 기존 champion보다 개선되어야 한다는 상대 조건을 충족하지 못해 v2는 등록만 유지되고 승격은 반려되었다.
+
+2. 두 게이트 중 하나만 둘 때의 사고 (2문장)
+절대 게이트만 두면 본인 결과의 v2(1.0455)처럼 기준 1.05는 통과하지만 현행 v1(1.0000)보다 나쁜 후보가 운영 모델을 교체하여 성능이 악화될 수 있다.
+상대 조건만 두면 두 모델 모두 업무상 허용 오차를 넘더라도 후보가 현행보다 조금만 나으면 승격되어, 업무에 부적합한 모델의 교체가 계속될 수 있다.

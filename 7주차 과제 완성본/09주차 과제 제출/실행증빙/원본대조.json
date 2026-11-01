@@ -1,0 +1,22 @@
+[
+  {
+    "path": "run_chapter9.py",
+    "sha256": "19daacfd921d3e7bd3fbdbae61364a1bc665b9921815995151878a1e3230fe1e",
+    "unchanged": true
+  },
+  {
+    "path": "code/requirements.txt",
+    "sha256": "5478c7b40a36d0d92b0a4bb9e2fb7d180571be571d125673b2120a7ffcd68084",
+    "unchanged": true
+  },
+  {
+    "path": "code/9-1-mlflow-tracking.py",
+    "sha256": "260d44fcd8ac9bde1d188aa2667b9f35ac04f95966176dddf23fd47b08559f1e",
+    "unchanged": true
+  },
+  {
+    "path": "data/input/complaint_daily_features.parquet",
+    "sha256": "2ea8b53756a86a11632a740377770288318f9e719c25c10da7d500e7289546d3",
+    "unchanged": true
+  }
+]

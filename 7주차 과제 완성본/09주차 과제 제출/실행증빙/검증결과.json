@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "independent_mae": {
+    "baseline": "1",
+    "linear": "23/22"
+  },
+  "own_gate": {
+    "absolute_max": 1.0,
+    "min_improvement": 0.1,
+    "v1_absolute_pass": true,
+    "v2_absolute_pass": false,
+    "v2_improvement": -0.045454545454545456,
+    "v2_relative_pass": false,
+    "champion_version": 1
+  },
+  "data_fingerprint": "5ff6781dc27fbf737cb2df092a152eca85662f797546aeb6a42f82f04758d4d9",
+  "report_sha256": "a1c7abe2d08581a3ec1bc2127c0ed210b38f05667ccba3bed54d23c4425e7ef5"
+}

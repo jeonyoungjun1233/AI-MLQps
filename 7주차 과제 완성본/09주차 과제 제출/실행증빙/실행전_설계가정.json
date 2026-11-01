@@ -1,0 +1,15 @@
+{
+  "recorded_at": "2026-11-01T04:22:17.314636+00:00",
+  "author": "과제 작성 지원 도구의 설계안; 학생 본인의 사전 예측이 아님",
+  "lecture_results_already_read": true,
+  "metric": "train_mae (교육용); 운영에서는 시간 분리 holdout MAE로 별도 검증",
+  "absolute_max": 1.0,
+  "minimum_improvement": 0.1,
+  "assumptions": [
+    "지역구별 하루 평균 절대 오차 1건까지 대응 가능하다고 교육용으로 가정; 실제 인력 여유량 미제공",
+    "월 1회 계획 변경 비용을 고려하여 예측 10회당 절대오차 합계 1건 감소에 해당하는 MAE 0.10 이상을 최소 개선으로 가정"
+  ],
+  "initial_champion_rule": "champion이 없으면 상대 조건 적용 제외; 절대 기준과 재현성 검수 후 최초 후보 지정",
+  "student_pre_execution_prediction": null,
+  "note": "강의 예시 결과를 이미 읽은 상태이므로 독립적인 학생 사전 예상으로 주장하지 않음"
+}

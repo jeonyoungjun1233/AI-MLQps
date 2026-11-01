@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "C:\Users\junyj\Desktop\AI데이터개발MLQps\7주차 과제 완성본\09주차 과제 제출\practice\chapter9\code\9-1-mlflow-tracking.py", line 22, in <module>
+    import pandas as pd
+ModuleNotFoundError: No module named 'pandas'
