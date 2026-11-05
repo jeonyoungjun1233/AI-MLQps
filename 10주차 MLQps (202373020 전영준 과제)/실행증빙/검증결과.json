@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "pytest_passed": 4,
+  "release_checks_passed": 8,
+  "host_forecast": 6.0,
+  "container_forecast": 6.0,
+  "invalid_input_status_both": 422,
+  "app_sha256": "1718607ffbd39aadb8597a1ad8d1168f54e3f1f3a070a475e6b6f57729416dd3",
+  "report_sha256": "9335e9f08ce8119c964a0e319268f4ffbb98633e7815f8cd2363325c18a5e73c"
+}

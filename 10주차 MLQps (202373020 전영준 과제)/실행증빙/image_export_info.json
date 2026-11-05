@@ -1,0 +1,6 @@
+{
+  "champion_version": 1,
+  "exported_from": "models:/complaint_daily_forecaster@champion",
+  "model_name": "complaint_daily_forecaster",
+  "note": "빌드 시점의 champion을 이미지에 고정(불변 아티팩트) — 10.4"
+}

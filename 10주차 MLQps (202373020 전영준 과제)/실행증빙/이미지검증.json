@@ -1,0 +1,11 @@
+{
+  "image_id": "sha256:d1a54560d56f6d0d95a9aa0593734ec1b8a86a01706f2ddb92b452df10f7b1d2",
+  "repo_tags": [
+    "ch10-model-api:latest"
+  ],
+  "size_bytes": 901365496,
+  "host_app_sha256": "1718607ffbd39aadb8597a1ad8d1168f54e3f1f3a070a475e6b6f57729416dd3",
+  "container_app_sha256": "1718607ffbd39aadb8597a1ad8d1168f54e3f1f3a070a475e6b6f57729416dd3",
+  "app_bytes_equal": true,
+  "export_info_bytes_equal": true
+}

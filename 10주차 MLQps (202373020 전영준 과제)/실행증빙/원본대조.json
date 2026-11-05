@@ -1,0 +1,42 @@
+[
+  {
+    "path": "run_chapter10.py",
+    "sha256": "50eb8d74f2bff9cc664de2661cf404158463581977a8e08d01eb8437e438f335",
+    "original_matches": true
+  },
+  {
+    "path": "code/requirements.txt",
+    "sha256": "a4d901e4473105e79f89e5af299d55894aba6eb1a51ccc0dfa61e2abb6dc6c01",
+    "original_matches": true
+  },
+  {
+    "path": "data/input/complaint_daily_features.parquet",
+    "sha256": "2ea8b53756a86a11632a740377770288318f9e719c25c10da7d500e7289546d3",
+    "original_matches": true
+  },
+  {
+    "path": "code/10-1-model-api/app.py",
+    "sha256": "1718607ffbd39aadb8597a1ad8d1168f54e3f1f3a070a475e6b6f57729416dd3",
+    "original_matches": true
+  },
+  {
+    "path": "code/10-1-model-api/bootstrap_registry.py",
+    "sha256": "3a4bcbbe4993c383a6e7df2def7eed8142bc3bb9a873ab877b313969c71e8391",
+    "original_matches": true
+  },
+  {
+    "path": "code/10-1-model-api/Dockerfile",
+    "sha256": "7997672898036854032da2c7539f0f331a7b03fb1d22b82e010581a37412d1f3",
+    "original_matches": true
+  },
+  {
+    "path": "code/10-1-model-api/requirements-serve.txt",
+    "sha256": "744bb707a3e3c85f042721871b38fcc42ed4ef227eb450867d9b7fe9299ca541",
+    "original_matches": true
+  },
+  {
+    "path": "code/10-1-model-api/test_app.py",
+    "sha256": "a33328172e7c32e8096578e279a4ed4f19b1500b834ad44938dd86afb28c25aa",
+    "original_matches": true
+  }
+]

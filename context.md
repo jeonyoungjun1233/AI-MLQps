@@ -110,3 +110,14 @@
 - 09주차 산출물 커밋6977a95c9f9f225ed2d811771f105520127bdf10 GitHub main 푸시·원격일치 확인, 과제파일25개 Git blob 바이트 대조 통과. LMS는 미제출.
 
 - 사용자 요청으로 9주차 폴더를 최상위 `9주차 과제물`로 분리, 파일 이동 전후 해시 일치 확인 및 안내 링크 갱신. 원본 실행 로그의 과거 경로는 보존.
+
+
+## 2026-11-05 10주차 과제
+
+- PDF 전체10쪽과 원본 실행기·FastAPI·bootstrap·pytest·Dockerfile 확인. `10주차 MLQps (202373020 전영준 과제)`에 구성, 원본8개 바이트 불변.
+- 로컬 Docker 없음. GitHub Actions Ubuntu에서 실제 호스트 HTTP·Docker build/run/HTTP 전체실습 실행, run41944634886, source3bfa8a69cc031934b7aed9afdb3ebbaebb559771, 성공 CH10_RUN_PASS. skip-docker/모의 결과 아님.
+- 호스트/컨테이너6.0/6.0, 양쪽422, 출처registry-alias/local-dir, pytest4, 체크리스트8 통과. shadow champion6.0/challenger7.3636, export검증6.0, champion1/challenger2.
+- 원본 컨테이너 고정버전을 호스트 constraints로 적용: FastAPI0.139.0/uvicorn0.50.2/MLflow3.14.0/sklearn1.9.0/pandas2.3.3. 원본 코드 변경 없음. 누락 CI는 개인 워크플로로 보완, 루트 실행용/개인폴더 원본실행기 경로용 동일 정의 보관.
+- Docker 이미지에서 직접 추출한 app.py와 원본 SHA256=1718607ffbd39aadb8597a1ad8d1168f54e3f1f3a070a475e6b6f57729416dd3 일치. export_info 바이트도 일치. 이미지ID d1a54560d56f6d0d95a9aa0593734ec1b8a86a01706f2ddb92b452df10f7b1d2.
+- 원본 제출JSON SHA256=9335e9f08ce8119c964a0e319268f4ffbb98633e7815f8cd2363325c18a5e73c. 3/3/3문장 TXT·PDF1쪽 렌더링 검수 완료. 실행로그·환경2종·이미지파일·DB/모델ZIP·독립검증 보관.
+- 고정 피처 스냅샷이며 실시간 API 수집 아님. 학생 사전 예상은 제공되지 않아 지어내지 않음. LMS 미제출/마감미확인. 작업 시작 시 있던 중간고사 제출MD 수정은 보존하고 커밋에서 제외.

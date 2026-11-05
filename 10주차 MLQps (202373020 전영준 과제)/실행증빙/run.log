@@ -1,0 +1,30 @@
+== 시나리오 1: 레지스트리 재구성(bootstrap) ==
+[bootstrap] 훈련 쌍 6개, 지문 96f6b6b3ce9dcdd1…
+[bootstrap] run baseline_mean: train_mae=1.0000
+[bootstrap] run linear: train_mae=1.0455
+[bootstrap] champion=v1, challenger=v2
+[bootstrap] export 로드 검증 예측=6.0 (champion=v1)
+CH10_BOOTSTRAP_OK
+
+== 시나리오 2: 서빙 계약 테스트(pytest) ==
+....                                                                     [100%]
+=============================== warnings summary ===============================
+../../../../../../../../../../opt/hostedtoolcache/Python/3.13.17/x64/lib/python3.13/site-packages/fastapi/testclient.py:1
+  /opt/hostedtoolcache/Python/3.13.17/x64/lib/python3.13/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+4 passed, 1 warning in 3.79s
+
+== 시나리오 3: 호스트 서빙 — models:/...@champion 로드 ==
+  health={'status': 'ok', 'model_name': 'complaint_daily_forecaster', 'model_version': '1', 'model_source': 'registry-alias', 'shadow_enabled': True}
+  predict(전일 9) → 6.0 / 잘못된 입력 → 422
+  shadow 관찰: {'lawd_cd': '11680', 'x_prev_count': 9, 'champion_forecast': 6.0, 'challenger_forecast': 7.3636}
+
+== 시나리오 4: 컨테이너 빌드·기동·호출 ==
+  이미지 빌드 완료: ch10-model-api (901 MB — 환경·시점에 따라 변동)
+  health={'status': 'ok', 'model_name': 'complaint_daily_forecaster', 'model_version': '1', 'model_source': 'local-dir', 'shadow_enabled': False}
+  predict(전일 9) → 6.0 / 잘못된 입력 → 422
+
+증거 파일: /home/runner/work/AI-MLQps/AI-MLQps/10주차 MLQps (202373020 전영준 과제)/practice/chapter10/data/output/ch10_deploy_report.json
+CH10_RUN_PASS
