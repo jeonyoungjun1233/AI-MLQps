@@ -1,0 +1,45 @@
+name: Week 10 model API Docker validation
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  deploy-exercise:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    env:
+      MLFLOW_ENABLE_TELEMETRY: 'false'
+      MLFLOW_RECORD_ENV_VARS_IN_MODEL_LOGGING: 'false'
+      PYTHONUTF8: '1'
+    defaults:
+      run:
+        working-directory: '10주차 MLQps (202373020 전영준 과제)'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Install compatible host dependencies
+        run: |
+          mkdir -p 실행증빙
+          pip install -r practice/chapter10/code/requirements.txt -c practice/chapter10/code/10-1-model-api/requirements-serve.txt
+          pip freeze > 실행증빙/host-requirements-lock.txt
+          python --version > 실행증빙/environment.txt
+          uname -a >> 실행증빙/environment.txt
+          docker version >> 실행증빙/environment.txt
+          echo "run_id=$GITHUB_RUN_ID commit=$GITHUB_SHA" >> 실행증빙/environment.txt
+      - name: Execute all four original scenarios
+        run: |
+          set -o pipefail
+          python practice/chapter10/run_chapter10.py 2>&1 | tee 실행증빙/run.log
+      - name: Verify image bytes and archive execution evidence
+        run: python 실행증빙/이미지증빙.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: week10-execution
+          path: |
+            10주차 MLQps (202373020 전영준 과제)/실행증빙/
+            10주차 MLQps (202373020 전영준 과제)/practice/chapter10/data/output/*.json
+            10주차 MLQps (202373020 전영준 과제)/practice/chapter10/data/output/*.jsonl
+          retention-days: 7

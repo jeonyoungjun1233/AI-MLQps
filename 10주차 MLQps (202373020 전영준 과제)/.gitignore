@@ -1,0 +1,5 @@
+__pycache__/
+.pytest_cache/
+practice/chapter10/mlruns/
+practice/chapter10/data/output/mlflow.db*
+practice/chapter10/code/10-1-model-api/model_export/
