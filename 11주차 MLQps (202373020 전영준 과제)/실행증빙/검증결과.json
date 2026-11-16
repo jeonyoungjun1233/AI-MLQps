@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "source_files": 7,
+  "report_sha256": "0a233f8e8edbe78713214843d15f006b33d8c5a1eb01e4245d94eeb25eccca79",
+  "independent_checks": [
+    {
+      "comparison": "comparison_a_1hour",
+      "ks": 0.175,
+      "psi": 0.1193,
+      "AND_level": "주의",
+      "OR_level": "주의"
+    },
+    {
+      "comparison": "comparison_b_9days_time_aligned",
+      "ks": 0.225,
+      "psi": 0.3324,
+      "AND_level": "주의",
+      "OR_level": "경보"
+    }
+  ],
+  "rerun_json_byte_identical": true,
+  "sentence_counts": [
+    3,
+    3,
+    3
+  ]
+}

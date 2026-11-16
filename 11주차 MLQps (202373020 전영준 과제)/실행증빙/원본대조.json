@@ -1,0 +1,9 @@
+{
+  "practice/chapter11/run_chapter11.py": "2d059320128783852e3fd4079750c2b4b19a28e05f10bc082d43849939480d6d",
+  "practice/chapter11/code/11-0-collect-snapshot.py": "be0f249e871abd2e29174d52838847f62eae1e72ce303e1a4efa8b2f0c03b40c",
+  "practice/chapter11/code/11-1-drift-monitoring.py": "987051f90b6d9832b26f0423306c1699e661aa0199a97cac3c89a68b9b07672d",
+  "practice/chapter11/code/requirements.txt": "0228d227ead4dac13cb4442f3375b35a9a94058b13f2e7b14e4de1ec2a1c20e3",
+  "practice/chapter11/data/input/airquality_seoul_2200_0628.json": "c74bd701e86eaa63ccbd2cd312b7a520b3a6779889d35440198d0e86d45c8b2f",
+  "practice/chapter11/data/input/airquality_seoul_2200_0707.json": "eddefa321ee4cc462178120dd160cfb72f6fcb598e9b89d51bf7ffdffe83454e",
+  "practice/chapter11/data/input/airquality_seoul_2300_0628.json": "688573590e38fcda232796d9546d2ac8fba632402e301cc6387562e212afde61"
+}
